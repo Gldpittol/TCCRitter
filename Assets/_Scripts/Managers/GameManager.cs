@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
 
     public GameManager Instance { get { return _instance; } }
 
+    [Header("Debug")] [SerializeField] private bool spawnPlayerOnStart = true;
+
     void Awake()
     {
         if(!_instance)
@@ -25,6 +27,6 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        Instantiate(_playerPrefab, _spawnPosition, Quaternion.identity);
+        if(spawnPlayerOnStart)Instantiate(_playerPrefab, _spawnPosition, Quaternion.identity);
     }
 }
