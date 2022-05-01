@@ -15,4 +15,8 @@ public class MagicData : ScriptableObject
 {
    public string magicName;
    public MagicType magicType;
+   public GameObject magicPrefab;
+   public float cooldown;
+   public float baseSpeed;
+   public float baseDamage;
 }
