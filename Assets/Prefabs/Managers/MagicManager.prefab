@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &689920944723619446
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 84616984466765534}
+  - component: {fileID: 7251533804114371759}
+  m_Layer: 0
+  m_Name: MagicManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &84616984466765534
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689920944723619446}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.4792036, y: -1.8812789, z: -7.218369}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7251533804114371759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689920944723619446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96ad8001eb827054c9c7538ffd9e3171, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  basicMagicsList:
+  - {fileID: 11400000, guid: 5a5f6465f50463b409772fd8b5b3fc58, type: 2}
+  - {fileID: 11400000, guid: 7f58083f5808c4341999fc3796f86f5c, type: 2}
+  - {fileID: 11400000, guid: 2cbebec6ae5f1f14bb769fbf6aacef82, type: 2}
+  - {fileID: 11400000, guid: ebb06d6214bb7084280aa6e941baa1fb, type: 2}
+  - {fileID: 11400000, guid: dd609f55696f3d545bd8a18c561ce2ad, type: 2}
+  - {fileID: 11400000, guid: 044d7b29eb640b842b72b3e9fda8f76d, type: 2}
+  - {fileID: 11400000, guid: 0d38d44017509454b85974ae439dc0bd, type: 2}
+  - {fileID: 11400000, guid: 0c5b17b798b709242bc087191f6f718d, type: 2}
+  - {fileID: 11400000, guid: 4be63a124d0499b4e8e8a80461fef4b6, type: 2}
+  offensiveMagicsList:
+  - {fileID: 11400000, guid: 11b85af1326ddc74cb2fc990ec022968, type: 2}
+  - {fileID: 11400000, guid: 5b047de7819183043a2a7e5667240fda, type: 2}
+  - {fileID: 11400000, guid: d4d0c04977df55040a5a504c143c6a86, type: 2}
+  - {fileID: 11400000, guid: c565318e46f58f84599b613155b28d3b, type: 2}
+  - {fileID: 11400000, guid: 9f1a7e5bf41e4434eba9a2afc4b22229, type: 2}
+  - {fileID: 11400000, guid: 564ea28ebc3b1c84babda82a8b6a2f24, type: 2}
+  - {fileID: 11400000, guid: 934258aaa39b7fd40aef58e97b252a96, type: 2}
+  - {fileID: 11400000, guid: adc1867ff574ece44aaba9ae49264198, type: 2}
+  - {fileID: 11400000, guid: 698c22c9965aa234189e9a80f572ce8f, type: 2}
+  defensiveMagicsList:
+  - {fileID: 11400000, guid: 3c65418db9af4ee45b6ddf0feb71bb90, type: 2}
+  - {fileID: 11400000, guid: 8762d63d1f02b6240a6417c8580c5003, type: 2}
+  - {fileID: 11400000, guid: 76d947b3a4d81a04397392c8d6c8041c, type: 2}
+  - {fileID: 11400000, guid: e78446572ff8fc646bda6a4e2ba88133, type: 2}
+  - {fileID: 11400000, guid: 33af8298bf2cbd841835a64f67cb943b, type: 2}
+  - {fileID: 11400000, guid: d8d218b777b9aa447b4ae994869814f3, type: 2}
+  - {fileID: 11400000, guid: 109f3f5c5681fe4488e0b82c07652d80, type: 2}
+  - {fileID: 11400000, guid: ff8fd03a1f896a346a6fe6ecca8b9ed4, type: 2}
+  - {fileID: 11400000, guid: efc4c02fffafe674d8af516feb1741dd, type: 2}
+  ultimateMagicsList:
+  - {fileID: 11400000, guid: 1449311e1d561464d85dd14e9bf0016d, type: 2}
+  - {fileID: 11400000, guid: bd09ae2f9430382419f4df2a12a92496, type: 2}
+  - {fileID: 11400000, guid: fed49b19a088cb0429a1c5655e577709, type: 2}

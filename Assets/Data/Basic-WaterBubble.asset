@@ -10,7 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e52174ff03eb19b4e867414c63caa4b2, type: 3}
-  m_Name: BasicMagic 2
+  m_Name: Basic-WaterBubble
   m_EditorClassIdentifier: 
-  magicName: BasicMagic 2
+  magicName: Water Bubble
   magicType: 0
+  magicPrefab: {fileID: 2358214578950324224, guid: d2d0a7906d39d3141b5ce5c239db9cc0, type: 3}
+  cooldown: 1
+  baseSpeed: 0
+  baseDamage: 9
+  delayBetweenHits: 0.7
+  duration: 0.3
