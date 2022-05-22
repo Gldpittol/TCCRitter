@@ -24,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        if(GameManager.Instance.gameState == GameState.Gameplay) DecideSide();
+        //if(GameManager.Instance.gameState == GameState.Gameplay) DecideSide();
     }
 
     private void FixedUpdate()

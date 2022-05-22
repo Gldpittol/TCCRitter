@@ -10,8 +10,9 @@ public class PlayerSpellCasting : MonoBehaviour
     public float cooldownRightClick;
 
     public int magicID;
-
     public event Action onClickBaseMagic;
+
+    [SerializeField] private Animator staffAnimator;
     private void Awake()
     {
         Instance = this;
@@ -31,6 +32,7 @@ public class PlayerSpellCasting : MonoBehaviour
         {
             if (cooldownRightClick > 0) return;
             onClickBaseMagic?.Invoke();
+            staffAnimator.Play("StaffCast");
         }
     }
 
