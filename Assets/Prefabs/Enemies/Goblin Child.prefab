@@ -98,7 +98,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.00949654, y: -0.17283618}
@@ -192,12 +192,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a201d3c6f450654cb747e317ffebced, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseDamage: 0
-  health: 0
-  speed: 0
-  delayBetweenAttacks: 0
-  projectileSpeed: 0
-  projectileDuration: 0
+  baseDamage: 5
+  health: 10
+  speed: 2
+  delayBetweenAttacks: 1
+  projectileSpeed: 1
+  projectileDuration: 1
 --- !u!114 &8775721312185665526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -210,8 +210,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7d2a982b544a034481f4ee09bda642f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyController: {fileID: 0}
-  animator: {fileID: 0}
   canMove: 1
   currentDelayBetweenHits: 0
   isDamagingPlayer: 0

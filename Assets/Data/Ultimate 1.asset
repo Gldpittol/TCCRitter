@@ -13,4 +13,10 @@ MonoBehaviour:
   m_Name: Ultimate 1
   m_EditorClassIdentifier: 
   magicName: Ultimate 1
-  magicType: 0
+  magicType: 3
+  magicPrefab: {fileID: 0}
+  cooldown: 0
+  baseSpeed: 0
+  baseDamage: 0
+  duration: 0
+  delayBetweenHits: 0.1

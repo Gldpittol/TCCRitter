@@ -1159,30 +1159,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1089513746}
     m_Modifications:
-    - target: {fileID: 464344125299315955, guid: dccaa69d9bbbd3f43af88bc1c3e91a27, type: 3}
-      propertyPath: speed
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 464344125299315955, guid: dccaa69d9bbbd3f43af88bc1c3e91a27, type: 3}
-      propertyPath: health
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 464344125299315955, guid: dccaa69d9bbbd3f43af88bc1c3e91a27, type: 3}
-      propertyPath: baseDamage
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 464344125299315955, guid: dccaa69d9bbbd3f43af88bc1c3e91a27, type: 3}
-      propertyPath: projectileSpeed
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 464344125299315955, guid: dccaa69d9bbbd3f43af88bc1c3e91a27, type: 3}
-      propertyPath: projectileDuration
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 464344125299315955, guid: dccaa69d9bbbd3f43af88bc1c3e91a27, type: 3}
-      propertyPath: delayBetweenAttacks
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7242947695145755469, guid: dccaa69d9bbbd3f43af88bc1c3e91a27, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1230,10 +1206,6 @@ PrefabInstance:
     - target: {fileID: 7242947695145755506, guid: dccaa69d9bbbd3f43af88bc1c3e91a27, type: 3}
       propertyPath: m_Name
       value: Goblin Child (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7242947695145755506, guid: dccaa69d9bbbd3f43af88bc1c3e91a27, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dccaa69d9bbbd3f43af88bc1c3e91a27, type: 3}
@@ -1393,6 +1365,10 @@ PrefabInstance:
       propertyPath: staffAnimator
       value: 
       objectReference: {fileID: 247260910635428403}
+    - target: {fileID: 5953440748861727101, guid: 2a7d5d1b0160d61498247313c122f350, type: 3}
+      propertyPath: magicDefensive
+      value: 
+      objectReference: {fileID: 11400000, guid: 3c65418db9af4ee45b6ddf0feb71bb90, type: 2}
     - target: {fileID: 5953440748861727101, guid: 2a7d5d1b0160d61498247313c122f350, type: 3}
       propertyPath: magicOffensive
       value: 

@@ -12,5 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e52174ff03eb19b4e867414c63caa4b2, type: 3}
   m_Name: DefensiveMagic 2
   m_EditorClassIdentifier: 
-  magicName: DefensiveMagic 2
-  magicType: 0
+  magicName: Defensive
+  magicType: 1
+  magicPrefab: {fileID: 0}
+  cooldown: 0
+  baseSpeed: 0
+  baseDamage: 0
+  duration: 0
+  delayBetweenHits: 0.1

@@ -13,4 +13,10 @@ MonoBehaviour:
   m_Name: DefensiveMagic 9
   m_EditorClassIdentifier: 
   magicName: DefensiveMagic 9
-  magicType: 0
+  magicType: 1
+  magicPrefab: {fileID: 0}
+  cooldown: 0
+  baseSpeed: 0
+  baseDamage: 0
+  duration: 0
+  delayBetweenHits: 0.1

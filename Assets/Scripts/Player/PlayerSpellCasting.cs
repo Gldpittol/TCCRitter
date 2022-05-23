@@ -50,6 +50,12 @@ public class PlayerSpellCasting : MonoBehaviour
             onClickBaseMagic?.Invoke();
             staffAnimator.Play("StaffCast");
         }
+        if (Input.GetButton("Fire2"))
+        {
+            if (cooldownDefensive > 0) return;
+            onClickDefensiveMagic?.Invoke();
+            staffAnimator.Play("StaffCast");
+        }
         if (Input.GetKeyDown(KeyCode.E))
         {
             if (cooldownOffsensive > 0) return;
@@ -62,6 +68,8 @@ public class PlayerSpellCasting : MonoBehaviour
     {
         cooldownRightClick -= Time.deltaTime;
         cooldownOffsensive -= Time.deltaTime;
+        cooldownDefensive -= Time.deltaTime;
+        cooldownUltimate -= Time.deltaTime;
     }
 
     public void SelectBaseMagic(int ID)
@@ -71,10 +79,10 @@ public class PlayerSpellCasting : MonoBehaviour
         switch (ID)
         {
             case 0:
-                onClickBaseMagic += ShootFireball;
+                onClickBaseMagic += CastFireball;
                 break;
             case 1:
-                onClickBaseMagic += SpawnWaterBubble;
+                onClickBaseMagic += CastWaterBubble;
                 break;
         }
     }
@@ -97,10 +105,11 @@ public class PlayerSpellCasting : MonoBehaviour
         switch (ID)
         {
             case 0:
-                onClickOffensiveMagic += CastStaticField;
+                onClickDefensiveMagic += CastWindWall;
                 break;
         }
     }
+
     public void SelectUltimateMagic(int ID)
     {
         onClickUltimateMagic = null;
@@ -108,9 +117,15 @@ public class PlayerSpellCasting : MonoBehaviour
         switch (ID)
         {
             case 0:
-                onClickOffensiveMagic += CastStaticField;
+                onClickUltimateMagic += CastStaticField;
                 break;
         }
+    }
+    
+    private void CastWindWall()
+    {
+        cooldownDefensive = magicDefensive.cooldown;
+        Instantiate(magicDefensive.magicPrefab, transform.position, Quaternion.identity);
     }
 
     private void CastStaticField()
@@ -121,7 +136,7 @@ public class PlayerSpellCasting : MonoBehaviour
         temp.GetComponent<SpellDamager>().damage = magicOffensive.baseDamage * PlayerStats.damageMultiplier;
     }
 
-    public void ShootFireball()
+    public void CastFireball()
     {
         cooldownRightClick = magicRightClick.cooldown;
         GameObject temp = Instantiate(magicRightClick.magicPrefab, PlayerManager.Instance.spellSpawnPoint.transform.position, Quaternion.identity);
@@ -135,7 +150,7 @@ public class PlayerSpellCasting : MonoBehaviour
         temp.GetComponent<SpellDamager>().damage = magicRightClick.baseDamage * PlayerStats.damageMultiplier;
     }
     
-    public void SpawnWaterBubble()
+    public void CastWaterBubble()
     {
         cooldownRightClick = magicRightClick.cooldown;
         GameObject temp = Instantiate(magicRightClick.magicPrefab, (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition), Quaternion.identity);
