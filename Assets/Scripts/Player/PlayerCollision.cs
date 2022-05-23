@@ -24,6 +24,11 @@ public class PlayerCollision : MonoBehaviour
         Instance = this;
     }
 
+    private void Start()
+    {
+        HUDManager.Instance.UpdateHealthText();
+    }
+
     private void Update()
     {
         currentSoundCooldown += Time.deltaTime;
@@ -46,7 +51,9 @@ public class PlayerCollision : MonoBehaviour
         }
 
         if (PlayerStats.currentHealth < 0) PlayerStats.currentHealth = 0;
-
+        
+        HUDManager.Instance.UpdateHealthText();
+        
         if (PlayerStats.currentHealth < 1)
         {
             StartCoroutine(KillPlayer());

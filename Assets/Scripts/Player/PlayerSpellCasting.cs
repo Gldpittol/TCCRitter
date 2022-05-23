@@ -7,10 +7,20 @@ public class PlayerSpellCasting : MonoBehaviour
 {
     public static PlayerSpellCasting Instance;
     public MagicData magicRightClick;
-    public float cooldownRightClick;
+    public MagicData magicOffensive;
+    public MagicData magicDefensive;
+    public MagicData magicUltimate;
 
-    public int magicID;
+    public float cooldownRightClick;
+    public float cooldownOffsensive;
+    public float cooldownDefensive;
+    public float cooldownUltimate;
+
     public event Action onClickBaseMagic;
+    public event Action onClickOffensiveMagic;
+    public event Action onClickDefensiveMagic;
+    public event Action onClickUltimateMagic;
+
 
     [SerializeField] private Animator staffAnimator;
     private void Awake()
@@ -21,7 +31,13 @@ public class PlayerSpellCasting : MonoBehaviour
     private void Start()
     {
         int basicMagicID = MagicManager.Instance.basicMagicsList.IndexOf(magicRightClick);
+        int offensiveMagicID = MagicManager.Instance.offensiveMagicsList.IndexOf(magicOffensive);
+        int defensiveMagicID = MagicManager.Instance.defensiveMagicsList.IndexOf(magicDefensive);
+        int ultimateMagicID = MagicManager.Instance.ultimateMagicsList.IndexOf(magicUltimate);
         SelectBaseMagic(basicMagicID);
+        SelectOffensiveMagic(offensiveMagicID);
+        SelectDefensiveMagic(defensiveMagicID);
+        SelectUltimateMagic(ultimateMagicID);
     }
 
     private void Update()
@@ -34,11 +50,18 @@ public class PlayerSpellCasting : MonoBehaviour
             onClickBaseMagic?.Invoke();
             staffAnimator.Play("StaffCast");
         }
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            if (cooldownOffsensive > 0) return;
+            onClickOffensiveMagic?.Invoke();
+            staffAnimator.Play("StaffCast");
+        }
     }
 
     public void ReduceCooldowns()
     {
         cooldownRightClick -= Time.deltaTime;
+        cooldownOffsensive -= Time.deltaTime;
     }
 
     public void SelectBaseMagic(int ID)
@@ -55,7 +78,49 @@ public class PlayerSpellCasting : MonoBehaviour
                 break;
         }
     }
-    
+
+    public void SelectOffensiveMagic(int ID)
+    {
+        onClickOffensiveMagic = null;
+
+        switch (ID)
+        {
+            case 0:
+                onClickOffensiveMagic += CastStaticField;
+                break;
+        }
+    }
+    public void SelectDefensiveMagic(int ID)
+    {
+        onClickDefensiveMagic = null;
+
+        switch (ID)
+        {
+            case 0:
+                onClickOffensiveMagic += CastStaticField;
+                break;
+        }
+    }
+    public void SelectUltimateMagic(int ID)
+    {
+        onClickUltimateMagic = null;
+
+        switch (ID)
+        {
+            case 0:
+                onClickOffensiveMagic += CastStaticField;
+                break;
+        }
+    }
+
+    private void CastStaticField()
+    {
+        cooldownOffsensive = magicOffensive.cooldown;
+        GameObject temp = Instantiate(magicOffensive.magicPrefab, (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition), Quaternion.identity);
+
+        temp.GetComponent<SpellDamager>().damage = magicOffensive.baseDamage * PlayerStats.damageMultiplier;
+    }
+
     public void ShootFireball()
     {
         cooldownRightClick = magicRightClick.cooldown;

@@ -11,7 +11,8 @@ public class EnemyController : MonoBehaviour
     public float delayBetweenAttacks;
     public float projectileSpeed;
     public float projectileDuration;
-    
+
+    private bool isChangingColor = false;
     public void TakeDamage(float damage)
     {
         health -= damage;
@@ -26,13 +27,17 @@ public class EnemyController : MonoBehaviour
 
     private void KillEnemy()
     {
-        Destroy(this.gameObject);
+        Destroy(gameObject);
     }
 
     public IEnumerator ChangeColor()
     {
+        if(isChangingColor) yield break;
+
+        isChangingColor = true;
         GetComponent<SpriteRenderer>().color = PlayerCollision.Instance.hitColor;
         yield return new WaitForSeconds(0.1f);
         GetComponent<SpriteRenderer>().color = Color.white;
+        isChangingColor = false;
     }
 }

@@ -19,6 +19,6 @@ public class MagicData : ScriptableObject
    public float cooldown;
    public float baseSpeed;
    public float baseDamage;
-   public float delayBetweenHits;
    public float duration;
+   public float delayBetweenHits = 0.1f;
 }

@@ -32,7 +32,7 @@ Transform:
   m_Children:
   - {fileID: 4343848555342929501}
   m_Father: {fileID: 5953440749701191229}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2439961776953613138
 SpriteRenderer:
@@ -146,7 +146,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6916378747491329874}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2082098739772346107
 GameObject:
@@ -205,6 +205,7 @@ Transform:
   m_LocalPosition: {x: -7.2168617, y: -1.381413, z: -20.072134}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 5953440750011677014}
   - {fileID: 673670787669928409}
   - {fileID: 6916378747491329874}
   m_Father: {fileID: 0}
@@ -235,10 +236,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5953440750011677015}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.284, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 1}
+  m_LocalPosition: {x: 2.4460778, y: 0.118224144, z: 20.072134}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children: []
-  m_Father: {fileID: 6916378747491329874}
+  m_Father: {fileID: 5953440749701191229}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5953440750011677013
@@ -331,10 +332,9 @@ Transform:
   m_LocalPosition: {x: 2.4460778, y: -0.73377585, z: 20.072134}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children:
-  - {fileID: 5953440750011677014}
   - {fileID: 289172609893366489}
   m_Father: {fileID: 5953440749701191229}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6916378747491329875
 SpriteRenderer:
@@ -711,8 +711,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   magicRightClick: {fileID: 11400000, guid: 5a5f6465f50463b409772fd8b5b3fc58, type: 2}
+  magicOffensive: {fileID: 0}
+  magicDefensive: {fileID: 0}
+  magicUltimate: {fileID: 0}
   cooldownRightClick: 0
-  magicID: 0
+  cooldownOffsensive: 0
+  cooldownDefensive: 0
+  cooldownUltimate: 0
   staffAnimator: {fileID: 0}
 --- !u!114 &5953440748861727100
 MonoBehaviour:
