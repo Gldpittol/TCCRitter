@@ -137,7 +137,7 @@ public class PlayerSpellCasting : MonoBehaviour
         cooldownUltimate = magicUltimate.cooldown;
         GameObject temp = Instantiate(magicUltimate.magicPrefab, (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition), Quaternion.identity);
 
-        temp.GetComponent<SpellDamager>().damage = magicUltimate.baseDamage * PlayerStats.damageMultiplier;
+        temp.transform.GetChild(0).GetComponent<SpellDamager>().damage = magicUltimate.baseDamage * PlayerStats.damageMultiplier;
     }
     
     private void CastIceMissile()
@@ -152,7 +152,7 @@ public class PlayerSpellCasting : MonoBehaviour
         temp.GetComponent<Rigidbody2D>().velocity = new Vector2(shootDirection.x, shootDirection.y).normalized * magicOffensive.baseSpeed;
 
         temp.GetComponent<SpellDamager>().damage = magicOffensive.baseDamage * PlayerStats.damageMultiplier;
-        RotateTowardsMouse(0, temp);
+        RotateTowardsMouse(180, temp);
     }
 
 

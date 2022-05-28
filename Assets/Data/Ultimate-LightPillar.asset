@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   magicName: Light Pillar
   magicType: 3
-  magicPrefab: {fileID: 699378484237173927, guid: ebc8f1b42bea48248ae6f0bfa16c6594, type: 3}
+  magicPrefab: {fileID: 528467459686949676, guid: ebc8f1b42bea48248ae6f0bfa16c6594, type: 3}
   cooldown: 120
   baseSpeed: 0
   baseDamage: 1.4
-  duration: 3
+  duration: 15
   delayBetweenHits: 0.1
