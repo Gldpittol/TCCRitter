@@ -10,7 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e52174ff03eb19b4e867414c63caa4b2, type: 3}
-  m_Name: OffensiveMagic 2
+  m_Name: Ultimate-LightPillar
   m_EditorClassIdentifier: 
-  magicName: OffensiveMagic 2
-  magicType: 2
+  magicName: Light Pillar
+  magicType: 3
+  magicPrefab: {fileID: 699378484237173927, guid: ebc8f1b42bea48248ae6f0bfa16c6594, type: 3}
+  cooldown: 120
+  baseSpeed: 0
+  baseDamage: 1.4
+  duration: 3
+  delayBetweenHits: 0.1

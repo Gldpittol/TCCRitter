@@ -62,6 +62,12 @@ public class PlayerSpellCasting : MonoBehaviour
             onClickOffensiveMagic?.Invoke();
             staffAnimator.Play("StaffCast");
         }
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            if (cooldownUltimate > 0) return;
+            onClickUltimateMagic?.Invoke();
+            staffAnimator.Play("StaffCast");
+        }
     }
 
     public void ReduceCooldowns()
@@ -96,8 +102,12 @@ public class PlayerSpellCasting : MonoBehaviour
             case 0:
                 onClickOffensiveMagic += CastStaticField;
                 break;
+            case 1:
+                onClickOffensiveMagic += CastIceMissile;
+                break;
         }
     }
+    
     public void SelectDefensiveMagic(int ID)
     {
         onClickDefensiveMagic = null;
@@ -117,11 +127,35 @@ public class PlayerSpellCasting : MonoBehaviour
         switch (ID)
         {
             case 0:
-                onClickUltimateMagic += CastStaticField;
+                onClickUltimateMagic += CastLightPillar;
                 break;
         }
     }
+
+    private void CastLightPillar()
+    {
+        cooldownUltimate = magicUltimate.cooldown;
+        GameObject temp = Instantiate(magicUltimate.magicPrefab, (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition), Quaternion.identity);
+
+        temp.GetComponent<SpellDamager>().damage = magicUltimate.baseDamage * PlayerStats.damageMultiplier;
+    }
     
+    private void CastIceMissile()
+    {
+        cooldownOffsensive = magicOffensive.cooldown;
+        GameObject temp = Instantiate(magicOffensive.magicPrefab, PlayerManager.Instance.spellSpawnPoint.transform.position, Quaternion.identity);
+
+        Vector3 shootDirection;
+        shootDirection = Input.mousePosition;
+        shootDirection = Camera.main.ScreenToWorldPoint(shootDirection);
+        shootDirection = shootDirection - PlayerManager.Instance.spellSpawnPoint.transform.position;
+        temp.GetComponent<Rigidbody2D>().velocity = new Vector2(shootDirection.x, shootDirection.y).normalized * magicOffensive.baseSpeed;
+
+        temp.GetComponent<SpellDamager>().damage = magicOffensive.baseDamage * PlayerStats.damageMultiplier;
+        RotateTowardsMouse(0, temp);
+    }
+
+
     private void CastWindWall()
     {
         cooldownDefensive = magicDefensive.cooldown;
@@ -156,5 +190,18 @@ public class PlayerSpellCasting : MonoBehaviour
         GameObject temp = Instantiate(magicRightClick.magicPrefab, (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition), Quaternion.identity);
 
         temp.GetComponent<SpellDamager>().damage = magicRightClick.baseDamage * PlayerStats.damageMultiplier;
+    }
+    
+    private void RotateTowardsMouse(float angleOffset, GameObject objectToRotate)
+    {
+        Vector2 positionOnScreen = Camera.main.WorldToViewportPoint (transform.position);
+        Vector2 mouseOnScreen = (Vector2)Camera.main.ScreenToViewportPoint(Input.mousePosition);
+        float angle = AngleBetweenTwoPoints(positionOnScreen, mouseOnScreen);
+        objectToRotate.transform.rotation =  Quaternion.Euler (new Vector3(0f,0f,angle + angleOffset));
+    }
+
+    float AngleBetweenTwoPoints(Vector3 a, Vector3 b) 
+    {
+        return Mathf.Atan2(a.y - b.y, a.x - b.x) * Mathf.Rad2Deg;
     }
 }

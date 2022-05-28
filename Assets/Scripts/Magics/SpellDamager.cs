@@ -6,4 +6,9 @@ using UnityEngine;
 public class SpellDamager : MonoBehaviour
 {
     public float damage;
+    
+    private void DestroySpell()
+    {
+        Destroy(gameObject);
+    }
 }

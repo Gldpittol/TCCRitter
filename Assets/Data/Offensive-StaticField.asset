@@ -19,3 +19,4 @@ MonoBehaviour:
   baseSpeed: 0
   baseDamage: 0.8
   duration: 5
+  delayBetweenHits: 0.2

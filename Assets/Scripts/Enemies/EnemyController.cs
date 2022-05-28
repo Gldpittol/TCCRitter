@@ -40,4 +40,12 @@ public class EnemyController : MonoBehaviour
         GetComponent<SpriteRenderer>().color = Color.white;
         isChangingColor = false;
     }
+
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.CompareTag("Wall"))
+        {
+            GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        }
+    }
 }

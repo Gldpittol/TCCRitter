@@ -30,7 +30,8 @@ public class PlayerStaff : MonoBehaviour
         transform.rotation =  Quaternion.Euler (new Vector3(0f,0f,angle + angleOffset));
     }
 
-    float AngleBetweenTwoPoints(Vector3 a, Vector3 b) {
+    float AngleBetweenTwoPoints(Vector3 a, Vector3 b) 
+    {
         return Mathf.Atan2(a.y - b.y, a.x - b.x) * Mathf.Rad2Deg;
     }
 }
