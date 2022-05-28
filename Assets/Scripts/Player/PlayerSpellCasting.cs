@@ -194,7 +194,7 @@ public class PlayerSpellCasting : MonoBehaviour
     
     private void RotateTowardsMouse(float angleOffset, GameObject objectToRotate)
     {
-        Vector2 positionOnScreen = Camera.main.WorldToViewportPoint (transform.position);
+        Vector2 positionOnScreen = Camera.main.WorldToViewportPoint (staffAnimator.transform.position);
         Vector2 mouseOnScreen = (Vector2)Camera.main.ScreenToViewportPoint(Input.mousePosition);
         float angle = AngleBetweenTwoPoints(positionOnScreen, mouseOnScreen);
         objectToRotate.transform.rotation =  Quaternion.Euler (new Vector3(0f,0f,angle + angleOffset));

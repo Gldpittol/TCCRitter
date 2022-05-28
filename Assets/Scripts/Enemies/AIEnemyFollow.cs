@@ -4,9 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class IAGoblinChild : MonoBehaviour
+public class AIEnemyFollow : MonoBehaviour
 {
-
     public bool canMove = true;
 
     public float currentDelayBetweenHits = 0;
@@ -30,8 +29,9 @@ public class IAGoblinChild : MonoBehaviour
     private void Update()
     {
         if(canMove) transform.position = Vector2.MoveTowards(transform.position, PlayerManager.Instance.gameObject.transform.position, _enemyController.speed * Time.deltaTime);
-        if (transform.position.x < PlayerManager.Instance.gameObject.transform.position.x) transform.localScale = new Vector2(1, 1);
-        else transform.localScale = new Vector2(-1, 1);
+        float scaleX = Mathf.Abs(transform.localScale.x);
+        if (PlayerManager.Instance.transform.position.x < transform.position.x) scaleX = -scaleX;
+        transform.localScale = new Vector2(scaleX, transform.localScale.y);
 
         if (isDamagingPlayer) currentDelayBetweenHits += Time.deltaTime;
 
@@ -43,11 +43,11 @@ public class IAGoblinChild : MonoBehaviour
 
         if (canMove)
         {
-            _animator.Play("GoblinChild");
+            _animator.speed = 1f;
         }
         else
         {
-            _animator.Play("GoblinChildIdle");
+            _animator.speed = 0.5f;
         }
     }
 
