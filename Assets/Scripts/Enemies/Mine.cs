@@ -13,7 +13,7 @@ public class Mine : MonoBehaviour
 
     private float currentTime;
     private bool isExploding;
-    private bool playerTouched = true;
+    private bool playerTouched = false;
 
     private void Update()
     {
@@ -30,6 +30,7 @@ public class Mine : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Player"))
         {
+            playerTouched = true;
             Explode();
         }
     }
