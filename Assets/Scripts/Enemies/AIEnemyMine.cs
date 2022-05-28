@@ -5,7 +5,7 @@ using Unity.Mathematics;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class EnemyMine : MonoBehaviour
+public class AIEnemyMine : MonoBehaviour
 {
     public GameObject minePrefab;
     public Transform mineSpawnPos;
