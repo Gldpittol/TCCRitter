@@ -56,19 +56,8 @@ public class Door : MonoBehaviour
         }
     }
 
-    private void OnDestroy()
-    {
-        StopAllCoroutines();
-    }
-
     public void OpenDoor()
     {
-        StartCoroutine(OpenDoorCoroutine());
-    }
-
-    public IEnumerator OpenDoorCoroutine()
-    {
-        yield return null;
         sr.enabled = true;
         boxCol.enabled = true;
         isOpen = true;

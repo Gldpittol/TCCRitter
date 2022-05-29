@@ -12,6 +12,8 @@ public class EnemySpawnerManager : MonoBehaviour
     private List<EnemySpawner> enemySpawnerList = new List<EnemySpawner>();
     public List<GameObject> enemiesSpawned = new List<GameObject>();
 
+    private bool doorOpen = false;
+
     private void Awake()
     {
         Instance = this;
@@ -26,6 +28,16 @@ public class EnemySpawnerManager : MonoBehaviour
             enemiesSpawned.Add(temp);
         }
     }
+
+    private void Update()
+    {
+        if (AmountOfEnemiesRemaining() == 0 && !doorOpen)
+        {
+            Door.Instance.OpenDoor();
+            doorOpen = true;
+        }
+    }
+
     public int AmountOfEnemiesRemaining()
     {
         return enemiesSpawned.Count;
@@ -36,10 +48,6 @@ public class EnemySpawnerManager : MonoBehaviour
         if (enemiesSpawned.Contains(enemy))
         {
             enemiesSpawned.Remove(enemy);
-            if (enemiesSpawned.Count == 0)
-            {
-                Door.Instance.OpenDoor();
-            }
         }
     }
     
