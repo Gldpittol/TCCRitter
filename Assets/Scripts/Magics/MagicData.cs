@@ -14,6 +14,8 @@ public enum MagicType
 public class MagicData : ScriptableObject
 {
    public string magicName;
+   [TextArea(3,3)]
+   public string magicDescription;
    public MagicType magicType;
    public GameObject magicPrefab;
    public Sprite magicIcon;

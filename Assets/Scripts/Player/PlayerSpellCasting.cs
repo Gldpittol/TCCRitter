@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class PlayerSpellCasting : MonoBehaviour
 {
@@ -29,6 +30,11 @@ public class PlayerSpellCasting : MonoBehaviour
     }
 
     private void Start()
+    {
+       UpdateSpells();
+    }
+
+    public void UpdateSpells()
     {
         int basicMagicID = MagicManager.Instance.basicMagicsList.IndexOf(magicRightClick);
         int offensiveMagicID = MagicManager.Instance.offensiveMagicsList.IndexOf(magicOffensive);
@@ -84,10 +90,38 @@ public class PlayerSpellCasting : MonoBehaviour
         HUDManager.Instance.UpdateCooldownFill(cooldownUltimate, magicUltimate.cooldown, MagicType.Ultimate);
     }
 
+    public void RerollMagic(MagicType type)
+    {
+        switch (type)
+        {
+            case MagicType.Basic:
+                magicRightClick =
+                    MagicManager.Instance.basicMagicsList[Random.Range(0, MagicManager.Instance.basicMagicsList.Count)];
+                UpdateSpells();
+                break;
+            case MagicType.Offensive:
+                magicOffensive =
+                    MagicManager.Instance.offensiveMagicsList[Random.Range(0, MagicManager.Instance.offensiveMagicsList.Count)];
+                UpdateSpells();
+                break;
+            case MagicType.Defensive:
+                magicDefensive =
+                    MagicManager.Instance.defensiveMagicsList[Random.Range(0, MagicManager.Instance.defensiveMagicsList.Count)];
+                UpdateSpells();
+                break;
+            case MagicType.Ultimate:
+                magicUltimate =
+                    MagicManager.Instance.ultimateMagicsList[Random.Range(0, MagicManager.Instance.ultimateMagicsList.Count)];
+                UpdateSpells();
+                break;
+        }
+    }
+
     public void SelectBaseMagic(int ID)
     {
         onClickBaseMagic = null;
         HUDManager.Instance.UpdateCooldownSprite(MagicType.Basic, magicRightClick.magicIcon);
+        HUDManager.Instance.UpdateTooltips(MagicType.Basic, magicRightClick.magicDescription);
 
         switch (ID)
         {
@@ -104,6 +138,7 @@ public class PlayerSpellCasting : MonoBehaviour
     {
         onClickOffensiveMagic = null;
         HUDManager.Instance.UpdateCooldownSprite(MagicType.Offensive, magicOffensive.magicIcon);
+        HUDManager.Instance.UpdateTooltips(MagicType.Offensive, magicOffensive.magicDescription);
 
         switch (ID)
         {
@@ -120,6 +155,7 @@ public class PlayerSpellCasting : MonoBehaviour
     {
         onClickDefensiveMagic = null;
         HUDManager.Instance.UpdateCooldownSprite(MagicType.Defensive, magicDefensive.magicIcon);
+        HUDManager.Instance.UpdateTooltips(MagicType.Defensive, magicDefensive.magicDescription);
 
         switch (ID)
         {
@@ -133,6 +169,7 @@ public class PlayerSpellCasting : MonoBehaviour
     {
         onClickUltimateMagic = null;
         HUDManager.Instance.UpdateCooldownSprite(MagicType.Ultimate, magicUltimate.magicIcon);
+        HUDManager.Instance.UpdateTooltips(MagicType.Ultimate, magicUltimate.magicDescription);
 
         switch (ID)
         {

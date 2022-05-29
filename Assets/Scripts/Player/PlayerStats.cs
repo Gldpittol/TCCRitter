@@ -12,8 +12,14 @@ public class PlayerStats : MonoBehaviour
     public static float invulnerabilityRemaining = 0;
     public static float currentHealth = 100;
     public static float maxHeath = 100;
+    public static float coins = 1000;
     private void Awake()
     {
         Instance = this;
+    }
+
+    private void Start()
+    {
+        HUDManager.Instance.UpdateCoins();
     }
 }

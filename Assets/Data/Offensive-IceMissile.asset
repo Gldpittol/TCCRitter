@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: Offensive-IceMissile
   m_EditorClassIdentifier: 
   magicName: Ice Missile
+  magicDescription: 'Casts an Ice Missile that explodes upon the first enemy it hits,
+    dealing moderate damage to enemies around it. Deals additional damage to the
+    first enemy hit. '
   magicType: 2
   magicPrefab: {fileID: 8356572137362077438, guid: 8a512dbd12c76224a9ee4337dafb9a41, type: 3}
   magicIcon: {fileID: -5247323767709746719, guid: cfab76246e9b28d49b9bc2eff0f6ac92, type: 3}

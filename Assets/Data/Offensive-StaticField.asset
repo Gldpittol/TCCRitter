@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Offensive-StaticField
   m_EditorClassIdentifier: 
   magicName: Static Field
+  magicDescription: Casts a Static Field upon a desired location. The field stays
+    for a short time, continuously damaging enemies within it's boundaries.
   magicType: 2
   magicPrefab: {fileID: 7956230663734872688, guid: faf8452dceb0f754d969321701a37a94, type: 3}
   magicIcon: {fileID: 7780786457913569144, guid: 14012a9651cbfd24fafa6bcfafd1931e, type: 3}

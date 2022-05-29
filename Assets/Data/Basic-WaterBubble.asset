@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Basic-WaterBubble
   m_EditorClassIdentifier: 
   magicName: Water Bubble
+  magicDescription: Conjures a Water Bubble on a desired location that explodes after
+    a certain amount of time, dealing damage to enemies within.
   magicType: 0
   magicPrefab: {fileID: 2358214578950324224, guid: d2d0a7906d39d3141b5ce5c239db9cc0, type: 3}
   magicIcon: {fileID: -3939131268431512220, guid: 9facad571a7d3734f89806334a364c2b, type: 3}
