@@ -42,6 +42,8 @@ public class PlayerSpellCasting : MonoBehaviour
 
     private void Update()
     {
+        if (GameManager.Instance.gameState != GameState.Gameplay) return;
+
         ReduceCooldowns();
         
         if (Input.GetButton("Fire1"))
@@ -73,14 +75,19 @@ public class PlayerSpellCasting : MonoBehaviour
     public void ReduceCooldowns()
     {
         cooldownRightClick -= Time.deltaTime;
+        HUDManager.Instance.UpdateCooldownFill(cooldownRightClick, magicRightClick.cooldown, MagicType.Basic);
         cooldownOffsensive -= Time.deltaTime;
+        HUDManager.Instance.UpdateCooldownFill(cooldownOffsensive, magicOffensive.cooldown, MagicType.Offensive);
         cooldownDefensive -= Time.deltaTime;
+        HUDManager.Instance.UpdateCooldownFill(cooldownDefensive, magicDefensive.cooldown, MagicType.Defensive);
         cooldownUltimate -= Time.deltaTime;
+        HUDManager.Instance.UpdateCooldownFill(cooldownUltimate, magicUltimate.cooldown, MagicType.Ultimate);
     }
 
     public void SelectBaseMagic(int ID)
     {
         onClickBaseMagic = null;
+        HUDManager.Instance.UpdateCooldownSprite(MagicType.Basic, magicRightClick.magicIcon);
 
         switch (ID)
         {
@@ -96,6 +103,7 @@ public class PlayerSpellCasting : MonoBehaviour
     public void SelectOffensiveMagic(int ID)
     {
         onClickOffensiveMagic = null;
+        HUDManager.Instance.UpdateCooldownSprite(MagicType.Offensive, magicOffensive.magicIcon);
 
         switch (ID)
         {
@@ -111,6 +119,7 @@ public class PlayerSpellCasting : MonoBehaviour
     public void SelectDefensiveMagic(int ID)
     {
         onClickDefensiveMagic = null;
+        HUDManager.Instance.UpdateCooldownSprite(MagicType.Defensive, magicDefensive.magicIcon);
 
         switch (ID)
         {
@@ -123,6 +132,7 @@ public class PlayerSpellCasting : MonoBehaviour
     public void SelectUltimateMagic(int ID)
     {
         onClickUltimateMagic = null;
+        HUDManager.Instance.UpdateCooldownSprite(MagicType.Ultimate, magicUltimate.magicIcon);
 
         switch (ID)
         {

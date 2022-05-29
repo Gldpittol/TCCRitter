@@ -15,7 +15,8 @@ MonoBehaviour:
   magicName: Ice Missile
   magicType: 2
   magicPrefab: {fileID: 8356572137362077438, guid: 8a512dbd12c76224a9ee4337dafb9a41, type: 3}
-  cooldown: 0
+  magicIcon: {fileID: -5247323767709746719, guid: cfab76246e9b28d49b9bc2eff0f6ac92, type: 3}
+  cooldown: 5
   baseSpeed: 15
   baseDamage: 8
   duration: 0

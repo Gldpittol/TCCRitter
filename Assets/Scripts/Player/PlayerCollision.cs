@@ -26,7 +26,7 @@ public class PlayerCollision : MonoBehaviour
 
     private void Start()
     {
-        HUDManager.Instance.UpdateHealthText();
+        HUDManager.Instance.UpdateHealthBar();
     }
 
     private void Update()
@@ -52,7 +52,7 @@ public class PlayerCollision : MonoBehaviour
 
         if (PlayerStats.currentHealth < 0) PlayerStats.currentHealth = 0;
         
-        HUDManager.Instance.UpdateHealthText();
+        HUDManager.Instance.UpdateHealthBar();
         
         if (PlayerStats.currentHealth < 1)
         {

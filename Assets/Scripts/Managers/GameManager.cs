@@ -6,7 +6,8 @@ using UnityEngine;
 public enum GameState
 {
    Cutscene,
-   Gameplay
+   Gameplay,
+   Paused
 }
 
 public class GameManager : MonoBehaviour

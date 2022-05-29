@@ -15,8 +15,9 @@ MonoBehaviour:
   magicName: Water Bubble
   magicType: 0
   magicPrefab: {fileID: 2358214578950324224, guid: d2d0a7906d39d3141b5ce5c239db9cc0, type: 3}
+  magicIcon: {fileID: -3939131268431512220, guid: 9facad571a7d3734f89806334a364c2b, type: 3}
   cooldown: 1
   baseSpeed: 0
   baseDamage: 9
-  delayBetweenHits: 0.7
   duration: 0.3
+  delayBetweenHits: 0.7

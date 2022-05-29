@@ -193,7 +193,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a201d3c6f450654cb747e317ffebced, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseDamage: 25
+  baseDamage: 15
   health: 10
   speed: 2
   delayBetweenAttacks: 3
@@ -211,7 +211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf8811675600fdb48943d2cd9113b7eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minePrefab: {fileID: 0}
+  minePrefab: {fileID: 1865294897246658078, guid: 6ec0e27a4a53ed2449626866db40099c, type: 3}
   mineSpawnPos: {fileID: 3665091227305139240}
 --- !u!1 &3665091227305139241
 GameObject:

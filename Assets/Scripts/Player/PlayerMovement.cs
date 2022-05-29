@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public static PlayerMovement Instance;
+    
     public float speed;
     
     private GameObject FKey;
@@ -13,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     private AudioSource _audSource;
     private void Awake()
     {
+        Instance = this;
         _rigidBody = GetComponent<Rigidbody2D>();
         _audSource = GetComponent<AudioSource>();
     }
@@ -21,11 +24,7 @@ public class PlayerMovement : MonoBehaviour
     {
         FKey = PlayerManager.Instance.exclamationMark;
     }
-
-    private void Update()
-    {
-        //if(GameManager.Instance.gameState == GameState.Gameplay) DecideSide();
-    }
+    
 
     private void FixedUpdate()
     {
@@ -38,25 +37,12 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void DecideSide()
+    public void ActivatePause()
     {
-        float mousePosX = Camera.main.ScreenToWorldPoint(Input.mousePosition).x;
-        float myPosX = transform.position.x;
-        
-        if ((mousePosX > myPosX) && transform.localScale.x < 0)
-        {
-            FKey.transform.parent = null;
-            transform.localScale = new Vector2(Mathf.Abs(transform.localScale.x), transform.localScale.y);
-            FKey.transform.parent = transform;
-
-        }
-        else if ((mousePosX < myPosX) && transform.localScale.x >0)
-        {
-            FKey.transform.parent = null;
-            transform.localScale = new Vector2(-Mathf.Abs(transform.localScale.x), transform.localScale.y);
-            FKey.transform.parent = transform;
-        }
+        _rigidBody.velocity = new Vector2(0, 0);
+        _audSource.enabled = false;
     }
+    
     private void MoveCharacter()
     {
         _rigidBody.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), 

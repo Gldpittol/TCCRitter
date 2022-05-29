@@ -15,6 +15,9 @@ MonoBehaviour:
   magicName: Fireball
   magicType: 0
   magicPrefab: {fileID: 5756786688516491478, guid: cbf6f9ee70f7f0b4fb1fc41f6bf6e514, type: 3}
+  magicIcon: {fileID: -3915765450054648673, guid: 54e8a87e21788d443a92c9b65a54e0be, type: 3}
   cooldown: 0.3
   baseSpeed: 10
   baseDamage: 5
+  duration: 0
+  delayBetweenHits: 0.1

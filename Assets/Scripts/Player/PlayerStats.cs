@@ -11,7 +11,7 @@ public class PlayerStats : MonoBehaviour
     public static float damageMultiplier = 1;
     public static float invulnerabilityRemaining = 0;
     public static float currentHealth = 100;
-
+    public static float maxHeath = 100;
     private void Awake()
     {
         Instance = this;

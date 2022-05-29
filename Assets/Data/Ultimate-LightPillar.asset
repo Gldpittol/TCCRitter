@@ -15,6 +15,7 @@ MonoBehaviour:
   magicName: Light Pillar
   magicType: 3
   magicPrefab: {fileID: 528467459686949676, guid: ebc8f1b42bea48248ae6f0bfa16c6594, type: 3}
+  magicIcon: {fileID: -6952930338915360160, guid: 83be59c9c0ab0904c909356d93bc67ab, type: 3}
   cooldown: 120
   baseSpeed: 0
   baseDamage: 1.4

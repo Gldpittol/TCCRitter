@@ -16,6 +16,8 @@ public class PlayerStaff : MonoBehaviour
 
     void Update ()
     {
+        if (GameManager.Instance.gameState != GameState.Gameplay) return;
+
         //int sideMultiplier = player.transform.localScale.x > 0 ? 1 : -1;
         //transform.position = player.transform.position + (new Vector3(offSetToPlayer.x * sideMultiplier, offSetToPlayer.y, offSetToPlayer.z) );
         transform.position = player.transform.position + offSetToPlayer;

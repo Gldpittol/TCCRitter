@@ -15,6 +15,7 @@ MonoBehaviour:
   magicName: Static Field
   magicType: 2
   magicPrefab: {fileID: 7956230663734872688, guid: faf8452dceb0f754d969321701a37a94, type: 3}
+  magicIcon: {fileID: 7780786457913569144, guid: 14012a9651cbfd24fafa6bcfafd1931e, type: 3}
   cooldown: 10
   baseSpeed: 0
   baseDamage: 0.8
