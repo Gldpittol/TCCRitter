@@ -48,4 +48,9 @@ public class EnemyController : MonoBehaviour
             GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         }
     }
+    
+    private void OnDestroy()
+    {
+        EnemySpawnerManager.Instance.RemoveFromRemainingEnemiesList(gameObject);
+    }
 }

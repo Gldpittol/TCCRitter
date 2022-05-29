@@ -9,6 +9,7 @@ public class FollowPlayer : MonoBehaviour
     private Vector3 offSetToPlayer;
     private void Awake()
     {
+        GetComponent<SpriteRenderer>().enabled = false;
         offSetToPlayer = transform.position - player.transform.position;
     }
 

@@ -13,6 +13,7 @@ public class PlayerManager : MonoBehaviour
 
     private void Awake()
     {
+        if (PlayerDontDestroy.Instance && PlayerDontDestroy.Instance.gameObject != transform.parent.gameObject) return;
         Instance = this;
     }
 /*

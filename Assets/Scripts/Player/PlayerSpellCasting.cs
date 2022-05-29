@@ -26,6 +26,7 @@ public class PlayerSpellCasting : MonoBehaviour
     [SerializeField] private Animator staffAnimator;
     private void Awake()
     {
+        if (PlayerDontDestroy.Instance && PlayerDontDestroy.Instance.gameObject != transform.parent.gameObject) return;
         Instance = this;
     }
 

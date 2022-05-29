@@ -36,6 +36,14 @@ public class HUDManager : MonoBehaviour
     {
         hpBarOriginalScaleX = hpBar.transform.localScale.x;
         Instance = this;
+        UpdateHealthBar();
+        UpdateCoins();
+    }
+
+    private void Start()
+    {
+        PlayerSpellCasting.Instance.UpdateSpells();
+        PlayerMovement.Instance.ChangeFKeyVisibility(false);
     }
 
     private void Update()

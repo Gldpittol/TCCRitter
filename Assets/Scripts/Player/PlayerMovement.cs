@@ -9,12 +9,13 @@ public class PlayerMovement : MonoBehaviour
     
     public float speed;
     
-    private GameObject FKey;
+    private SpriteRenderer FKey;
     private PlayerAnimations _playerAnimations;
     private Rigidbody2D _rigidBody;
     private AudioSource _audSource;
     private void Awake()
     {
+        if (PlayerDontDestroy.Instance && PlayerDontDestroy.Instance.gameObject != transform.parent.gameObject) return;
         Instance = this;
         _rigidBody = GetComponent<Rigidbody2D>();
         _audSource = GetComponent<AudioSource>();
@@ -22,7 +23,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
-        FKey = PlayerManager.Instance.exclamationMark;
+        FKey = PlayerManager.Instance.exclamationMark.GetComponent<SpriteRenderer>();
+    }
+
+    public void ChangeFKeyVisibility(bool active)
+    {
+        FKey.enabled = active;
     }
     
 

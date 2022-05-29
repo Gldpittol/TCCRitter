@@ -21,6 +21,7 @@ public class PlayerCollision : MonoBehaviour
     public GameObject shield;
     private void Awake()
     {
+        if (PlayerDontDestroy.Instance && PlayerDontDestroy.Instance.gameObject != transform.parent.gameObject) return;
         Instance = this;
     }
 
