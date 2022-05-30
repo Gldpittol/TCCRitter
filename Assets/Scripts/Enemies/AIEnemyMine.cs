@@ -21,6 +21,10 @@ public class AIEnemyMine : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         myController = GetComponent<EnemyController>();
+    }
+
+    private void Start()
+    {
         DeployNextBomb();
     }
 

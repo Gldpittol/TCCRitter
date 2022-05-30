@@ -28,6 +28,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void ChangeFKeyVisibility(bool active)
     {
+        if(!FKey) FKey = PlayerManager.Instance.exclamationMark.GetComponent<SpriteRenderer>();
         FKey.enabled = active;
     }
     
