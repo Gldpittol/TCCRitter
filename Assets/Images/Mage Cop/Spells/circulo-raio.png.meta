@@ -48,6 +48,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -292,6 +293,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      circulo-raio_1: -7651362348340761243
+      circulo-raio_2: -3557635198732584723
+      circulo-raio_0: 7780786457913569144
+      circulo-raio_3: -3448331522062849171
+      circulo-raio_5: 4281029366536804583
+      circulo-raio_6: 5395331707933587581
+      circulo-raio_4: -3118019287900403000
+      circulo-raio_7: -1349233137704716774
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

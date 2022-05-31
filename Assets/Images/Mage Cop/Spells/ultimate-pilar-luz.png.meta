@@ -51,6 +51,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -316,6 +317,16 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      ultimate-pilar-luz_5: -9133339286653556286
+      ultimate-pilar-luz_0: 5262912519721790586
+      ultimate-pilar-luz_7: 4803351808556536349
+      ultimate-pilar-luz_1: -1437827262631606065
+      ultimate-pilar-luz_4: -6952930338915360160
+      ultimate-pilar-luz_6: 5108234276163895760
+      ultimate-pilar-luz_8: 4918246033858898154
+      ultimate-pilar-luz_2: -4696508734197305752
+      ultimate-pilar-luz_3: -2527999966524580483
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

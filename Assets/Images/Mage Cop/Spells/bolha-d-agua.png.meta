@@ -45,6 +45,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -268,6 +269,14 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      bolha-d-agua_4: -6074612702381341729
+      bolha-d-agua_5: 7039507882399196495
+      bolha-d-agua_2: -3815078644681966105
+      bolha-d-agua_3: -3939131268431512220
+      bolha-d-agua_0: 1640602943718968948
+      bolha-d-agua_6: -2419093329802610334
+      bolha-d-agua_1: -4296594690502709460
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

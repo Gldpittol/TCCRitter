@@ -11,6 +11,7 @@ public class HUDManager : MonoBehaviour
 
     [SerializeField] private GameObject hpBar;
     [SerializeField] private GameObject pauseMenu;
+    [SerializeField] private GameObject gameOverPanel;
     [SerializeField] private GameObject rouletteMenu;
     [SerializeField] private TextMeshProUGUI coinsHUD;
     [SerializeField] private TextMeshProUGUI coinsRoulette;
@@ -32,6 +33,7 @@ public class HUDManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI ultimateTooltip;
 
     private float hpBarOriginalScaleX;
+
     private void Awake()
     {
         hpBarOriginalScaleX = hpBar.transform.localScale.x;
@@ -48,6 +50,11 @@ public class HUDManager : MonoBehaviour
 
     private void Update()
     {
+        if(gameOverPanel.activeInHierarchy)
+        {
+            return;
+        }
+        
         if (Input.GetKeyDown(KeyCode.P))
         {
             if (rouletteMenu.activeInHierarchy) return;
@@ -79,6 +86,10 @@ public class HUDManager : MonoBehaviour
                 Time.timeScale = 1;
                 GameManager.Instance.gameState = GameState.Gameplay;
             }
+        }
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
         }
     }
 
@@ -156,5 +167,12 @@ public class HUDManager : MonoBehaviour
     {
         coinsHUD.text = PlayerStats.coins.ToString("F0");
         coinsRoulette.text = PlayerStats.coins.ToString("F0");
+    }
+
+    public void GameOver()
+    {
+        Time.timeScale = 0;
+        GameManager.Instance.gameState = GameState.Paused;
+        gameOverPanel.SetActive(true);
     }
 }

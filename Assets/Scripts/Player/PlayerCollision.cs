@@ -63,7 +63,8 @@ public class PlayerCollision : MonoBehaviour
 
     private IEnumerator KillPlayer()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single);
+        // SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single);
+        HUDManager.Instance.GameOver();
         yield return null;
     }
 
