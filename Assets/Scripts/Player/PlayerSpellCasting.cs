@@ -32,7 +32,29 @@ public class PlayerSpellCasting : MonoBehaviour
 
     private void Start()
     {
-       UpdateSpells();
+        if (SaveLoadManager.Instance)
+        {
+            PlayerStats.coins = SaveLoadManager.PlayerData.gold;
+            PlayerStats.progress = SaveLoadManager.PlayerData.progress;
+            if (SaveLoadManager.PlayerData.justStarting)
+            {
+                SaveLoadManager.PlayerData.justStarting = false;
+                SaveLoadManager.PlayerData.baseMagicID = Random.Range(0, MagicManager.Instance.basicMagicsList.Count);
+                SaveLoadManager.PlayerData.offensiveMagicID =
+                    Random.Range(0, MagicManager.Instance.offensiveMagicsList.Count);
+                SaveLoadManager.PlayerData.defensiveMagicID =
+                    Random.Range(0, MagicManager.Instance.defensiveMagicsList.Count);
+                SaveLoadManager.PlayerData.ultimateMagicID =
+                    Random.Range(0, MagicManager.Instance.ultimateMagicsList.Count);
+            }
+            magicRightClick = MagicManager.Instance.basicMagicsList[SaveLoadManager.PlayerData.baseMagicID];
+            magicOffensive = MagicManager.Instance.offensiveMagicsList[SaveLoadManager.PlayerData.offensiveMagicID];
+            magicDefensive = MagicManager.Instance.defensiveMagicsList[SaveLoadManager.PlayerData.defensiveMagicID];
+            magicUltimate = MagicManager.Instance.ultimateMagicsList[SaveLoadManager.PlayerData.ultimateMagicID];
+            SaveLoadManager.Instance.SaveGame();
+        }
+
+        UpdateSpells();
     }
 
     public void UpdateSpells()

@@ -14,6 +14,7 @@ public class PlayerStats : MonoBehaviour
     public static float maxHeath = 100;
     public static float coins = 1000;
     public static float currentFloor = 1;
+    public static GameProgress progress = GameProgress.None;
     private void Awake()
     {
         if (PlayerDontDestroy.Instance && PlayerDontDestroy.Instance.gameObject != transform.parent.gameObject) return;

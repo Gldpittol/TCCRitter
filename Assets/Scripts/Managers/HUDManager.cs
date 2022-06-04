@@ -31,6 +31,8 @@ public class HUDManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI offensiveTooltip;
     [SerializeField] private TextMeshProUGUI defensiveTooltip;
     [SerializeField] private TextMeshProUGUI ultimateTooltip;
+    [SerializeField] private Image fadeImage;
+    [SerializeField] private float fadeTime = 1;
 
     private float hpBarOriginalScaleX;
 
@@ -46,6 +48,7 @@ public class HUDManager : MonoBehaviour
     {
         PlayerSpellCasting.Instance.UpdateSpells();
         PlayerMovement.Instance.ChangeFKeyVisibility(false);
+        GameManager.Instance.FadeOut(fadeImage,fadeTime);
     }
 
     private void Update()

@@ -5,27 +5,49 @@ using UnityEngine;
 using System.IO;
 using System.Resources;
 using UnityEngine.SceneManagement;
+using Random = UnityEngine.Random;
+
+[Serializable]
+public enum GameProgress
+{
+   None,
+   Level1Clear,
+   Boss1Clear,
+   Level2Clear,
+   Boss2Clear,
+   Level3Clear,
+   Boss3Clear
+}
 
 [Serializable]
 public class SaveData
 {
-   public int totalPulls;
-   public int currentPulls;
-   public List<int> magicsObtained;
-   public List<int> ultimatesObtained;
+   public int gold;
+   public GameProgress progress;
+   public int baseMagicID;
+   public int offensiveMagicID;
+   public int defensiveMagicID;
+   public int ultimateMagicID;
+   public bool justStarting;
    public SaveData()
    {
-      totalPulls = 0;
-      currentPulls = 0;
-      magicsObtained = new List<int>();
-      ultimatesObtained = new List<int>();
+      gold = 0;
+      progress = GameProgress.None;
+      baseMagicID = 0;
+      offensiveMagicID = 0;
+      defensiveMagicID = 0;
+      ultimateMagicID = 0;
+      justStarting = true;
    }
    public SaveData(SaveData data)
    {
-      totalPulls = data.totalPulls;
-      currentPulls = data.currentPulls;
-      magicsObtained = new List<int>(data.magicsObtained);
-      ultimatesObtained = new List<int>(data.ultimatesObtained);
+      gold = data.gold;
+      progress = data.progress;
+      baseMagicID = data.baseMagicID;
+      offensiveMagicID = data.offensiveMagicID;
+      defensiveMagicID = data.defensiveMagicID;
+      ultimateMagicID = data.ultimateMagicID;
+      justStarting = data.justStarting;
    }
 }
 
@@ -39,33 +61,52 @@ public class SaveLoadManager : MonoBehaviour
    [SerializeField] private KeyCode _quickSaveKey;
    [SerializeField] private KeyCode _quickLoadKey;
    [SerializeField] private KeyCode _quickDeleteKey;
-   [SerializeField] private GachaManager _gachaManager;
 
    [Header("Debug")]
    [SerializeField]
    private bool _debugDataVisualization;
+   [SerializeField]
+   private bool _debugQuickKeys = true;
    [SerializeField] private SaveData _playerDataVisualization;
-   
+
    private void Awake()
    {
       if (!Instance)
       {
-         Initialize();
+         Instance = this;
       }
       else
       {
          Destroy(gameObject);
-      }
+      }   
+   }
+
+   private void Start()
+   {
+      Initialize();
    }
 
    private void Update()
    {
       if(PlayerData != null && _debugDataVisualization) _playerDataVisualization = PlayerData;
+      if (_debugQuickKeys)
+      {
+         if (Input.GetKeyDown(_quickSaveKey))
+         {
+            SaveGame();
+         }
+         if (Input.GetKeyDown(_quickLoadKey))
+         {
+            LoadGame();
+         } if (Input.GetKeyDown(_quickDeleteKey))
+         {
+            DeleteSave();
+         }
+      }
    }
 
    public void Initialize()
    {
-      Instance = this;
       DontDestroyOnLoad(gameObject);
       _jsonPath = Application.persistentDataPath + _jsonPath;
       CheckIfSaveExists();
