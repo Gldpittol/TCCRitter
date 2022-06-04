@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.Mime;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -35,6 +36,9 @@ public class HUDManager : MonoBehaviour
     [SerializeField] private float fadeTime = 1;
 
     private float hpBarOriginalScaleX;
+
+    public Image FadeImage => fadeImage;
+    public float FadeTime => fadeTime;
 
     private void Awake()
     {

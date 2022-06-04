@@ -34,7 +34,16 @@ public class Door : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F))
         {
             int newSceneID = Random.Range(0, possibleScenes.Count);
-            SceneManager.LoadScene(possibleScenes[newSceneID], LoadSceneMode.Single);
+            var newScene = possibleScenes[newSceneID];
+            PlayerStats.currentFloor++;
+            if (PlayerStats.currentFloor > GameManager.Instance.amountOfLevels)
+            {
+                GameManager.Instance.LoadScene(HUDManager.Instance.FadeImage,HUDManager.Instance.FadeTime,"Hub");
+            }
+            else
+            {
+                GameManager.Instance.LoadScene(HUDManager.Instance.FadeImage,HUDManager.Instance.FadeTime,newScene);
+            }
         }
     }
 

@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
 {
    public static GameManager Instance;
    public GameState gameState;
+   public int amountOfLevels = 15;
    private void Awake()
    {
       Instance = this;

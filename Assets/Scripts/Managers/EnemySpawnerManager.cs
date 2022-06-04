@@ -22,13 +22,7 @@ public class EnemySpawnerManager : MonoBehaviour
             enemySpawnerList.Add(child.gameObject.GetComponent<EnemySpawner>());
         }
 
-        StartCoroutine(SpawnEnemy());
-        
-        // foreach (EnemySpawner spawner in enemySpawnerList)
-        // {
-        //     GameObject temp = Instantiate(spawner.possibleEnemies[Random.Range(0, enemySpawnerList.Count)].enemy, spawner.transform.position, Quaternion.identity);
-        //     enemiesSpawned.Add(temp);
-        // }
+        SpawnEnemies();
     }
 
     private void Update()
@@ -53,18 +47,17 @@ public class EnemySpawnerManager : MonoBehaviour
         }
     }
     
-    public IEnumerator SpawnEnemy()
+    private void SpawnEnemies()
     {
-        while(true)
+        int spawnedAmount = 0;
+        while (spawnedAmount < PlayerStats.currentFloor)
         {
-        int rnd = Random.Range(0, enemySpawnerList.Count);
-
-        EnemySpawner spawner = enemySpawnerList[rnd];
-
-        GameObject temp = Instantiate(spawner.possibleEnemies[Random.Range(0, spawner.possibleEnemies.Length)].enemy, spawner.transform.position, Quaternion.identity);
-        enemiesSpawned.Add(temp);
-
-        yield return new WaitForSeconds(2);
-        } 
+            int rnd = Random.Range(0, enemySpawnerList.Count);
+            EnemySpawner spawner = enemySpawnerList[rnd];
+            GameObject temp = Instantiate(spawner.possibleEnemies[Random.Range(0, enemySpawnerList.Count)].enemy, spawner.transform.position, Quaternion.identity);
+            enemiesSpawned.Add(temp);
+            enemySpawnerList.Remove(spawner);
+            spawnedAmount++;
+        }
     }
 }
