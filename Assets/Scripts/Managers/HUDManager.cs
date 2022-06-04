@@ -50,6 +50,11 @@ public class HUDManager : MonoBehaviour
 
     private void Update()
     {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+        
         if(gameOverPanel.activeInHierarchy)
         {
             return;
@@ -87,10 +92,7 @@ public class HUDManager : MonoBehaviour
                 GameManager.Instance.gameState = GameState.Gameplay;
             }
         }
-        if(Input.GetKeyDown(KeyCode.Escape))
-        {
-            Application.Quit();
-        }
+
     }
 
     public void UpdateHealthBar()
