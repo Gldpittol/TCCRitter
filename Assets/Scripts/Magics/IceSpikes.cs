@@ -10,6 +10,7 @@ public class IceSpikes : MonoBehaviour
     public SpellDamager damager;
     private bool hit = false;
     public float speed;
+    public MagicData myMagic;
     public bool canMove = false;
     private void Awake()
     {

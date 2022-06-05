@@ -177,9 +177,12 @@ public class PlayerSpellCasting : MonoBehaviour
             case 3:
                 onClickOffensiveMagic += CastIceSpikes;
                 break;
+            case 4:
+                onClickOffensiveMagic += CastFireShotgun;
+                break;
         }
     }
-    
+
 
     public void SelectDefensiveMagic(int ID)
     {
@@ -194,6 +197,9 @@ public class PlayerSpellCasting : MonoBehaviour
                 break;
             case 1:
                 onClickDefensiveMagic += CastIceFloor;
+                break;
+            case 2:
+                onClickDefensiveMagic += CastShield;
                 break;
         }
     }
@@ -210,6 +216,12 @@ public class PlayerSpellCasting : MonoBehaviour
                 onClickUltimateMagic += CastLightPillar;
                 break;
         }
+    }
+    
+    private void CastShield()
+    {
+        cooldownDefensive = magicDefensive.cooldown;
+        PlayerCollision.Instance.shield.SetActive(true);
     }
 
     private void CastLightPillar()
@@ -284,6 +296,16 @@ public class PlayerSpellCasting : MonoBehaviour
         temp.GetComponent<Rigidbody2D>().velocity = new Vector2(shootDirection.x, shootDirection.y).normalized * magicRightClick.baseSpeed;
 
         temp.GetComponent<SpellDamager>().damage = magicRightClick.baseDamage * PlayerStats.damageMultiplier;
+    }
+    
+    private void CastFireShotgun()
+    {
+        cooldownOffsensive = magicOffensive.cooldown;
+        GameObject temp = Instantiate(magicOffensive.magicPrefab, PlayerManager.Instance.spellSpawnPoint.transform.position, Quaternion.identity);
+
+        RotateTowardsMouse(180, temp);
+        
+        temp.GetComponent<FireBoulderParent>().Initialize(magicRightClick.baseDamage * PlayerStats.damageMultiplier);    
     }
     
     public void CastWaterBubble()

@@ -12,7 +12,6 @@ public class IceSpikesParent : MonoBehaviour
     public GameObject[] spikesParents;
     public MagicData myMagic;
     public float damage;
-    public float speed;
     public Vector3 offset;
     private int currentID;
     [FormerlySerializedAs("maxID")] public int amountOfSpikes;
@@ -26,7 +25,7 @@ public class IceSpikesParent : MonoBehaviour
         foreach (IceSpikes sp in spikes)
         {
             sp.damager.damage = damage;
-            sp.speed = speed;
+            sp.speed = myMagic.baseSpeed;
         }
         foreach (GameObject par in spikesParents)
         {
