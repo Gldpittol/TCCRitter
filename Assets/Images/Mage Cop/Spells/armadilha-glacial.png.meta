@@ -1,28 +1,7 @@
 fileFormatVersion: 2
-guid: cfab76246e9b28d49b9bc2eff0f6ac92
+guid: 298f45a756867f640b48002f26c95ab0
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -856085545168688419
-    second: ice_0
-  - first:
-      213: -1054573163461033994
-    second: ice_1
-  - first:
-      213: -4747277866943198223
-    second: ice_2
-  - first:
-      213: -4621826098645276579
-    second: ice_3
-  - first:
-      213: 6655876435703727693
-    second: ice_4
-  - first:
-      213: -5679005837793796318
-    second: ice_5
-  - first:
-      213: -5247323767709746719
-    second: ice_6
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -54,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -109,173 +88,206 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ice_0
+      name: armadilha-glacial_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 64
-        height: 64
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ddaafde7bb29e14f0800000000000000
-      internalID: -856085545168688419
+      spriteID: 7c9a093ba276fe5448b86ad1121eabd2
+      internalID: 1360357380
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ice_1
+      name: armadilha-glacial_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cf5c65c00c25ee44838cf2fd1b4f332
+      internalID: -1255895551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armadilha-glacial_2
       rect:
         serializedVersion: 2
         x: 64
-        y: 0
-        width: 64
-        height: 64
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ffbe329b476d51f0800000000000000
-      internalID: -1054573163461033994
+      spriteID: ac9ae736a4038344fa1bd6841954a4f4
+      internalID: 153017866
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ice_2
+      name: armadilha-glacial_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da1d9934a6156af479807454b5ba0394
+      internalID: -2133165109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armadilha-glacial_4
       rect:
         serializedVersion: 2
         x: 128
-        y: 0
-        width: 64
-        height: 64
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1fbc6c2aee74e1eb0800000000000000
-      internalID: -4747277866943198223
+      spriteID: 2f404750544d89c4baf97a2d142f4e06
+      internalID: 1191414409
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ice_3
+      name: armadilha-glacial_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7db3ff018abb49f468b226e6ae203dd8
+      internalID: 428262407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armadilha-glacial_6
       rect:
         serializedVersion: 2
         x: 192
-        y: 0
-        width: 64
-        height: 64
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d586e9896a9fbdfb0800000000000000
-      internalID: -4621826098645276579
+      spriteID: 2426d0f98f360c947ae70f2d09c0a17b
+      internalID: -1387654167
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ice_4
+      name: armadilha-glacial_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fc5eb4a85ce8c74997051cd639ee162
+      internalID: 2104839332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armadilha-glacial_8
       rect:
         serializedVersion: 2
         x: 256
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d46830b9a5c6e5c50800000000000000
-      internalID: 6655876435703727693
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ice_5
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 22f5ee8774e1031b0800000000000000
-      internalID: -5679005837793796318
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ice_6
-      rect:
-        serializedVersion: 2
-        x: 18
         y: 16
-        width: 32
-        height: 32
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e93234b5d2cd27b0800000000000000
-      internalID: -5247323767709746719
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ice_7
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 17
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e94c3c16f6c0e3e4dac5799ba47a9ed4
-      internalID: -1770788270
+      spriteID: 1a8a1e21ec05e4f4e8c147f241d775f9
+      internalID: 1494012641
       vertices: []
       indices: 
       edges: []
@@ -291,14 +303,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ice_6: -5247323767709746719
-      ice_3: -4621826098645276579
-      ice_1: -1054573163461033994
-      ice_2: -4747277866943198223
-      ice_4: 6655876435703727693
-      ice_7: -1770788270
-      ice_0: -856085545168688419
-      ice_5: -5679005837793796318
+      armadilha-glacial_7: 2104839332
+      armadilha-glacial_3: -2133165109
+      armadilha-glacial_1: -1255895551
+      armadilha-glacial_4: 1191414409
+      armadilha-glacial_2: 153017866
+      armadilha-glacial_8: 1494012641
+      armadilha-glacial_5: 428262407
+      armadilha-glacial_6: -1387654167
+      armadilha-glacial_0: 1360357380
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

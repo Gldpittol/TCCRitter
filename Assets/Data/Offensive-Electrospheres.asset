@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52174ff03eb19b4e867414c63caa4b2, type: 3}
+  m_Name: Offensive-Electrospheres
+  m_EditorClassIdentifier: 
+  magicName: Electrospheres
+  magicDescription: Summons several electrospheres that follow the player and circle
+    around him, dealing damage to each enemy it touches and protecting against projectiles.
+    Electrospheres are destroyed when hitting an enemy or after blocking three projectiles.
+  magicType: 2
+  magicPrefab: {fileID: 4761831712445647496, guid: 517d744291ea197459c02460fd8cfaf2, type: 3}
+  magicIcon: {fileID: 999676541, guid: 5c6187fed9b2395468813afc8f32821e, type: 3}
+  cooldown: 20
+  baseSpeed: 0
+  baseDamage: 2
+  duration: 10
+  delayBetweenHits: 0.1

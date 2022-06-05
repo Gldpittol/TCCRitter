@@ -1,28 +1,7 @@
 fileFormatVersion: 2
-guid: cfab76246e9b28d49b9bc2eff0f6ac92
+guid: 5c6187fed9b2395468813afc8f32821e
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -856085545168688419
-    second: ice_0
-  - first:
-      213: -1054573163461033994
-    second: ice_1
-  - first:
-      213: -4747277866943198223
-    second: ice_2
-  - first:
-      213: -4621826098645276579
-    second: ice_3
-  - first:
-      213: 6655876435703727693
-    second: ice_4
-  - first:
-      213: -5679005837793796318
-    second: ice_5
-  - first:
-      213: -5247323767709746719
-    second: ice_6
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -54,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -109,17 +88,29 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ice_0
+      name: bolas-estaticas_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,123 +118,39 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ddaafde7bb29e14f0800000000000000
-      internalID: -856085545168688419
+      spriteID: a543e2b8cc2033849a8bd1439f0bf00c
+      internalID: -507144486
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ice_1
+      name: bolas-estaticas_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f873c45983cf9c4e8d3008120f18da0
+      internalID: -1495525159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bolas-estaticas_2
       rect:
         serializedVersion: 2
         x: 64
         y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6ffbe329b476d51f0800000000000000
-      internalID: -1054573163461033994
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ice_2
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1fbc6c2aee74e1eb0800000000000000
-      internalID: -4747277866943198223
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ice_3
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d586e9896a9fbdfb0800000000000000
-      internalID: -4621826098645276579
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ice_4
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d46830b9a5c6e5c50800000000000000
-      internalID: 6655876435703727693
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ice_5
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 22f5ee8774e1031b0800000000000000
-      internalID: -5679005837793796318
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ice_6
-      rect:
-        serializedVersion: 2
-        x: 18
-        y: 16
         width: 32
         height: 32
       alignment: 0
@@ -253,20 +160,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e93234b5d2cd27b0800000000000000
-      internalID: -5247323767709746719
+      spriteID: 49036e4be09cdee478a1b9eb480a55cf
+      internalID: 1561159365
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ice_7
+      name: bolas-estaticas_3
       rect:
         serializedVersion: 2
-        x: 144
-        y: 17
-        width: 32
-        height: 32
+        x: 72
+        y: 7
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -274,8 +181,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e94c3c16f6c0e3e4dac5799ba47a9ed4
-      internalID: -1770788270
+      spriteID: 6a7f83a5dbcb9824da3187d7fa816bc4
+      internalID: 999676541
       vertices: []
       indices: 
       edges: []
@@ -291,14 +198,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ice_6: -5247323767709746719
-      ice_3: -4621826098645276579
-      ice_1: -1054573163461033994
-      ice_2: -4747277866943198223
-      ice_4: 6655876435703727693
-      ice_7: -1770788270
-      ice_0: -856085545168688419
-      ice_5: -5679005837793796318
+      bolas-estaticas_0: -507144486
+      bolas-estaticas_2: 1561159365
+      bolas-estaticas_3: 999676541
+      bolas-estaticas_1: -1495525159
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

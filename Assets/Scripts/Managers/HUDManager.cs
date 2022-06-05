@@ -66,6 +66,11 @@ public class HUDManager : MonoBehaviour
         {
             return;
         }
+
+        if (fadeImage.enabled)
+        {
+            return;
+        }
         
         if (Input.GetKeyDown(KeyCode.P))
         {

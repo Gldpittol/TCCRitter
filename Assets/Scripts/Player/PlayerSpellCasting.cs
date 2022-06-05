@@ -171,9 +171,16 @@ public class PlayerSpellCasting : MonoBehaviour
             case 1:
                 onClickOffensiveMagic += CastIceMissile;
                 break;
+            case 2:
+                onClickOffensiveMagic += CastElectroSphere;
+                break;
+            case 3:
+                onClickOffensiveMagic += CastIceSpikes;
+                break;
         }
     }
     
+
     public void SelectDefensiveMagic(int ID)
     {
         onClickDefensiveMagic = null;
@@ -184,6 +191,9 @@ public class PlayerSpellCasting : MonoBehaviour
         {
             case 0:
                 onClickDefensiveMagic += CastWindWall;
+                break;
+            case 1:
+                onClickDefensiveMagic += CastIceFloor;
                 break;
         }
     }
@@ -223,6 +233,28 @@ public class PlayerSpellCasting : MonoBehaviour
 
         temp.GetComponent<SpellDamager>().damage = magicOffensive.baseDamage * PlayerStats.damageMultiplier;
         RotateTowardsMouse(180, temp);
+    }
+    
+    private void CastElectroSphere()
+    {
+        cooldownOffsensive = magicOffensive.cooldown;
+        GameObject temp = Instantiate(magicOffensive.magicPrefab, transform.position, Quaternion.identity);
+        temp.GetComponent<ElectrosphereParent>().damage = magicOffensive.baseDamage;
+        temp.GetComponent<ElectrosphereParent>().Initialize();
+    }
+    
+    private void CastIceSpikes()
+    {
+        cooldownOffsensive = magicOffensive.cooldown;
+        GameObject temp = Instantiate(magicOffensive.magicPrefab, transform.position, Quaternion.identity);
+        temp.GetComponent<IceSpikesParent>().damage = magicOffensive.baseDamage;
+        temp.GetComponent<IceSpikesParent>().Initialize();
+    }
+    
+    private void CastIceFloor()
+    {
+        cooldownDefensive = magicDefensive.cooldown;
+        GameObject temp = Instantiate(magicDefensive.magicPrefab, (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition), Quaternion.identity);
     }
 
 

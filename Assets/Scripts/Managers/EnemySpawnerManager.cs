@@ -49,6 +49,7 @@ public class EnemySpawnerManager : MonoBehaviour
     
     private void SpawnEnemies()
     {
+        if (enemySpawnerList.Count == 0) return;
         int spawnedAmount = 0;
         while (spawnedAmount < PlayerStats.currentFloor)
         {
