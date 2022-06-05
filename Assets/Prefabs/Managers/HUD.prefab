@@ -4989,6 +4989,8 @@ MonoBehaviour:
   offensiveTooltip: {fileID: 7386548366201450970}
   defensiveTooltip: {fileID: 7386548364765222343}
   ultimateTooltip: {fileID: 7386548364254355639}
+  fadeImage: {fileID: 0}
+  fadeTime: 1
 --- !u!1 &7386548366030022474
 GameObject:
   m_ObjectHideFlags: 0
