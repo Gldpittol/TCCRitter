@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52174ff03eb19b4e867414c63caa4b2, type: 3}
+  m_Name: Ultimate-Vortex
+  m_EditorClassIdentifier: 
+  magicName: Vortex
+  magicDescription: Summons a vortex at the desired location, sucking in all enemies
+    nearby and damaging them when they get too close.
+  magicType: 3
+  magicPrefab: {fileID: 7229199848507456449, guid: f59a89e1cd68fac4b989bdea88ade870, type: 3}
+  magicIcon: {fileID: 1000713066, guid: cfe488e1fe36c4e4db2bef9e6eaf53fc, type: 3}
+  cooldown: 200
+  baseSpeed: 0
+  baseDamage: 1
+  duration: 8
+  delayBetweenHits: 0.2

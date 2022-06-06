@@ -26,12 +26,12 @@ public class AIEnemyFollow : MonoBehaviour
 
     private void Start()
     {
-        _enemyController.speed = Random.Range(_enemyController.speed - 0.5f, _enemyController.speed + 0.5f);
+        _enemyController.speed = Random.Range(_enemyController.speed - 0.2f, _enemyController.speed + 0.2f);
     }
 
     private void Update()
     {
-        transform.position = Vector2.MoveTowards(transform.position, PlayerManager.Instance.gameObject.transform.position, _enemyController.speed * Time.deltaTime);
+        if(canMove)transform.position = Vector2.MoveTowards(transform.position, PlayerManager.Instance.gameObject.transform.position, _enemyController.speed * Time.deltaTime);
         float scaleX = Mathf.Abs(transform.localScale.x);
         if (PlayerManager.Instance.transform.position.x < transform.position.x) scaleX = -scaleX;
         transform.localScale = new Vector2(scaleX, transform.localScale.y);

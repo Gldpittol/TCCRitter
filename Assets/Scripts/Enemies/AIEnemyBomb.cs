@@ -17,7 +17,7 @@ public class AIEnemyBomb : MonoBehaviour
 
     private void Start()
     {
-        _enemyController.speed = Random.Range(_enemyController.speed - 0.5f, _enemyController.speed + 0.5f);
+        _enemyController.speed = Random.Range(_enemyController.speed - 0.2f, _enemyController.speed + 0.2f);
     }
 
     private void Update()
