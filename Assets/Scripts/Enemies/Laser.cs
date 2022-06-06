@@ -13,6 +13,13 @@ public class Laser : MonoBehaviour
     private bool isTouchingPlayer = false;
     private float currentTime;
 
+    private Vector3 originalLocalPos;
+
+    private void Awake()
+    {
+        originalLocalPos = transform.localPosition;
+    }
+
     private void OnEnable()
     {
         transform.localScale = new Vector2(0, transform.localScale.y);
@@ -29,6 +36,8 @@ public class Laser : MonoBehaviour
             PlayerCollision.Instance.PlayerTakeDamage(damage);
             currentTime = delayBetweenPlayerHits;
         }
+
+        transform.localPosition = originalLocalPos;
     }
 
     private void FixedUpdate()

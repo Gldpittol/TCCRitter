@@ -31,7 +31,7 @@ public class AIEnemyFollow : MonoBehaviour
 
     private void Update()
     {
-        transform.position = Vector2.MoveTowards(transform.position, PlayerManager.Instance.gameObject.transform.position, _enemyController.speed * Time.deltaTime);
+        if(canMove)transform.position = Vector2.MoveTowards(transform.position, PlayerManager.Instance.gameObject.transform.position, _enemyController.speed * Time.deltaTime);
         float scaleX = Mathf.Abs(transform.localScale.x);
         if (PlayerManager.Instance.transform.position.x < transform.position.x) scaleX = -scaleX;
         transform.localScale = new Vector2(scaleX, transform.localScale.y);

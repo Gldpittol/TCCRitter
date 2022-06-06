@@ -16,7 +16,7 @@ public class AIEnemyMine : MonoBehaviour
     private Vector2 moveDestination;
     private Vector2 originalPos;
     private float currentTime;
-
+    private Vector2 lastSpot;
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -33,7 +33,16 @@ public class AIEnemyMine : MonoBehaviour
         currentTime+=Time.deltaTime / myController.delayBetweenAttacks;
         if (canMove)
         {
-            transform.position = Vector2.Lerp(originalPos, moveDestination, currentTime);
+            transform.position = Vector2.MoveTowards(transform.position, moveDestination, myController.speed * Time.deltaTime);
+            if (Vector2.Distance(transform.position, moveDestination) < 0.1f)
+            {
+                if (lastSpot == moveDestination) return;
+                lastSpot = moveDestination;
+                animator.Play("EnemyMineDeploy");
+                canMove = false;
+                StopAllCoroutines();
+                StartCoroutine(WaitToMoveAgain());
+            }
         }
     }
 
@@ -67,6 +76,13 @@ public class AIEnemyMine : MonoBehaviour
         yield return new WaitForSeconds(myController.delayBetweenAttacks);
         animator.Play("EnemyMineDeploy");
         canMove = false;
+        while (!canMove) yield return null;
+        animator.Play("EnemyMineRun");
+        DeployNextBomb();
+    }
+
+    public IEnumerator WaitToMoveAgain()
+    {
         while (!canMove) yield return null;
         animator.Play("EnemyMineRun");
         DeployNextBomb();

@@ -11,8 +11,18 @@ public class EnemyController : MonoBehaviour
     public float delayBetweenAttacks;
     public float projectileSpeed;
     public float projectileDuration;
+    public float goldGiven;
 
     private bool isChangingColor = false;
+    public bool isStaticEnemy;
+    private bool cantMoveAnymore;
+    private Rigidbody2D thisRb;
+
+    private void Awake()
+    {
+        thisRb = GetComponent<Rigidbody2D>();
+    }
+
     public void TakeDamage(float damage)
     {
         health -= damage;
@@ -25,8 +35,15 @@ public class EnemyController : MonoBehaviour
         }
     }
 
+    private void FixedUpdate()
+    {
+        if (cantMoveAnymore) thisRb.velocity = Vector2.zero;
+    }
+
     private void KillEnemy()
     {
+        PlayerStats.coins += goldGiven;
+        HUDManager.Instance.UpdateCoins();
         Destroy(gameObject);
     }
 
@@ -46,6 +63,7 @@ public class EnemyController : MonoBehaviour
         if (col.gameObject.CompareTag("Wall"))
         {
             GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+            if (isStaticEnemy) cantMoveAnymore = true;
         }
     }
     
