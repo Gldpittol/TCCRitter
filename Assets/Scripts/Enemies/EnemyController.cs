@@ -67,6 +67,14 @@ public class EnemyController : MonoBehaviour
         }
     }
     
+    private void OnTriggerExit2D(Collider2D col)
+    {
+        if (col.gameObject.CompareTag("Wall"))
+        {
+            if (isStaticEnemy) cantMoveAnymore = false;
+        }
+    }
+    
     private void OnDestroy()
     {
         EnemySpawnerManager.Instance.RemoveFromRemainingEnemiesList(gameObject);

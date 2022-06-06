@@ -21,6 +21,7 @@ public class AIEnemyMine : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         myController = GetComponent<EnemyController>();
+        myController.speed = Random.Range(myController.speed - 0.2f, myController.speed + 0.2f);
     }
 
     private void Start()

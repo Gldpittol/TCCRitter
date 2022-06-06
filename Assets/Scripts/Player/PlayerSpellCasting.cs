@@ -215,9 +215,20 @@ public class PlayerSpellCasting : MonoBehaviour
             case 0:
                 onClickUltimateMagic += CastLightPillar;
                 break;
+            case 1:
+                onClickUltimateMagic += CastVortex;
+                break;
         }
     }
-    
+
+    private void CastVortex()
+    {
+        cooldownUltimate = magicUltimate.cooldown;
+        GameObject temp = Instantiate(magicUltimate.magicPrefab, (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition), Quaternion.identity);
+
+        temp.GetComponent<SpellDamager>().damage = magicUltimate.baseDamage * PlayerStats.damageMultiplier;
+    }
+
     private void CastShield()
     {
         cooldownDefensive = magicDefensive.cooldown;
