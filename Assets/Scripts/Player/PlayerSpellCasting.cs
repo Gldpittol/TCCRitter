@@ -32,7 +32,29 @@ public class PlayerSpellCasting : MonoBehaviour
 
     private void Start()
     {
-       UpdateSpells();
+        if (SaveLoadManager.Instance)
+        {
+            PlayerStats.coins = SaveLoadManager.PlayerData.gold;
+            PlayerStats.progress = SaveLoadManager.PlayerData.progress;
+            if (SaveLoadManager.PlayerData.justStarting)
+            {
+                SaveLoadManager.PlayerData.justStarting = false;
+                SaveLoadManager.PlayerData.baseMagicID = Random.Range(0, MagicManager.Instance.basicMagicsList.Count);
+                SaveLoadManager.PlayerData.offensiveMagicID =
+                    Random.Range(0, MagicManager.Instance.offensiveMagicsList.Count);
+                SaveLoadManager.PlayerData.defensiveMagicID =
+                    Random.Range(0, MagicManager.Instance.defensiveMagicsList.Count);
+                SaveLoadManager.PlayerData.ultimateMagicID =
+                    Random.Range(0, MagicManager.Instance.ultimateMagicsList.Count);
+            }
+            magicRightClick = MagicManager.Instance.basicMagicsList[SaveLoadManager.PlayerData.baseMagicID];
+            magicOffensive = MagicManager.Instance.offensiveMagicsList[SaveLoadManager.PlayerData.offensiveMagicID];
+            magicDefensive = MagicManager.Instance.defensiveMagicsList[SaveLoadManager.PlayerData.defensiveMagicID];
+            magicUltimate = MagicManager.Instance.ultimateMagicsList[SaveLoadManager.PlayerData.ultimateMagicID];
+            SaveLoadManager.Instance.SaveGame();
+        }
+
+        UpdateSpells();
     }
 
     public void UpdateSpells()
@@ -149,9 +171,19 @@ public class PlayerSpellCasting : MonoBehaviour
             case 1:
                 onClickOffensiveMagic += CastIceMissile;
                 break;
+            case 2:
+                onClickOffensiveMagic += CastElectroSphere;
+                break;
+            case 3:
+                onClickOffensiveMagic += CastIceSpikes;
+                break;
+            case 4:
+                onClickOffensiveMagic += CastFireShotgun;
+                break;
         }
     }
-    
+
+
     public void SelectDefensiveMagic(int ID)
     {
         onClickDefensiveMagic = null;
@@ -162,6 +194,12 @@ public class PlayerSpellCasting : MonoBehaviour
         {
             case 0:
                 onClickDefensiveMagic += CastWindWall;
+                break;
+            case 1:
+                onClickDefensiveMagic += CastIceFloor;
+                break;
+            case 2:
+                onClickDefensiveMagic += CastShield;
                 break;
         }
     }
@@ -178,6 +216,12 @@ public class PlayerSpellCasting : MonoBehaviour
                 onClickUltimateMagic += CastLightPillar;
                 break;
         }
+    }
+    
+    private void CastShield()
+    {
+        cooldownDefensive = magicDefensive.cooldown;
+        PlayerCollision.Instance.shield.SetActive(true);
     }
 
     private void CastLightPillar()
@@ -201,6 +245,28 @@ public class PlayerSpellCasting : MonoBehaviour
 
         temp.GetComponent<SpellDamager>().damage = magicOffensive.baseDamage * PlayerStats.damageMultiplier;
         RotateTowardsMouse(180, temp);
+    }
+    
+    private void CastElectroSphere()
+    {
+        cooldownOffsensive = magicOffensive.cooldown;
+        GameObject temp = Instantiate(magicOffensive.magicPrefab, transform.position, Quaternion.identity);
+        temp.GetComponent<ElectrosphereParent>().damage = magicOffensive.baseDamage;
+        temp.GetComponent<ElectrosphereParent>().Initialize();
+    }
+    
+    private void CastIceSpikes()
+    {
+        cooldownOffsensive = magicOffensive.cooldown;
+        GameObject temp = Instantiate(magicOffensive.magicPrefab, transform.position, Quaternion.identity);
+        temp.GetComponent<IceSpikesParent>().damage = magicOffensive.baseDamage;
+        temp.GetComponent<IceSpikesParent>().Initialize();
+    }
+    
+    private void CastIceFloor()
+    {
+        cooldownDefensive = magicDefensive.cooldown;
+        GameObject temp = Instantiate(magicDefensive.magicPrefab, (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition), Quaternion.identity);
     }
 
 
@@ -230,6 +296,16 @@ public class PlayerSpellCasting : MonoBehaviour
         temp.GetComponent<Rigidbody2D>().velocity = new Vector2(shootDirection.x, shootDirection.y).normalized * magicRightClick.baseSpeed;
 
         temp.GetComponent<SpellDamager>().damage = magicRightClick.baseDamage * PlayerStats.damageMultiplier;
+    }
+    
+    private void CastFireShotgun()
+    {
+        cooldownOffsensive = magicOffensive.cooldown;
+        GameObject temp = Instantiate(magicOffensive.magicPrefab, PlayerManager.Instance.spellSpawnPoint.transform.position, Quaternion.identity);
+
+        RotateTowardsMouse(180, temp);
+        
+        temp.GetComponent<FireBoulderParent>().Initialize(magicRightClick.baseDamage * PlayerStats.damageMultiplier);    
     }
     
     public void CastWaterBubble()

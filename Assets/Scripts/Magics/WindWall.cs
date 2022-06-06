@@ -10,13 +10,16 @@ public class WindWall : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (affectedObjects.Contains(col.gameObject)) return;
-        Rigidbody2D colRb = col.GetComponent<Rigidbody2D>();
-        if (colRb)
+        if (col.CompareTag("Enemy") || col.CompareTag("Bullet"))
         {
-            affectedObjects.Add(col.gameObject);
-            Vector2 pushVector = transform.position - col.gameObject.transform.position;
-            colRb.AddForce(impulseIntensity * pushVector * -1, ForceMode2D.Impulse);
+            if (affectedObjects.Contains(col.gameObject)) return;
+            Rigidbody2D colRb = col.GetComponent<Rigidbody2D>();
+            if (colRb)
+            {
+                affectedObjects.Add(col.gameObject);
+                Vector2 pushVector = transform.position - col.gameObject.transform.position;
+                colRb.AddForce(impulseIntensity * pushVector * -1, ForceMode2D.Impulse);
+            }
         }
     }
 

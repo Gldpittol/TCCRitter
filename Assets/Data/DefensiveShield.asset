@@ -10,13 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e52174ff03eb19b4e867414c63caa4b2, type: 3}
-  m_Name: DefensiveMagic 3
+  m_Name: DefensiveShield
   m_EditorClassIdentifier: 
-  magicName: DefensiveMagic 3
+  magicName: Shield
+  magicDescription: Casts a shield that blocks the next attack that would otherwise
+    damage you.
   magicType: 1
   magicPrefab: {fileID: 0}
-  cooldown: 0
+  magicIcon: {fileID: 21300000, guid: be92da593e9f4df4da4a55ddbee24e16, type: 3}
+  cooldown: 10
   baseSpeed: 0
   baseDamage: 0
-  duration: 0
+  duration: 5
   delayBetweenHits: 0.1

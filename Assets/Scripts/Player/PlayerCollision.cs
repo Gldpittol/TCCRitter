@@ -37,8 +37,9 @@ public class PlayerCollision : MonoBehaviour
 
     public void PlayerTakeDamage(float damage)
     {
-        if (PlayerStats.invulnerabilityRemaining > 0)
+        if (Shield.Instance)
         {
+            Shield.Instance.DestroyShield();
             return;
         }
         

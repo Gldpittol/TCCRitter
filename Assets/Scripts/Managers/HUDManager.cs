@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.Mime;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -31,8 +32,13 @@ public class HUDManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI offensiveTooltip;
     [SerializeField] private TextMeshProUGUI defensiveTooltip;
     [SerializeField] private TextMeshProUGUI ultimateTooltip;
+    [SerializeField] private Image fadeImage;
+    [SerializeField] private float fadeTime = 1;
 
     private float hpBarOriginalScaleX;
+
+    public Image FadeImage => fadeImage;
+    public float FadeTime => fadeTime;
 
     private void Awake()
     {
@@ -46,6 +52,7 @@ public class HUDManager : MonoBehaviour
     {
         PlayerSpellCasting.Instance.UpdateSpells();
         PlayerMovement.Instance.ChangeFKeyVisibility(false);
+        GameManager.Instance.FadeOut(fadeImage,fadeTime);
     }
 
     private void Update()
@@ -56,6 +63,11 @@ public class HUDManager : MonoBehaviour
         }
         
         if(gameOverPanel.activeInHierarchy)
+        {
+            return;
+        }
+
+        if (fadeImage.enabled)
         {
             return;
         }
