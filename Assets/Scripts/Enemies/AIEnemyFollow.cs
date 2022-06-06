@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 using Random = UnityEngine.Random;
 
 public class AIEnemyFollow : MonoBehaviour
@@ -14,6 +15,8 @@ public class AIEnemyFollow : MonoBehaviour
 
     private EnemyController _enemyController;
     private Animator _animator;
+
+    private NavMeshAgent _navAgent;
 
     private void Awake()
     {
@@ -28,7 +31,7 @@ public class AIEnemyFollow : MonoBehaviour
 
     private void Update()
     {
-        if(canMove) transform.position = Vector2.MoveTowards(transform.position, PlayerManager.Instance.gameObject.transform.position, _enemyController.speed * Time.deltaTime);
+        transform.position = Vector2.MoveTowards(transform.position, PlayerManager.Instance.gameObject.transform.position, _enemyController.speed * Time.deltaTime);
         float scaleX = Mathf.Abs(transform.localScale.x);
         if (PlayerManager.Instance.transform.position.x < transform.position.x) scaleX = -scaleX;
         transform.localScale = new Vector2(scaleX, transform.localScale.y);
