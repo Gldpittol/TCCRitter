@@ -13,15 +13,17 @@ public class Door : MonoBehaviour
     
     public List<string> possibleScenes;
     private bool isCollidingWithPlayer;
-    private SpriteRenderer sr;
-    private BoxCollider2D boxCol;
+    private Renderer sr;
+    private Collider2D boxCol;
     private bool isOpen = false;
+    public bool isBossDoor;
+    public GameProgress stateAfterClearingBoss;
 
     private void Awake()
     {
         Instance = this;
-        sr = GetComponent<SpriteRenderer>();
-        boxCol = GetComponent<BoxCollider2D>();
+        sr = GetComponent<Renderer>();
+        boxCol = GetComponent<Collider2D>();
         sr.enabled = false;
         boxCol.enabled = false;
     }

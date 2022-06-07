@@ -722,7 +722,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1066020198}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.37, y: -0.8, z: 0}
+  m_LocalPosition: {x: 5.37, y: 99999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -742,7 +742,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   possibleEnemies:
-  - enemy: {fileID: 6943234605131471461, guid: 9efb5d7ccca9baf43a2e3dcd70e772b0, type: 3}
+  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
     minimumFloorToSpawn: 0
 --- !u!1 &1074641164
 GameObject:
@@ -1030,6 +1030,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 975344474, guid: 1b359119fb1ae32499b2ea9e0506fd3b, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4987235490648834050, guid: 1b359119fb1ae32499b2ea9e0506fd3b, type: 3}
       propertyPath: m_RootOrder
       value: 0
