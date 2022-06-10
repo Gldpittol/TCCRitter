@@ -120,17 +120,17 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 3ad407a4ebe011049a96aa38b1dfdd35, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 1
-    m_Data: {fileID: -66306636, guid: 1b65e209fe4565b4d9ce1200d94a032b, type: 3}
+    m_Data: {fileID: 137350106, guid: 1b65e209fe4565b4d9ce1200d94a032b, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 427619059, guid: 1b65e209fe4565b4d9ce1200d94a032b, type: 3}
+    m_Data: {fileID: -827458279, guid: 1b65e209fe4565b4d9ce1200d94a032b, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 1059277674, guid: 1b65e209fe4565b4d9ce1200d94a032b, type: 3}
+    m_Data: {fileID: -1871099085, guid: 1b65e209fe4565b4d9ce1200d94a032b, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 248153877, guid: 1b65e209fe4565b4d9ce1200d94a032b, type: 3}
+    m_Data: {fileID: 2041824214, guid: 1b65e209fe4565b4d9ce1200d94a032b, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 1532788442, guid: 1b65e209fe4565b4d9ce1200d94a032b, type: 3}
+    m_Data: {fileID: 2051575308, guid: 1b65e209fe4565b4d9ce1200d94a032b, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 1774953473, guid: 1b65e209fe4565b4d9ce1200d94a032b, type: 3}
+    m_Data: {fileID: -2086693637, guid: 1b65e209fe4565b4d9ce1200d94a032b, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 6
     m_Data:
@@ -255,3 +255,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   possibleScenes: []
+  isBossDoor: 0
+  stateAfterClearingBoss: 0
