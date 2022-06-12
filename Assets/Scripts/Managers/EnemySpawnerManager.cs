@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
 using Random = UnityEngine.Random;
+using Vector2 = System.Numerics.Vector2;
 
 public class EnemySpawnerManager : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class EnemySpawnerManager : MonoBehaviour
     
     private List<EnemySpawner> enemySpawnerList = new List<EnemySpawner>();
     public List<GameObject> enemiesSpawned = new List<GameObject>();
+    public bool isBossRoom = false;
+    public GameObject bossPrefab;
 
     private bool doorOpen = false;
 
@@ -22,7 +25,12 @@ public class EnemySpawnerManager : MonoBehaviour
             enemySpawnerList.Add(child.gameObject.GetComponent<EnemySpawner>());
         }
 
-        SpawnEnemies();
+        if(!isBossRoom)SpawnEnemies();
+        else
+        {
+            GameObject temp = Instantiate(bossPrefab, transform.GetChild(0).transform.position, Quaternion.identity);
+            enemiesSpawned.Add(temp);
+        }
     }
 
     private void Update()
