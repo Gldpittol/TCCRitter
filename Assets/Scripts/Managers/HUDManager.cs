@@ -32,6 +32,7 @@ public class HUDManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI offensiveTooltip;
     [SerializeField] private TextMeshProUGUI defensiveTooltip;
     [SerializeField] private TextMeshProUGUI ultimateTooltip;
+    public TextMeshProUGUI ultimateBlockText;
     [SerializeField] private Image fadeImage;
     [SerializeField] private float fadeTime = 1;
 

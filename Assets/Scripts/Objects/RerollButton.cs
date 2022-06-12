@@ -31,8 +31,8 @@ public class RerollButton : MonoBehaviour
         PlayerStats.coins -= coinsRequired;
         PlayerSpellCasting.Instance.RerollMagic(type);
         HUDManager.Instance.UpdateCoins();
+        PlayerSpellCasting.Instance.ResetCooldowns();
         onUpdateReroll?.Invoke();
-        
     }
 
     public void UpdateReroll()

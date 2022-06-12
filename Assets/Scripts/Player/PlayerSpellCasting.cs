@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
+using TMPro;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -67,6 +69,13 @@ public class PlayerSpellCasting : MonoBehaviour
         SelectOffensiveMagic(offensiveMagicID);
         SelectDefensiveMagic(defensiveMagicID);
         SelectUltimateMagic(ultimateMagicID);
+        if (SaveLoadManager.Instance)
+        {
+            SaveLoadManager.PlayerData.baseMagicID = basicMagicID;
+            SaveLoadManager.PlayerData.offensiveMagicID = offensiveMagicID;
+            SaveLoadManager.PlayerData.defensiveMagicID = defensiveMagicID;
+            SaveLoadManager.PlayerData.ultimateMagicID = ultimateMagicID;
+        }
     }
 
     private void Update()
@@ -138,6 +147,42 @@ public class PlayerSpellCasting : MonoBehaviour
                 UpdateSpells();
                 break;
         }
+        
+        if (SaveLoadManager.Instance) SaveLoadManager.Instance.SaveGame();
+    }
+
+    public void RerollAllMagics()
+    {
+        magicRightClick =
+            MagicManager.Instance.basicMagicsList[Random.Range(0, MagicManager.Instance.basicMagicsList.Count)];
+        magicOffensive =
+            MagicManager.Instance.offensiveMagicsList[Random.Range(0, MagicManager.Instance.offensiveMagicsList.Count)];
+        magicDefensive =
+            MagicManager.Instance.defensiveMagicsList[Random.Range(0, MagicManager.Instance.defensiveMagicsList.Count)];
+        magicUltimate =
+            MagicManager.Instance.ultimateMagicsList[Random.Range(0, MagicManager.Instance.ultimateMagicsList.Count)]; 
+        SaveLoadManager.Instance.SaveGame();
+    }
+
+    public void UltimateBlock()
+    {
+        StartCoroutine(UltimateBlockCoroutine());
+    }
+
+    public IEnumerator UltimateBlockCoroutine()
+    {
+        cooldownUltimate = int.MaxValue;
+        HUDManager.Instance.ultimateBlockText.gameObject.SetActive(true);
+        yield return new WaitForSeconds(HUDManager.Instance.FadeTime * 3f) ;
+        HUDManager.Instance.ultimateBlockText.GetComponent<TextMeshProUGUI>().DOFade(0, HUDManager.Instance.FadeTime);
+    }
+
+    public void ResetCooldowns()
+    {
+        cooldownDefensive = 0;
+        cooldownOffsensive = 0;
+        cooldownUltimate = 0;
+        cooldownRightClick = 0;
     }
 
     public void SelectBaseMagic(int ID)

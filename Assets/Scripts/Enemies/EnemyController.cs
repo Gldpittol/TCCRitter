@@ -17,7 +17,7 @@ public class EnemyController : MonoBehaviour
     public bool isStaticEnemy;
     private bool cantMoveAnymore;
     private Rigidbody2D thisRb;
-
+    
     private void Awake()
     {
         thisRb = GetComponent<Rigidbody2D>();

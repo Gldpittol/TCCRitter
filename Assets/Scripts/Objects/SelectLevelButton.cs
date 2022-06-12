@@ -15,7 +15,7 @@ public class SelectLevelButton : MonoBehaviour
     {
         if ((int) PlayerStats.progress < (int) minimumProgress)
         {
-            GetComponent<Button>().interactable = false;
+            GetComponent<Image>().enabled = false;
             foreach (GameObject trace in relatedTraces)
             {
                 trace.SetActive(false);
@@ -23,7 +23,7 @@ public class SelectLevelButton : MonoBehaviour
         }
         else
         {
-            GetComponent<Button>().interactable = true;
+            GetComponent<Image>().enabled = true;
             foreach (GameObject trace in relatedTraces)
             {
                 trace.SetActive(true);
