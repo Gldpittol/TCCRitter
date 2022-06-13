@@ -37,6 +37,8 @@ public class PlayerCollision : MonoBehaviour
 
     public void PlayerTakeDamage(float damage)
     {
+        if (GameManager.Instance.gameState != GameState.Gameplay) return;
+        
         if (Shield.Instance)
         {
             Shield.Instance.DestroyShield();
@@ -65,7 +67,15 @@ public class PlayerCollision : MonoBehaviour
     private IEnumerator KillPlayer()
     {
         // SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single);
-        HUDManager.Instance.GameOver();
+        //HUDManager.Instance.GameOver();
+        GameManager.Instance.gameState = GameState.Cutscene;
+        PlayerStats.currentFloor = 0;
+        PlayerStats.currentHealth = 100;
+        PlayerStats.invulnerabilityRemaining = 0;
+        PlayerSpellCasting.Instance.RerollAllMagics();
+        yield return new WaitForEndOfFrame();
+        GameManager.Instance.LoadScene(HUDManager.Instance.FadeImage, HUDManager.Instance.FadeTime,"MagePoliceDepartment");
+
         yield return null;
     }
 

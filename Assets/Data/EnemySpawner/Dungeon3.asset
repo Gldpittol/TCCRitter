@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 556016786c08e4c49900d375265ae927, type: 3}
+  m_Name: Dungeon3
+  m_EditorClassIdentifier: 
+  possibleEnemies:
+  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
+    minimumFloorToSpawn: 0
+  - enemy: {fileID: 6943234605131471461, guid: 9efb5d7ccca9baf43a2e3dcd70e772b0, type: 3}
+    minimumFloorToSpawn: 0
+  - enemy: {fileID: 3527495202902667342, guid: afdbc68328fb976429416c2805a91972, type: 3}
+    minimumFloorToSpawn: 0
+  - enemy: {fileID: 6625143156896383306, guid: a2193fc4c522cdd41bcd4b45e94d0cbd, type: 3}
+    minimumFloorToSpawn: 0
+  - enemy: {fileID: 2033061060245245159, guid: 718ef9f28c0de2044ae4e7218d371e7a, type: 3}
+    minimumFloorToSpawn: 0
+  - enemy: {fileID: 4519842719898565374, guid: 0d6886299bfb0be4f8adbcea72839d35, type: 3}
+    minimumFloorToSpawn: 0

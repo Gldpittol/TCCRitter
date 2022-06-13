@@ -345,7 +345,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 6409780700071697032}
   m_OnClick:
     m_PersistentCalls:
@@ -381,7 +381,15 @@ MonoBehaviour:
   - {fileID: 6409780700394515467}
   - {fileID: 6409780701370605113}
   - {fileID: 6409780701667856581}
-  possibleSceneNames: []
+  possibleSceneNames:
+  - Dungeon3-2
+  - Dungeon3-3
+  - Dungeon3-4
+  - Dungeon3-5
+  - Dungeon3-6
+  - Dungeon3-7
+  - Dungeon3-8
+  enemySpawnCountMultiplier: 3
 --- !u!1 &6409780700171562372
 GameObject:
   m_ObjectHideFlags: 0
@@ -1014,7 +1022,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minimumProgress: 0
   relatedTraces: []
-  possibleSceneNames: []
+  possibleSceneNames:
+  - Dungeon1-2
+  - Dungeon1-3
+  - Dungeon1-4
+  - Dungeon1-5
+  - Dungeon1-6
+  - Dungeon1-7
+  - Dungeon1-8
+  enemySpawnCountMultiplier: 1
 --- !u!1 &6409780701025921085
 GameObject:
   m_ObjectHideFlags: 0
@@ -1132,7 +1148,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 6409780701025921082}
   m_OnClick:
     m_PersistentCalls:
@@ -1166,7 +1182,9 @@ MonoBehaviour:
   - {fileID: 6409780701347225195}
   - {fileID: 6409780699835997720}
   - {fileID: 6409780701380604137}
-  possibleSceneNames: []
+  possibleSceneNames:
+  - Boss2Arena
+  enemySpawnCountMultiplier: 1
 --- !u!1 &6409780701045773771
 GameObject:
   m_ObjectHideFlags: 0
@@ -2045,7 +2063,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 6409780701442449105}
   m_OnClick:
     m_PersistentCalls:
@@ -2082,7 +2100,9 @@ MonoBehaviour:
   - {fileID: 6409780699796362020}
   - {fileID: 6409780701045773771}
   - {fileID: 6409780701279480958}
-  possibleSceneNames: []
+  possibleSceneNames:
+  - Boss1Arena
+  enemySpawnCountMultiplier: 1
 --- !u!1 &6409780701508865895
 GameObject:
   m_ObjectHideFlags: 0
@@ -2352,7 +2372,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 6409780701614513102}
   m_OnClick:
     m_PersistentCalls:
@@ -2386,7 +2406,9 @@ MonoBehaviour:
   - {fileID: 6409780700171562372}
   - {fileID: 6409780700524671819}
   - {fileID: 6409780701427922629}
-  possibleSceneNames: []
+  possibleSceneNames:
+  - Boss3Arena
+  enemySpawnCountMultiplier: 1
 --- !u!1 &6409780701667856581
 GameObject:
   m_ObjectHideFlags: 0
@@ -2771,7 +2793,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 6409780701817976865}
   m_OnClick:
     m_PersistentCalls:
@@ -2806,7 +2828,15 @@ MonoBehaviour:
   - {fileID: 6409780701574624567}
   - {fileID: 6409780699800353522}
   - {fileID: 6409780701508865895}
-  possibleSceneNames: []
+  possibleSceneNames:
+  - Dungeon2-2
+  - Dungeon2-3
+  - Dungeon2-4
+  - Dungeon2-5
+  - Dungeon2-6
+  - Dungeon2-7
+  - Dungeon2-8
+  enemySpawnCountMultiplier: 2
 --- !u!1 &6409780701862943147
 GameObject:
   m_ObjectHideFlags: 0

@@ -22,6 +22,7 @@ public class Vortex : MonoBehaviour
     private void Awake()
     {
         damager = GetComponent<SpellDamager>();
+        Destroy(gameObject, myMagic.duration);
     }
 
     private void OnTriggerEnter2D(Collider2D col)

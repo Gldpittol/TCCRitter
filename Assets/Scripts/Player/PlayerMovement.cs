@@ -39,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             _rigidBody.velocity = new Vector2(0, 0);
-            _playerAnimations.SetIdle();
+            if(_playerAnimations) _playerAnimations.SetIdle();
             _audSource.enabled = false;
         }
     }

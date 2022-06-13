@@ -627,7 +627,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dffc090aa986274fabb80b5412eab22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainHubSceneName: TestLevel
+  mainHubSceneName: MagePoliceDepartment
   fadeImage: {fileID: 295816605}
   fadeTime: 1
   creditsPanel: {fileID: 1069408328}
@@ -1108,6 +1108,7 @@ MonoBehaviour:
   _quickLoadKey: 289
   _quickDeleteKey: 292
   _debugDataVisualization: 1
+  _debugQuickKeys: 1
   _playerDataVisualization:
     gold: 0
     progress: 0

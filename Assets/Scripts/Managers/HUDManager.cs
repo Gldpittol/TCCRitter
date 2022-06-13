@@ -32,6 +32,7 @@ public class HUDManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI offensiveTooltip;
     [SerializeField] private TextMeshProUGUI defensiveTooltip;
     [SerializeField] private TextMeshProUGUI ultimateTooltip;
+    public TextMeshProUGUI ultimateBlockText;
     [SerializeField] private Image fadeImage;
     [SerializeField] private float fadeTime = 1;
 
@@ -50,7 +51,7 @@ public class HUDManager : MonoBehaviour
 
     private void Start()
     {
-        PlayerSpellCasting.Instance.UpdateSpells();
+        if(!SaveLoadManager.Instance) PlayerSpellCasting.Instance.UpdateSpells();
         PlayerMovement.Instance.ChangeFKeyVisibility(false);
         GameManager.Instance.FadeOut(fadeImage,fadeTime);
     }
@@ -80,6 +81,7 @@ public class HUDManager : MonoBehaviour
             {
                 Time.timeScale = 0;
                 GameManager.Instance.gameState = GameState.Paused;
+                CameraManager.Instance.FinishLerp();
                 PlayerMovement.Instance.ActivatePause();
             }
             else 
@@ -88,23 +90,6 @@ public class HUDManager : MonoBehaviour
                 GameManager.Instance.gameState = GameState.Gameplay;
             }
         }
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            if (pauseMenu.activeInHierarchy) return;
-            rouletteMenu.SetActive(!rouletteMenu.activeInHierarchy);
-            if (rouletteMenu.activeInHierarchy)
-            {
-                Time.timeScale = 0;
-                GameManager.Instance.gameState = GameState.Paused;
-                PlayerMovement.Instance.ActivatePause();
-            }
-            else 
-            {
-                Time.timeScale = 1;
-                GameManager.Instance.gameState = GameState.Gameplay;
-            }
-        }
-
     }
 
     public void UpdateHealthBar()
@@ -179,6 +164,10 @@ public class HUDManager : MonoBehaviour
 
     public void UpdateCoins()
     {
+        if (SaveLoadManager.Instance)
+        {
+            PlayerStats.coins = SaveLoadManager.PlayerData.gold;
+        }
         coinsHUD.text = PlayerStats.coins.ToString("F0");
         coinsRoulette.text = PlayerStats.coins.ToString("F0");
     }
@@ -188,5 +177,24 @@ public class HUDManager : MonoBehaviour
         Time.timeScale = 0;
         GameManager.Instance.gameState = GameState.Paused;
         gameOverPanel.SetActive(true);
+    }
+
+    public void OpenGachaPanel()
+    {
+        if (pauseMenu.activeInHierarchy) return;
+            rouletteMenu.SetActive(!rouletteMenu.activeInHierarchy);
+            if (rouletteMenu.activeInHierarchy)
+            {
+                Time.timeScale = 0;
+                GameManager.Instance.gameState = GameState.Paused;
+                PlayerMovement.Instance.ActivatePause();
+                CameraManager.Instance.FinishLerp();
+            }
+            else 
+            {
+                Time.timeScale = 1;
+                PlayerSpellCasting.Instance.ResetCooldowns();
+                GameManager.Instance.gameState = GameState.Gameplay;
+            }
     }
 }

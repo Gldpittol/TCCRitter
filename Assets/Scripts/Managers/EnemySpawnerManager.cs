@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
 using Random = UnityEngine.Random;
+using Vector2 = System.Numerics.Vector2;
 
 public class EnemySpawnerManager : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class EnemySpawnerManager : MonoBehaviour
     
     private List<EnemySpawner> enemySpawnerList = new List<EnemySpawner>();
     public List<GameObject> enemiesSpawned = new List<GameObject>();
+    public bool isBossRoom = false;
+    public GameObject bossPrefab;
 
     private bool doorOpen = false;
 
@@ -22,7 +25,12 @@ public class EnemySpawnerManager : MonoBehaviour
             enemySpawnerList.Add(child.gameObject.GetComponent<EnemySpawner>());
         }
 
-        SpawnEnemies();
+        if(!isBossRoom)SpawnEnemies();
+        else
+        {
+            GameObject temp = Instantiate(bossPrefab, transform.GetChild(0).transform.position, Quaternion.identity);
+            enemiesSpawned.Add(temp);
+        }
     }
 
     private void Update()
@@ -51,11 +59,15 @@ public class EnemySpawnerManager : MonoBehaviour
     {
         if (enemySpawnerList.Count == 0) return;
         int spawnedAmount = 0;
-        while (spawnedAmount < PlayerStats.currentFloor)
+        while (spawnedAmount < PlayerStats.currentFloor * PlayerStats.spawnCountMultiplier)
         {
             int rnd = Random.Range(0, enemySpawnerList.Count);
             EnemySpawner spawner = enemySpawnerList[rnd];
-            GameObject temp = Instantiate(spawner.possibleEnemies[Random.Range(0, enemySpawnerList.Count)].enemy, spawner.transform.position, Quaternion.identity);
+            int enemyRnd = Random.Range(0, spawner.myData.possibleEnemies.Length);
+            int minFloor = spawner.myData.possibleEnemies[enemyRnd].minimumFloorToSpawn;
+            if (PlayerStats.currentFloor < minFloor) continue;
+
+            GameObject temp = Instantiate(spawner.myData.possibleEnemies[enemyRnd].enemy, spawner.transform.position, Quaternion.identity);
             enemiesSpawned.Add(temp);
             enemySpawnerList.Remove(spawner);
             spawnedAmount++;

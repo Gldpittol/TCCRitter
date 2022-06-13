@@ -26,13 +26,15 @@ public class RerollButton : MonoBehaviour
 
     public void Reroll()
     {
+//        print(PlayerStats.coins);
         if (PlayerStats.coins < coinsRequired) return;
         
         PlayerStats.coins -= coinsRequired;
-        PlayerSpellCasting.Instance.RerollMagic(type);
+        if (SaveLoadManager.Instance) SaveLoadManager.PlayerData.gold = PlayerStats.coins;
         HUDManager.Instance.UpdateCoins();
+        PlayerSpellCasting.Instance.ResetCooldowns();
         onUpdateReroll?.Invoke();
-        
+        PlayerSpellCasting.Instance.RerollMagic(type);
     }
 
     public void UpdateReroll()
