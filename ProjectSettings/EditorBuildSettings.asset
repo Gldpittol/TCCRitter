@@ -17,9 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Boss Arena/Boss1Arena.unity
     guid: 7d180432b47999043b91c4a9b0292331
-  - enabled: 0
-    path: Assets/Scenes/Dungeons/Gondor Abandoned Motel/Dungeon1-1.unity
-    guid: 6467f5d14b2012143b7de51ff0515c85
   - enabled: 1
     path: Assets/Scenes/Dungeons/Gondor Abandoned Motel/Dungeon1-2.unity
     guid: 05df078510e3c244f91bdec41ee48b34
@@ -41,9 +38,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Dungeons/Gondor Abandoned Motel/Dungeon1-8.unity
     guid: 50ce2234bcc1d674d96474e0cf329630
-  - enabled: 1
-    path: Assets/Scenes/Dungeons/Moria Night Club/Dungeon2-1.unity
-    guid: 9c9c8c3a827761c4784748ec55bffdca
   - enabled: 1
     path: Assets/Scenes/Dungeons/Moria Night Club/Dungeon2-3.unity
     guid: 5d22be9e785f4634586469303898545b
