@@ -28600,7 +28600,7 @@ GameObject:
   - component: {fileID: 317781070182186011}
   - component: {fileID: 210012137522649863}
   m_Layer: 0
-  m_Name: Gondor Abondoned Motel Level 3
+  m_Name: Level 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

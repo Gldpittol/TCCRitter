@@ -293,7 +293,7 @@ GameObject:
   - component: {fileID: 2190734406589277043}
   - component: {fileID: 5531923922202140619}
   m_Layer: 0
-  m_Name: Dungeon 3
+  m_Name: Level 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
