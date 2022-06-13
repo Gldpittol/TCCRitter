@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.PlayerLoop;
 using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 public class Door : MonoBehaviour
@@ -36,6 +37,8 @@ public class Door : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.F))
         {
+            if (HUDManager.Instance.FadeImage.gameObject.GetComponent<Image>().enabled) return;
+
             int newSceneID = Random.Range(0, possibleScenes.Count);
             var newScene = possibleScenes[newSceneID];
 

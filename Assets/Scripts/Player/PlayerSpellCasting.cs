@@ -50,12 +50,16 @@ public class PlayerSpellCasting : MonoBehaviour
                     Random.Range(0, MagicManager.Instance.defensiveMagicsList.Count);
                 SaveLoadManager.PlayerData.ultimateMagicID =
                     Random.Range(0, MagicManager.Instance.ultimateMagicsList.Count);
+
             }
+//            print(SaveLoadManager.PlayerData.offensiveMagicID);
+
             magicRightClick = MagicManager.Instance.basicMagicsList[SaveLoadManager.PlayerData.baseMagicID];
             magicOffensive = MagicManager.Instance.offensiveMagicsList[SaveLoadManager.PlayerData.offensiveMagicID];
             magicDefensive = MagicManager.Instance.defensiveMagicsList[SaveLoadManager.PlayerData.defensiveMagicID];
             magicUltimate = MagicManager.Instance.ultimateMagicsList[SaveLoadManager.PlayerData.ultimateMagicID];
-            if (SaveLoadManager.Instance) SaveLoadManager.Instance.SaveGame();
+
+            SaveLoadManager.Instance.SaveGame();
         }
 
         UpdateSpells();
@@ -75,6 +79,8 @@ public class PlayerSpellCasting : MonoBehaviour
         {
             SaveLoadManager.PlayerData.baseMagicID = basicMagicID;
             SaveLoadManager.PlayerData.offensiveMagicID = offensiveMagicID;
+          //  print(offensiveMagicID);
+           // print(SaveLoadManager.PlayerData.offensiveMagicID);
             SaveLoadManager.PlayerData.defensiveMagicID = defensiveMagicID;
             SaveLoadManager.PlayerData.ultimateMagicID = ultimateMagicID;
         }
@@ -116,12 +122,17 @@ public class PlayerSpellCasting : MonoBehaviour
     {
         cooldownRightClick -= Time.deltaTime;
         HUDManager.Instance.UpdateCooldownFill(cooldownRightClick, magicRightClick.cooldown, MagicType.Basic);
+        HUDManager.Instance.UpdateCooldownSprite(MagicType.Basic, magicRightClick.magicIcon);
         cooldownOffsensive -= Time.deltaTime;
         HUDManager.Instance.UpdateCooldownFill(cooldownOffsensive, magicOffensive.cooldown, MagicType.Offensive);
+        HUDManager.Instance.UpdateCooldownSprite(MagicType.Offensive, magicOffensive.magicIcon);
         cooldownDefensive -= Time.deltaTime;
         HUDManager.Instance.UpdateCooldownFill(cooldownDefensive, magicDefensive.cooldown, MagicType.Defensive);
+        HUDManager.Instance.UpdateCooldownSprite(MagicType.Defensive, magicDefensive.magicIcon);
         cooldownUltimate -= Time.deltaTime;
         HUDManager.Instance.UpdateCooldownFill(cooldownUltimate, magicUltimate.cooldown, MagicType.Ultimate);
+        HUDManager.Instance.UpdateCooldownSprite(MagicType.Ultimate, magicUltimate.magicIcon);
+
     }
 
     public void RerollMagic(MagicType type)
@@ -155,6 +166,7 @@ public class PlayerSpellCasting : MonoBehaviour
 
     public void RerollAllMagics()
     {
+       // print(SaveLoadManager.PlayerData.offensiveMagicID);
         magicRightClick =
             MagicManager.Instance.basicMagicsList[Random.Range(0, MagicManager.Instance.basicMagicsList.Count)];
         magicOffensive =
@@ -163,6 +175,8 @@ public class PlayerSpellCasting : MonoBehaviour
             MagicManager.Instance.defensiveMagicsList[Random.Range(0, MagicManager.Instance.defensiveMagicsList.Count)];
         magicUltimate =
             MagicManager.Instance.ultimateMagicsList[Random.Range(0, MagicManager.Instance.ultimateMagicsList.Count)]; 
+        UpdateSpells();
+//        print(SaveLoadManager.PlayerData.offensiveMagicID);
         if(SaveLoadManager.Instance) SaveLoadManager.Instance.SaveGame();
     }
 

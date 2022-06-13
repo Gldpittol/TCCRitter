@@ -17,7 +17,7 @@ MonoBehaviour:
     for enemies to walk in it, slowing them down while inside.
   magicType: 1
   magicPrefab: {fileID: 5721038317100778787, guid: c77092375f20c4f4eb41a5f4f933c991, type: 3}
-  magicIcon: {fileID: 1360357380, guid: 298f45a756867f640b48002f26c95ab0, type: 3}
+  magicIcon: {fileID: 1191414409, guid: 298f45a756867f640b48002f26c95ab0, type: 3}
   cooldown: 7
   baseSpeed: 0
   baseDamage: 0

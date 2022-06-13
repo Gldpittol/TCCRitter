@@ -10,5 +10,7 @@ public class LobbyManager : MonoBehaviour
         GameManager.Instance.gameState = GameState.Gameplay;
         PlayerStats.currentHealth = 100;
         PlayerStats.currentFloor = 1;
+        PlayerSpellCasting.Instance.ResetCooldowns();
+        if(SaveLoadManager.Instance) SaveLoadManager.Instance.SaveGame();
     }
 }

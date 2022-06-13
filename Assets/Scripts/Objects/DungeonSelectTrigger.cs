@@ -13,6 +13,7 @@ public class DungeonSelectTrigger : MonoBehaviour
         if (isCollidingWithPlayer && Input.GetKeyDown(KeyCode.F) && GameManager.Instance.gameState == GameState.Gameplay)
         {
             selectDungeonScreen.SetActive(true);
+            CameraManager.Instance.FinishLerp();
         }
     }
 

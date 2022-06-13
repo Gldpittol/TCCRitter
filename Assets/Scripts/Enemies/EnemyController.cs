@@ -12,6 +12,7 @@ public class EnemyController : MonoBehaviour
     public float projectileSpeed;
     public float projectileDuration;
     public float goldGiven;
+    public GameObject explosionPrefab;
 
     private bool isChangingColor = false;
     public bool isStaticEnemy;
@@ -43,7 +44,9 @@ public class EnemyController : MonoBehaviour
     private void KillEnemy()
     {
         PlayerStats.coins += goldGiven;
+        if (SaveLoadManager.Instance) SaveLoadManager.PlayerData.gold = PlayerStats.coins;
         HUDManager.Instance.UpdateCoins();
+        Instantiate(explosionPrefab, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 

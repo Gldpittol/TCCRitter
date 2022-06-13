@@ -37,6 +37,8 @@ public class PlayerCollision : MonoBehaviour
 
     public void PlayerTakeDamage(float damage)
     {
+        if (GameManager.Instance.gameState != GameState.Gameplay) return;
+        
         if (Shield.Instance)
         {
             Shield.Instance.DestroyShield();

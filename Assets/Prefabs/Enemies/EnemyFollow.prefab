@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 5495022048305034067}
   - component: {fileID: 5693148313423857119}
   - component: {fileID: 3511170218935834330}
-  - component: {fileID: 1258860368574952191}
   m_Layer: 0
   m_Name: EnemyFollow
   m_TagString: Enemy
@@ -176,6 +175,7 @@ MonoBehaviour:
   projectileSpeed: 1
   projectileDuration: 1
   goldGiven: 2
+  explosionPrefab: {fileID: 1050888314282456832, guid: f7a02b14c1119a949910e1ddd3ff68a5, type: 3}
   isStaticEnemy: 0
 --- !u!114 &3511170218935834330
 MonoBehaviour:
@@ -192,25 +192,3 @@ MonoBehaviour:
   canMove: 1
   currentDelayBetweenHits: 0
   isDamagingPlayer: 0
---- !u!195 &1258860368574952191
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3312274597102662238}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 1
-  m_BaseOffset: 0.5
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4

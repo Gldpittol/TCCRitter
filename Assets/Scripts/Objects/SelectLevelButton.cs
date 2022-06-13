@@ -34,6 +34,7 @@ public class SelectLevelButton : MonoBehaviour
 
     public void GoToLevel()
     {
+        if (HUDManager.Instance.FadeImage.gameObject.GetComponent<Image>().enabled) return;
         if (possibleSceneNames.Length == 0) return;
         int rnd = Random.Range(0, possibleSceneNames.Length);
         PlayerSpellCasting.Instance.ResetCooldowns();

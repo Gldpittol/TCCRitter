@@ -156,6 +156,7 @@ MonoBehaviour:
   projectileSpeed: 6
   projectileDuration: 1
   goldGiven: 4
+  explosionPrefab: {fileID: 1050888314282456832, guid: f7a02b14c1119a949910e1ddd3ff68a5, type: 3}
   isStaticEnemy: 1
 --- !u!95 &3527495202902667381
 Animator:

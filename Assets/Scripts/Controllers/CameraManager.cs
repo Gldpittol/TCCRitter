@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class CameraManager : MonoBehaviour
 {
+    public static CameraManager Instance;
+    
     private PlayerManager _player;
     private float _zOffset;
     public float lerpTiming = 0.5f;
@@ -12,6 +14,11 @@ public class CameraManager : MonoBehaviour
     private bool canLerpSize = false;
     private float _newSize;
     private Camera cam;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     private void Start()
     {
@@ -35,5 +42,11 @@ public class CameraManager : MonoBehaviour
     {
         _newSize = newSize;
         canLerpSize = true;
+    }
+
+    public void FinishLerp()
+    {
+        Vector3 lerpVector = new Vector3(_player.transform.position.x, _player.transform.position.y, _zOffset);
+        transform.position = lerpVector;
     }
 }

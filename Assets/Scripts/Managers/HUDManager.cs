@@ -51,7 +51,7 @@ public class HUDManager : MonoBehaviour
 
     private void Start()
     {
-        PlayerSpellCasting.Instance.UpdateSpells();
+        if(!SaveLoadManager.Instance) PlayerSpellCasting.Instance.UpdateSpells();
         PlayerMovement.Instance.ChangeFKeyVisibility(false);
         GameManager.Instance.FadeOut(fadeImage,fadeTime);
     }
@@ -81,6 +81,7 @@ public class HUDManager : MonoBehaviour
             {
                 Time.timeScale = 0;
                 GameManager.Instance.gameState = GameState.Paused;
+                CameraManager.Instance.FinishLerp();
                 PlayerMovement.Instance.ActivatePause();
             }
             else 
@@ -163,6 +164,10 @@ public class HUDManager : MonoBehaviour
 
     public void UpdateCoins()
     {
+        if (SaveLoadManager.Instance)
+        {
+            PlayerStats.coins = SaveLoadManager.PlayerData.gold;
+        }
         coinsHUD.text = PlayerStats.coins.ToString("F0");
         coinsRoulette.text = PlayerStats.coins.ToString("F0");
     }
@@ -183,6 +188,7 @@ public class HUDManager : MonoBehaviour
                 Time.timeScale = 0;
                 GameManager.Instance.gameState = GameState.Paused;
                 PlayerMovement.Instance.ActivatePause();
+                CameraManager.Instance.FinishLerp();
             }
             else 
             {

@@ -22,7 +22,7 @@ public enum GameProgress
 [Serializable]
 public class SaveData
 {
-   public int gold;
+   public float gold;
    public GameProgress progress;
    public int baseMagicID;
    public int offensiveMagicID;
@@ -31,8 +31,8 @@ public class SaveData
    public bool justStarting;
    public SaveData()
    {
-      gold = 0;
-      progress = GameProgress.None;
+      gold = 1000;
+      progress = GameProgress.Level1Clear;
       baseMagicID = 0;
       offensiveMagicID = 0;
       defensiveMagicID = 0;
@@ -119,7 +119,7 @@ public class SaveLoadManager : MonoBehaviour
      
       if (File.Exists(_jsonPath))
       {
-         print("Save Found, Game Loaded");
+       //  print("Save Found, Game Loaded");
          jsonString = File.ReadAllText(_jsonPath);
          if (string.IsNullOrEmpty(jsonString))
          {
@@ -130,7 +130,7 @@ public class SaveLoadManager : MonoBehaviour
       }
       else
       {
-         print("Save Not Found, Initializing Default Parameters");
+        // print("Save Not Found, Initializing Default Parameters");
          PlayerData = new SaveData();
          File.Create(_jsonPath);
       }
@@ -142,7 +142,7 @@ public class SaveLoadManager : MonoBehaviour
       
       if (File.Exists(_jsonPath))
       {
-         print("Save Found, Game Loaded");
+        // print("Save Found, Game Loaded");
          jsonString = File.ReadAllText(_jsonPath);
          if (string.IsNullOrEmpty(jsonString))
          {
@@ -150,11 +150,14 @@ public class SaveLoadManager : MonoBehaviour
             jsonString = JsonUtility.ToJson(PlayerData);
          }
          PlayerData = new SaveData(JsonUtility.FromJson<SaveData>(jsonString));
+         PlayerStats.coins = PlayerData.gold;
+         PlayerStats.progress = PlayerData.progress;
+         if(HUDManager.Instance)HUDManager.Instance.UpdateCoins();
          //go to scene
       }
       else
       {
-         print("No Save Found");
+       //  print("No Save Found");
       }
    }
 
@@ -166,15 +169,15 @@ public class SaveLoadManager : MonoBehaviour
       {
          jsonString = JsonUtility.ToJson(PlayerData);
          File.WriteAllText(_jsonPath, jsonString);
-         print("Game Saved");
+//         print("Game Saved");
       }
       else
       {
-         print("No Save Found, Creating a New Save");
+      //   print("No Save Found, Creating a New Save");
          File.Create(_jsonPath);
          jsonString = JsonUtility.ToJson(PlayerData);
          File.WriteAllText(_jsonPath, jsonString);
-         print("Game Saved");
+       //  print("Game Saved");
       }
    }
 
@@ -184,13 +187,13 @@ public class SaveLoadManager : MonoBehaviour
 
       if (File.Exists(_jsonPath))
       {
-         print("ResettingSave");
+        // print("ResettingSave");
          PlayerData = new SaveData();
          SaveGame();
       }
       else
       {
-         print("No Save Found");
+       //  print("No Save Found");
       }
    }
 }

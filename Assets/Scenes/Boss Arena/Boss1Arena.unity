@@ -629,9 +629,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 1935561548414351014, guid: ef5554f6839ad6f479de72167f4d09d3, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &1074641164
 GameObject:
   m_ObjectHideFlags: 0
@@ -5409,6 +5407,10 @@ PrefabInstance:
     - target: {fileID: 6741613882465202018, guid: 66c717ae4b53b8e4a8c614c92908a7e0, type: 3}
       propertyPath: m_Tiles.Array.data[3].second.m_TileSpriteIndex
       value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 8198878316028800634, guid: 66c717ae4b53b8e4a8c614c92908a7e0, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.33
       objectReference: {fileID: 0}
     - target: {fileID: 8198878316028800634, guid: 66c717ae4b53b8e4a8c614c92908a7e0, type: 3}
       propertyPath: m_IsTrigger
