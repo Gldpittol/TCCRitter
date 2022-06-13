@@ -65,7 +65,13 @@ public class PlayerCollision : MonoBehaviour
     private IEnumerator KillPlayer()
     {
         // SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single);
-        HUDManager.Instance.GameOver();
+        //HUDManager.Instance.GameOver();
+        PlayerStats.currentFloor = 0;
+        PlayerStats.currentHealth = 100;
+        PlayerStats.invulnerabilityRemaining = 0;
+        PlayerSpellCasting.Instance.RerollAllMagics();
+        GameManager.Instance.LoadScene(HUDManager.Instance.FadeImage, HUDManager.Instance.FadeTime,"MagePoliceDepartment");
+
         yield return null;
     }
 

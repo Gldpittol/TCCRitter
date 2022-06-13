@@ -5,6 +5,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 public class Door : MonoBehaviour
@@ -17,7 +18,7 @@ public class Door : MonoBehaviour
     private Collider2D boxCol;
     private bool isOpen = false;
     public bool isBossDoor;
-    public GameProgress stateAfterClearingBoss;
+    [FormerlySerializedAs("stateAfterClearingBoss")] public GameProgress stateAfterClearing;
 
     private void Awake()
     {
@@ -37,14 +38,34 @@ public class Door : MonoBehaviour
         {
             int newSceneID = Random.Range(0, possibleScenes.Count);
             var newScene = possibleScenes[newSceneID];
-            PlayerStats.currentFloor++;
-            if (PlayerStats.currentFloor > GameManager.Instance.amountOfLevels)
+
+            if (!isBossDoor)
             {
-                GameManager.Instance.LoadScene(HUDManager.Instance.FadeImage,HUDManager.Instance.FadeTime,"Hub");
+                PlayerStats.currentFloor++;
+                if (PlayerStats.currentFloor > GameManager.Instance.amountOfLevels)
+                {
+                    if ((int)stateAfterClearing > (int)PlayerStats.progress)
+                    {
+                        PlayerStats.progress = stateAfterClearing;
+                    }
+
+                    PlayerStats.invulnerabilityRemaining = 0;
+                    GameManager.Instance.LoadScene(HUDManager.Instance.FadeImage,HUDManager.Instance.FadeTime,"MagePoliceDepartment");
+                }
+                else
+                {
+                    PlayerStats.invulnerabilityRemaining = 0;
+                    GameManager.Instance.LoadScene(HUDManager.Instance.FadeImage,HUDManager.Instance.FadeTime,newScene);
+                }
             }
             else
             {
-                GameManager.Instance.LoadScene(HUDManager.Instance.FadeImage,HUDManager.Instance.FadeTime,newScene);
+                if ((int)stateAfterClearing > (int)PlayerStats.progress)
+                {
+                    PlayerStats.progress = stateAfterClearing;
+                }       
+                PlayerStats.invulnerabilityRemaining = 0;
+                GameManager.Instance.LoadScene(HUDManager.Instance.FadeImage,HUDManager.Instance.FadeTime,"MagePoliceDepartment");
             }
         }
     }

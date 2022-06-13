@@ -30,6 +30,8 @@ public class PlayerSpellCasting : MonoBehaviour
     {
         if (PlayerDontDestroy.Instance && PlayerDontDestroy.Instance.gameObject != transform.parent.gameObject) return;
         Instance = this;
+        Application.targetFrameRate = 60;
+        QualitySettings.vSyncCount = 1;
     }
 
     private void Start()

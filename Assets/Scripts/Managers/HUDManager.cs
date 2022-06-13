@@ -89,23 +89,6 @@ public class HUDManager : MonoBehaviour
                 GameManager.Instance.gameState = GameState.Gameplay;
             }
         }
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            if (pauseMenu.activeInHierarchy) return;
-            rouletteMenu.SetActive(!rouletteMenu.activeInHierarchy);
-            if (rouletteMenu.activeInHierarchy)
-            {
-                Time.timeScale = 0;
-                GameManager.Instance.gameState = GameState.Paused;
-                PlayerMovement.Instance.ActivatePause();
-            }
-            else 
-            {
-                Time.timeScale = 1;
-                GameManager.Instance.gameState = GameState.Gameplay;
-            }
-        }
-
     }
 
     public void UpdateHealthBar()
@@ -189,5 +172,22 @@ public class HUDManager : MonoBehaviour
         Time.timeScale = 0;
         GameManager.Instance.gameState = GameState.Paused;
         gameOverPanel.SetActive(true);
+    }
+
+    public void OpenGachaPanel()
+    {
+        if (pauseMenu.activeInHierarchy) return;
+            rouletteMenu.SetActive(!rouletteMenu.activeInHierarchy);
+            if (rouletteMenu.activeInHierarchy)
+            {
+                Time.timeScale = 0;
+                GameManager.Instance.gameState = GameState.Paused;
+                PlayerMovement.Instance.ActivatePause();
+            }
+            else 
+            {
+                Time.timeScale = 1;
+                GameManager.Instance.gameState = GameState.Gameplay;
+            }
     }
 }

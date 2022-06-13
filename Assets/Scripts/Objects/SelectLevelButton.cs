@@ -11,6 +11,7 @@ public class SelectLevelButton : MonoBehaviour
     public GameProgress minimumProgress;
     public GameObject[] relatedTraces;
     public string[] possibleSceneNames;
+    public float enemySpawnCountMultiplier = 1;
     private void Awake()
     {
         if ((int) PlayerStats.progress < (int) minimumProgress)
@@ -35,6 +36,8 @@ public class SelectLevelButton : MonoBehaviour
     {
         if (possibleSceneNames.Length == 0) return;
         int rnd = Random.Range(0, possibleSceneNames.Length);
-        SceneManager.LoadScene(possibleSceneNames[rnd], LoadSceneMode.Single);
+        PlayerSpellCasting.Instance.ResetCooldowns();
+        PlayerStats.spawnCountMultiplier = enemySpawnCountMultiplier;
+        GameManager.Instance.LoadScene(HUDManager.Instance.FadeImage, HUDManager.Instance.FadeTime, possibleSceneNames[rnd]);
     }
 }

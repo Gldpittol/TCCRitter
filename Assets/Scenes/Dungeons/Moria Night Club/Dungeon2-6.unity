@@ -1140,63 +1140,67 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1001 &1700450063
+--- !u!1001 &1525053772
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2178076718297418956, guid: f469bac960ac1e3488d225c64d12b68e, type: 3}
-      propertyPath: m_Name
-      value: Dungeon 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8899690364408881263, guid: f469bac960ac1e3488d225c64d12b68e, type: 3}
+    - target: {fileID: 718581990882409945, guid: 4c0a99dfc58557140a3c2e7c1d729b60, type: 3}
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
-    - target: {fileID: 8899690364408881263, guid: f469bac960ac1e3488d225c64d12b68e, type: 3}
+    - target: {fileID: 718581990882409945, guid: 4c0a99dfc58557140a3c2e7c1d729b60, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8899690364408881263, guid: f469bac960ac1e3488d225c64d12b68e, type: 3}
+    - target: {fileID: 718581990882409945, guid: 4c0a99dfc58557140a3c2e7c1d729b60, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8899690364408881263, guid: f469bac960ac1e3488d225c64d12b68e, type: 3}
+    - target: {fileID: 718581990882409945, guid: 4c0a99dfc58557140a3c2e7c1d729b60, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8899690364408881263, guid: f469bac960ac1e3488d225c64d12b68e, type: 3}
+    - target: {fileID: 718581990882409945, guid: 4c0a99dfc58557140a3c2e7c1d729b60, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8899690364408881263, guid: f469bac960ac1e3488d225c64d12b68e, type: 3}
+    - target: {fileID: 718581990882409945, guid: 4c0a99dfc58557140a3c2e7c1d729b60, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8899690364408881263, guid: f469bac960ac1e3488d225c64d12b68e, type: 3}
+    - target: {fileID: 718581990882409945, guid: 4c0a99dfc58557140a3c2e7c1d729b60, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8899690364408881263, guid: f469bac960ac1e3488d225c64d12b68e, type: 3}
+    - target: {fileID: 718581990882409945, guid: 4c0a99dfc58557140a3c2e7c1d729b60, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8899690364408881263, guid: f469bac960ac1e3488d225c64d12b68e, type: 3}
+    - target: {fileID: 718581990882409945, guid: 4c0a99dfc58557140a3c2e7c1d729b60, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8899690364408881263, guid: f469bac960ac1e3488d225c64d12b68e, type: 3}
+    - target: {fileID: 718581990882409945, guid: 4c0a99dfc58557140a3c2e7c1d729b60, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8899690364408881263, guid: f469bac960ac1e3488d225c64d12b68e, type: 3}
+    - target: {fileID: 718581990882409945, guid: 4c0a99dfc58557140a3c2e7c1d729b60, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6707700783670543132, guid: 4c0a99dfc58557140a3c2e7c1d729b60, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 7909314129362548817, guid: 4c0a99dfc58557140a3c2e7c1d729b60, type: 3}
+      propertyPath: m_Name
+      value: Dungeon 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: f469bac960ac1e3488d225c64d12b68e, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 4c0a99dfc58557140a3c2e7c1d729b60, type: 3}
 --- !u!1001 &1927967999
 PrefabInstance:
   m_ObjectHideFlags: 0

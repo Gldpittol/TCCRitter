@@ -8,7 +8,7 @@ using Vector2 = UnityEngine.Vector2;
 
 public class AIFirstBoss : MonoBehaviour
 {
-    public GameProgress progressWhenKilled = GameProgress.Boss1Clear;
+    //public GameProgress progressWhenKilled = GameProgress.Boss1Clear;
     private EnemyController myController;
     public float delayBeforeStarting;
     public float cooldownEdgeBalls = 3f;
@@ -29,6 +29,7 @@ public class AIFirstBoss : MonoBehaviour
     public Transform greenOrbUpperLeft;
     public Transform greenOrblowerRight;
     public int greenOrbsToSpawn = 5;
+    public int cameraOrtoZoom = 5;
     private void Awake()
     {
         myController = GetComponent<EnemyController>();
@@ -52,10 +53,12 @@ public class AIFirstBoss : MonoBehaviour
     {
         if (myController.health <= 0)
         {
-            if ((int) PlayerStats.progress < (int)progressWhenKilled)
+            /*if ((int) PlayerStats.progress < (int)progressWhenKilled)
             {
                 PlayerStats.progress = progressWhenKilled;
-            }
+            }*/
+            Camera.main.GetComponent<CameraManager>().enabled = true;
+            Camera.main.GetComponent<CameraManager>().LerpSize(cameraOrtoZoom);
         }
     }
 
@@ -122,7 +125,7 @@ public class AIFirstBoss : MonoBehaviour
     public void SpawnGreenBalls()
     {
         GameObject temp =  Instantiate(greenOrbprefab, PlayerManager.Instance.transform.position, Quaternion.identity);
-        temp.GetComponent<GreenOrb>().damage = purpleOrbsDamage;
+        temp.GetComponent<GreenOrb>().damage = greenOrbsDamage;
 
         for (int i = 0; i < greenOrbsToSpawn; i++)
         {
@@ -130,7 +133,7 @@ public class AIFirstBoss : MonoBehaviour
                 Random.Range(greenOrbUpperLeft.position.x, greenOrblowerRight.transform.position.x),
                 Random.Range(greenOrbUpperLeft.position.y, greenOrblowerRight.transform.position.y));
             temp =  Instantiate(greenOrbprefab, randomPos, Quaternion.identity);
-            temp.GetComponent<GreenOrb>().damage = purpleOrbsDamage;
+            temp.GetComponent<GreenOrb>().damage = greenOrbsDamage;
         }
     }
 

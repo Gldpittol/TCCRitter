@@ -1598,6 +1598,22 @@ PrefabInstance:
       propertyPath: m_Tiles.Array.data[4].second.m_TileSpriteIndex
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 3149353995372171894, guid: 66c717ae4b53b8e4a8c614c92908a7e0, type: 3}
+      propertyPath: isBossDoor
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3149353995372171894, guid: 66c717ae4b53b8e4a8c614c92908a7e0, type: 3}
+      propertyPath: stateAfterClearing
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3149353995372171894, guid: 66c717ae4b53b8e4a8c614c92908a7e0, type: 3}
+      propertyPath: possibleScenes.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3149353995372171894, guid: 66c717ae4b53b8e4a8c614c92908a7e0, type: 3}
+      propertyPath: possibleScenes.Array.data[0]
+      value: MagePoliceDepartment
+      objectReference: {fileID: 0}
     - target: {fileID: 3467381687392219380, guid: 66c717ae4b53b8e4a8c614c92908a7e0, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -5410,6 +5426,10 @@ PrefabInstance:
     - target: {fileID: 975344474, guid: 1b359119fb1ae32499b2ea9e0506fd3b, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 975344474, guid: 1b359119fb1ae32499b2ea9e0506fd3b, type: 3}
+      propertyPath: lerpTiming
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 4987235490648834050, guid: 1b359119fb1ae32499b2ea9e0506fd3b, type: 3}
       propertyPath: m_RootOrder
