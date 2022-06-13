@@ -1150,7 +1150,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de6e824dd6627204f88bc83a2837069f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  progressWhenKilled: 2
   delayBeforeStarting: 4
   cooldownEdgeBalls: 3
   cooldownGreenBalls: 5
@@ -1163,6 +1162,7 @@ MonoBehaviour:
   greenOrbUpperLeft: {fileID: 586278081}
   greenOrblowerRight: {fileID: 1781246007}
   greenOrbsToSpawn: 5
+  cameraOrtoZoom: 9.72
 --- !u!95 &1516339922
 Animator:
   serializedVersion: 4

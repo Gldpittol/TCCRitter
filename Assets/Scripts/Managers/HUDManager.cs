@@ -187,6 +187,7 @@ public class HUDManager : MonoBehaviour
             else 
             {
                 Time.timeScale = 1;
+                PlayerSpellCasting.Instance.ResetCooldowns();
                 GameManager.Instance.gameState = GameState.Gameplay;
             }
     }

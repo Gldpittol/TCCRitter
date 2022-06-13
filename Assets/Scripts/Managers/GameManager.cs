@@ -29,6 +29,7 @@ public class GameManager : MonoBehaviour
    }
    public IEnumerator LoadSceneCoroutine(Image fadeImage, float fadeTime, string sceneName)
    {
+      Time.timeScale = 1;
       FadeIn(fadeImage, fadeTime);
       while (fadeImage.enabled)
       {

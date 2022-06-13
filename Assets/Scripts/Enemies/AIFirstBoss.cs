@@ -29,7 +29,7 @@ public class AIFirstBoss : MonoBehaviour
     public Transform greenOrbUpperLeft;
     public Transform greenOrblowerRight;
     public int greenOrbsToSpawn = 5;
-    public int cameraOrtoZoom = 5;
+    public float cameraOrtoZoom = 5;
     private void Awake()
     {
         myController = GetComponent<EnemyController>();

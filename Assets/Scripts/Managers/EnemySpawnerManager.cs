@@ -63,7 +63,7 @@ public class EnemySpawnerManager : MonoBehaviour
         {
             int rnd = Random.Range(0, enemySpawnerList.Count);
             EnemySpawner spawner = enemySpawnerList[rnd];
-            GameObject temp = Instantiate(spawner.possibleEnemies[Random.Range(0, enemySpawnerList.Count)].enemy, spawner.transform.position, Quaternion.identity);
+            GameObject temp = Instantiate(spawner.possibleEnemies[Random.Range(0, spawner.possibleEnemies.Length)].enemy, spawner.transform.position, Quaternion.identity);
             enemiesSpawned.Add(temp);
             enemySpawnerList.Remove(spawner);
             spawnedAmount++;
