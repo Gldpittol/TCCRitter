@@ -14,11 +14,6 @@ public class AttractorField : MonoBehaviour
         Instance = this;
     }
 
-    private void Start()
-    {
-       AddToList(PlayerManager.Instance.gameObject);
-    }
-
     private void FixedUpdate()
     {
         for (int i = 0; i < pullList.Count; i++)
