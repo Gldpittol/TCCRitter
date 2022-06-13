@@ -15,5 +15,6 @@ public class PlayerManager : MonoBehaviour
     {
         if (PlayerDontDestroy.Instance && PlayerDontDestroy.Instance.gameObject != transform.parent.gameObject) return;
         Instance = this;
+        if (SaveLoadManager.Instance) PlayerStats.progress = SaveLoadManager.PlayerData.progress;
     }
 }

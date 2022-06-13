@@ -12,6 +12,7 @@ public class SelectDungeonManager : MonoBehaviour
         if (!startedOnce) return;
         Time.timeScale = 0f;
         GameManager.Instance.gameState = GameState.Cutscene;
+        PlayerStats.currentFloor = 1;
     }
 
     private void Start()

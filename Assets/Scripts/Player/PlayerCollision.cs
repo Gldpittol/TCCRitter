@@ -66,10 +66,12 @@ public class PlayerCollision : MonoBehaviour
     {
         // SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single);
         //HUDManager.Instance.GameOver();
+        GameManager.Instance.gameState = GameState.Cutscene;
         PlayerStats.currentFloor = 0;
         PlayerStats.currentHealth = 100;
         PlayerStats.invulnerabilityRemaining = 0;
         PlayerSpellCasting.Instance.RerollAllMagics();
+        yield return new WaitForEndOfFrame();
         GameManager.Instance.LoadScene(HUDManager.Instance.FadeImage, HUDManager.Instance.FadeTime,"MagePoliceDepartment");
 
         yield return null;

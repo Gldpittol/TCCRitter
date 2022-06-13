@@ -55,7 +55,7 @@ public class PlayerSpellCasting : MonoBehaviour
             magicOffensive = MagicManager.Instance.offensiveMagicsList[SaveLoadManager.PlayerData.offensiveMagicID];
             magicDefensive = MagicManager.Instance.defensiveMagicsList[SaveLoadManager.PlayerData.defensiveMagicID];
             magicUltimate = MagicManager.Instance.ultimateMagicsList[SaveLoadManager.PlayerData.ultimateMagicID];
-            SaveLoadManager.Instance.SaveGame();
+            if (SaveLoadManager.Instance) SaveLoadManager.Instance.SaveGame();
         }
 
         UpdateSpells();
@@ -163,7 +163,7 @@ public class PlayerSpellCasting : MonoBehaviour
             MagicManager.Instance.defensiveMagicsList[Random.Range(0, MagicManager.Instance.defensiveMagicsList.Count)];
         magicUltimate =
             MagicManager.Instance.ultimateMagicsList[Random.Range(0, MagicManager.Instance.ultimateMagicsList.Count)]; 
-        SaveLoadManager.Instance.SaveGame();
+        if(SaveLoadManager.Instance) SaveLoadManager.Instance.SaveGame();
     }
 
     public void UltimateBlock()

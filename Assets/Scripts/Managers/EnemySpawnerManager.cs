@@ -63,7 +63,11 @@ public class EnemySpawnerManager : MonoBehaviour
         {
             int rnd = Random.Range(0, enemySpawnerList.Count);
             EnemySpawner spawner = enemySpawnerList[rnd];
-            GameObject temp = Instantiate(spawner.possibleEnemies[Random.Range(0, spawner.possibleEnemies.Length)].enemy, spawner.transform.position, Quaternion.identity);
+            int enemyRnd = Random.Range(0, spawner.myData.possibleEnemies.Length);
+            int minFloor = spawner.myData.possibleEnemies[enemyRnd].minimumFloorToSpawn;
+            if (PlayerStats.currentFloor < minFloor) continue;
+
+            GameObject temp = Instantiate(spawner.myData.possibleEnemies[enemyRnd].enemy, spawner.transform.position, Quaternion.identity);
             enemiesSpawned.Add(temp);
             enemySpawnerList.Remove(spawner);
             spawnedAmount++;

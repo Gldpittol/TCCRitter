@@ -47,6 +47,11 @@ public class Door : MonoBehaviour
                     if ((int)stateAfterClearing > (int)PlayerStats.progress)
                     {
                         PlayerStats.progress = stateAfterClearing;
+                        if (SaveLoadManager.Instance)
+                        {
+                            SaveLoadManager.PlayerData.progress = PlayerStats.progress;
+                            SaveLoadManager.Instance.SaveGame();
+                        }
                     }
 
                     PlayerStats.invulnerabilityRemaining = 0;
@@ -63,6 +68,11 @@ public class Door : MonoBehaviour
                 if ((int)stateAfterClearing > (int)PlayerStats.progress)
                 {
                     PlayerStats.progress = stateAfterClearing;
+                    if (SaveLoadManager.Instance)
+                    {
+                        SaveLoadManager.PlayerData.progress = PlayerStats.progress;
+                        SaveLoadManager.Instance.SaveGame();
+                    }
                 }       
                 PlayerStats.invulnerabilityRemaining = 0;
                 GameManager.Instance.LoadScene(HUDManager.Instance.FadeImage,HUDManager.Instance.FadeTime,"MagePoliceDepartment");
