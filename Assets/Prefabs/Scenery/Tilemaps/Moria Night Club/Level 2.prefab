@@ -44,9 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &435105235401730220
 GameObject:
   m_ObjectHideFlags: 0
@@ -91,9 +89,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &516037543415926754
 GameObject:
   m_ObjectHideFlags: 0
@@ -184,9 +180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &694905187755545517
 GameObject:
   m_ObjectHideFlags: 0
@@ -212,7 +206,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 694905187755545517}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.16, y: -35.53, z: 0}
+  m_LocalPosition: {x: -11.16, y: -32.82, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -231,9 +225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &986060526949299788
 GameObject:
   m_ObjectHideFlags: 0
@@ -259,7 +251,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 986060526949299788}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.94, y: -36.21, z: 0}
+  m_LocalPosition: {x: 10.94, y: -33.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -278,9 +270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &990451841763876988
 GameObject:
   m_ObjectHideFlags: 0
@@ -325,9 +315,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &1185258174781931603
 GameObject:
   m_ObjectHideFlags: 0
@@ -372,9 +360,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &1194216388462049538
 GameObject:
   m_ObjectHideFlags: 0
@@ -419,9 +405,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &1401636926641760794
 GameObject:
   m_ObjectHideFlags: 0
@@ -466,9 +450,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &1423346659679438772
 GameObject:
   m_ObjectHideFlags: 0
@@ -494,7 +476,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1423346659679438772}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.76, y: -32.95, z: 0}
+  m_LocalPosition: {x: -15.76, y: -30.240002, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -513,9 +495,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &1447407172300326249
 GameObject:
   m_ObjectHideFlags: 0
@@ -541,7 +521,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1447407172300326249}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.14, y: -41.61, z: 0}
+  m_LocalPosition: {x: -7.14, y: -38.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -560,9 +540,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &1616395935366887819
 GameObject:
   m_ObjectHideFlags: 0
@@ -607,9 +585,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &1625522867365652506
 GameObject:
   m_ObjectHideFlags: 0
@@ -654,9 +630,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &1804285556344799414
 GameObject:
   m_ObjectHideFlags: 0
@@ -682,7 +656,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1804285556344799414}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.64, y: -44.06, z: 0}
+  m_LocalPosition: {x: -5.64, y: -41.350002, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -701,9 +675,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &1842133233113579277
 GameObject:
   m_ObjectHideFlags: 0
@@ -748,9 +720,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &2058744999981492171
 GameObject:
   m_ObjectHideFlags: 0
@@ -795,9 +765,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &2221392433492735308
 GameObject:
   m_ObjectHideFlags: 0
@@ -842,9 +810,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &2395820142733664367
 GameObject:
   m_ObjectHideFlags: 0
@@ -889,9 +855,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &2407129969817084193
 GameObject:
   m_ObjectHideFlags: 0
@@ -936,9 +900,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &2449131232411543474
 GameObject:
   m_ObjectHideFlags: 0
@@ -964,7 +926,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2449131232411543474}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.39, y: -35.2, z: 0}
+  m_LocalPosition: {x: 13.39, y: -32.49, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -983,9 +945,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &2469526983471686731
 GameObject:
   m_ObjectHideFlags: 0
@@ -1030,9 +990,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &2493456965922017763
 GameObject:
   m_ObjectHideFlags: 0
@@ -1058,7 +1016,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2493456965922017763}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.95, y: -37.99, z: 0}
+  m_LocalPosition: {x: 8.95, y: -35.280003, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1077,9 +1035,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &2536243729129923436
 GameObject:
   m_ObjectHideFlags: 0
@@ -1124,9 +1080,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &2542158840518631083
 GameObject:
   m_ObjectHideFlags: 0
@@ -1171,9 +1125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &2788031510407734795
 GameObject:
   m_ObjectHideFlags: 0
@@ -1199,7 +1151,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2788031510407734795}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.03, y: -34.07, z: 0}
+  m_LocalPosition: {x: 16.03, y: -31.36, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1218,9 +1170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &2864582873995816354
 GameObject:
   m_ObjectHideFlags: 0
@@ -1329,6 +1279,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemiesSpawned: []
+  isBossRoom: 0
+  bossPrefab: {fileID: 0}
 --- !u!1 &2905683627036680786
 GameObject:
   m_ObjectHideFlags: 0
@@ -1373,9 +1325,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &3040469161676819247
 GameObject:
   m_ObjectHideFlags: 0
@@ -1420,9 +1370,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &3056461266157879702
 GameObject:
   m_ObjectHideFlags: 0
@@ -1467,9 +1415,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &3057480375010889611
 GameObject:
   m_ObjectHideFlags: 0
@@ -1514,9 +1460,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &3110487136378037388
 GameObject:
   m_ObjectHideFlags: 0
@@ -1542,7 +1486,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3110487136378037388}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.49, y: -44.06, z: 0}
+  m_LocalPosition: {x: 0.49, y: -41.350002, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1561,9 +1505,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &3530570242380122063
 GameObject:
   m_ObjectHideFlags: 0
@@ -1608,9 +1550,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &3577627275897504759
 GameObject:
   m_ObjectHideFlags: 0
@@ -1636,7 +1576,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3577627275897504759}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.49, y: -39.34, z: 0}
+  m_LocalPosition: {x: -8.49, y: -36.63, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1655,9 +1595,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &3587287879172863564
 GameObject:
   m_ObjectHideFlags: 0
@@ -1702,9 +1640,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &3644805172841851223
 GameObject:
   m_ObjectHideFlags: 0
@@ -1749,9 +1685,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &3988895894694886139
 GameObject:
   m_ObjectHideFlags: 0
@@ -1777,7 +1711,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3988895894694886139}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.45, y: -40.38, z: 0}
+  m_LocalPosition: {x: 7.45, y: -37.670002, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1796,9 +1730,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &4293442736611272295
 GameObject:
   m_ObjectHideFlags: 0
@@ -1843,9 +1775,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &4714197868869067868
 GameObject:
   m_ObjectHideFlags: 0
@@ -1890,9 +1820,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &4803245441303957530
 GameObject:
   m_ObjectHideFlags: 0
@@ -1937,9 +1865,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &4870309547859580914
 GameObject:
   m_ObjectHideFlags: 0
@@ -1984,9 +1910,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &4939669947051131489
 GameObject:
   m_ObjectHideFlags: 0
@@ -2012,7 +1936,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4939669947051131489}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.46, y: -44.06, z: 0}
+  m_LocalPosition: {x: 5.46, y: -41.350002, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2031,9 +1955,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &4960434175707889978
 GameObject:
   m_ObjectHideFlags: 0
@@ -2078,9 +2000,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &5124445783931421882
 GameObject:
   m_ObjectHideFlags: 0
@@ -2159,9 +2079,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &5186580222477327646
 GameObject:
   m_ObjectHideFlags: 0
@@ -2206,9 +2124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &5305702639684915060
 GameObject:
   m_ObjectHideFlags: 0
@@ -18651,9 +18567,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &5566851312475419908
 GameObject:
   m_ObjectHideFlags: 0
@@ -18698,9 +18612,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &5739068757970676701
 GameObject:
   m_ObjectHideFlags: 0
@@ -19318,9 +19230,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &5974679568592425387
 GameObject:
   m_ObjectHideFlags: 0
@@ -19365,9 +19275,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &6166545723045589287
 GameObject:
   m_ObjectHideFlags: 0
@@ -19412,9 +19320,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &6596792253633671055
 GameObject:
   m_ObjectHideFlags: 0
@@ -19459,9 +19365,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &6624432118408824713
 GameObject:
   m_ObjectHideFlags: 0
@@ -21495,9 +21399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &7802966857324776834
 GameObject:
   m_ObjectHideFlags: 0
@@ -21542,9 +21444,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &8054096924182634224
 GameObject:
   m_ObjectHideFlags: 0
@@ -21589,9 +21489,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &8265054985400394137
 GameObject:
   m_ObjectHideFlags: 0
@@ -21617,7 +21515,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8265054985400394137}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.58, y: -34.36, z: 0}
+  m_LocalPosition: {x: -13.58, y: -31.650002, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -21636,9 +21534,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &8310381050492707145
 GameObject:
   m_ObjectHideFlags: 0
@@ -21664,7 +21560,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8310381050492707145}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.32, y: -37.65, z: 0}
+  m_LocalPosition: {x: -9.32, y: -34.940002, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -21683,9 +21579,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &8383562648579075300
 GameObject:
   m_ObjectHideFlags: 0
@@ -21730,9 +21624,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &8481483167770140244
 GameObject:
   m_ObjectHideFlags: 0
@@ -21777,9 +21669,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &8493081556585297185
 GameObject:
   m_ObjectHideFlags: 0
@@ -21824,9 +21714,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &8504271573692164314
 GameObject:
   m_ObjectHideFlags: 0
@@ -21871,9 +21759,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &8625128743570953163
 GameObject:
   m_ObjectHideFlags: 0
@@ -21918,9 +21804,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &8811426577446181999
 GameObject:
   m_ObjectHideFlags: 0
@@ -21965,9 +21849,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &8827346413378828916
 GameObject:
   m_ObjectHideFlags: 0
@@ -22012,9 +21894,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &9087468298443158360
 GameObject:
   m_ObjectHideFlags: 0
@@ -22059,9 +21939,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1 &9196506947239664421
 GameObject:
   m_ObjectHideFlags: 0
@@ -22106,9 +21984,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6ae31a2ca0ba4cb8139cbbb2f5c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleEnemies:
-  - enemy: {fileID: 3312274597102662238, guid: 697781448db5bba418bd268bc0d07dc1, type: 3}
-    minimumFloorToSpawn: 0
+  myData: {fileID: 0}
 --- !u!1001 &7159373632244342627
 PrefabInstance:
   m_ObjectHideFlags: 0

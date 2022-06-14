@@ -50,7 +50,7 @@ public class PlayerCollision : MonoBehaviour
         
         if(currentSoundCooldown > soundCooldown)
         {
-            AudioManager.Instance.PlayClip(audClip);
+            AudioManager.Instance.PlayFX(audClip);
             currentSoundCooldown = 0;
         }
 

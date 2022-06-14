@@ -8,6 +8,7 @@ using Random = UnityEngine.Random;
 
 public class PlayerSpellCasting : MonoBehaviour
 {
+    [SerializeField] private AudioClip[] _spellFX;
     public static PlayerSpellCasting Instance;
     public MagicData magicRightClick;
     public MagicData magicOffensive;
@@ -97,24 +98,28 @@ public class PlayerSpellCasting : MonoBehaviour
             if (cooldownRightClick > 0) return;
             onClickBaseMagic?.Invoke();
             staffAnimator.Play("StaffCast");
+            PlayFX();
         }
         if (Input.GetButton("Fire2"))
         {
             if (cooldownDefensive > 0) return;
             onClickDefensiveMagic?.Invoke();
             staffAnimator.Play("StaffCast");
+            PlayFX();
         }
         if (Input.GetKeyDown(KeyCode.E))
         {
             if (cooldownOffsensive > 0) return;
             onClickOffensiveMagic?.Invoke();
             staffAnimator.Play("StaffCast");
+            PlayFX();
         }
         if (Input.GetKeyDown(KeyCode.Q))
         {
             if (cooldownUltimate > 0) return;
             onClickUltimateMagic?.Invoke();
             staffAnimator.Play("StaffCast");
+            PlayFX();
         }
     }
 
@@ -403,5 +408,10 @@ public class PlayerSpellCasting : MonoBehaviour
     float AngleBetweenTwoPoints(Vector3 a, Vector3 b) 
     {
         return Mathf.Atan2(a.y - b.y, a.x - b.x) * Mathf.Rad2Deg;
+    }
+
+    void PlayFX()
+    {
+        AudioManager.Instance.PlayFX(_spellFX[UnityEngine.Random.Range(0, _spellFX.Length)]);
     }
 }
