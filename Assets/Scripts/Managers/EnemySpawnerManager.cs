@@ -59,7 +59,7 @@ public class EnemySpawnerManager : MonoBehaviour
     {
         if (enemySpawnerList.Count == 0) return;
         int spawnedAmount = 0;
-        while (spawnedAmount < (PlayerStats.currentFloor * PlayerStats.spawnCountMultiplier)*2)
+        while (spawnedAmount < (PlayerStats.currentFloor * PlayerStats.spawnCountMultiplier) * 3)
         {
             int rnd = Random.Range(0, enemySpawnerList.Count);
             EnemySpawner spawner = enemySpawnerList[rnd];

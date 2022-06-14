@@ -41,16 +41,21 @@ public class AudioManager : MonoBehaviour
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
+    private string[] _lastScene = new string[] {"empty","0"};
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         if (scene.name == "MagePoliceDepartment")
         {
             PlayMPDMusic();
         }
-        else
+        else if (scene.name.Split('-')[0] != _lastScene[0])
         {
             PlayDGMusic();
         }
+
+        Debug.Log(scene.name.Split('-')[0] + "---" + _lastScene[0]);
+
+        _lastScene = scene.name.Split('-');
     }
 
     public void PlayFX(AudioClip clip)
