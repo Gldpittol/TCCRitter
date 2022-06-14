@@ -123,15 +123,19 @@ public class PlayerSpellCasting : MonoBehaviour
         cooldownRightClick -= Time.deltaTime;
         HUDManager.Instance.UpdateCooldownFill(cooldownRightClick, magicRightClick.cooldown, MagicType.Basic);
         HUDManager.Instance.UpdateCooldownSprite(MagicType.Basic, magicRightClick.magicIcon);
+        HUDManager.Instance.UpdateTooltips(MagicType.Basic, magicRightClick.magicDescription);
         cooldownOffsensive -= Time.deltaTime;
         HUDManager.Instance.UpdateCooldownFill(cooldownOffsensive, magicOffensive.cooldown, MagicType.Offensive);
         HUDManager.Instance.UpdateCooldownSprite(MagicType.Offensive, magicOffensive.magicIcon);
+        HUDManager.Instance.UpdateTooltips(MagicType.Offensive, magicOffensive.magicDescription);
         cooldownDefensive -= Time.deltaTime;
         HUDManager.Instance.UpdateCooldownFill(cooldownDefensive, magicDefensive.cooldown, MagicType.Defensive);
         HUDManager.Instance.UpdateCooldownSprite(MagicType.Defensive, magicDefensive.magicIcon);
+        HUDManager.Instance.UpdateTooltips(MagicType.Defensive, magicDefensive.magicDescription);
         cooldownUltimate -= Time.deltaTime;
         HUDManager.Instance.UpdateCooldownFill(cooldownUltimate, magicUltimate.cooldown, MagicType.Ultimate);
         HUDManager.Instance.UpdateCooldownSprite(MagicType.Ultimate, magicUltimate.magicIcon);
+        HUDManager.Instance.UpdateTooltips(MagicType.Ultimate, magicUltimate.magicDescription);
 
     }
 
