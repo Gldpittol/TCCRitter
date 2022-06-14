@@ -19,7 +19,7 @@ MonoBehaviour:
   magicPrefab: {fileID: 1002823005535015361, guid: 012250b1face04044b3de0cac47c84c0, type: 3}
   magicIcon: {fileID: -1770788270, guid: cfab76246e9b28d49b9bc2eff0f6ac92, type: 3}
   cooldown: 10
-  baseSpeed: 0
+  baseSpeed: 10
   baseDamage: 5
   duration: 20
   delayBetweenHits: 0.1
