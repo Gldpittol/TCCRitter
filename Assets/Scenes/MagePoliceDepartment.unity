@@ -1340,6 +1340,74 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6409780700071697030, guid: 16469de4cbc8ecc4aa346c711da8f38f, type: 3}
+      propertyPath: possibleSceneNames.Array.data[0]
+      value: Dungeon-3_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409780700071697030, guid: 16469de4cbc8ecc4aa346c711da8f38f, type: 3}
+      propertyPath: possibleSceneNames.Array.data[1]
+      value: Dungeon-3_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409780700071697030, guid: 16469de4cbc8ecc4aa346c711da8f38f, type: 3}
+      propertyPath: possibleSceneNames.Array.data[2]
+      value: Dungeon-3_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409780700071697030, guid: 16469de4cbc8ecc4aa346c711da8f38f, type: 3}
+      propertyPath: possibleSceneNames.Array.data[3]
+      value: Dungeon-3_5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409780700071697030, guid: 16469de4cbc8ecc4aa346c711da8f38f, type: 3}
+      propertyPath: possibleSceneNames.Array.data[4]
+      value: Dungeon-3_6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409780700071697030, guid: 16469de4cbc8ecc4aa346c711da8f38f, type: 3}
+      propertyPath: possibleSceneNames.Array.data[5]
+      value: Dungeon-3_7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409780700071697030, guid: 16469de4cbc8ecc4aa346c711da8f38f, type: 3}
+      propertyPath: possibleSceneNames.Array.data[6]
+      value: Dungeon-3_8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409780700929304164, guid: 16469de4cbc8ecc4aa346c711da8f38f, type: 3}
+      propertyPath: possibleSceneNames.Array.data[0]
+      value: Dungeon-1_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409780700929304164, guid: 16469de4cbc8ecc4aa346c711da8f38f, type: 3}
+      propertyPath: possibleSceneNames.Array.data[1]
+      value: Dungeon-1_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409780700929304164, guid: 16469de4cbc8ecc4aa346c711da8f38f, type: 3}
+      propertyPath: possibleSceneNames.Array.data[2]
+      value: Dungeon-1_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409780700929304164, guid: 16469de4cbc8ecc4aa346c711da8f38f, type: 3}
+      propertyPath: possibleSceneNames.Array.data[3]
+      value: Dungeon-1_5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409780700929304164, guid: 16469de4cbc8ecc4aa346c711da8f38f, type: 3}
+      propertyPath: possibleSceneNames.Array.data[4]
+      value: Dungeon-1_6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409780700929304164, guid: 16469de4cbc8ecc4aa346c711da8f38f, type: 3}
+      propertyPath: possibleSceneNames.Array.data[5]
+      value: Dungeon-1_7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409780700929304164, guid: 16469de4cbc8ecc4aa346c711da8f38f, type: 3}
+      propertyPath: possibleSceneNames.Array.data[6]
+      value: Dungeon-1_8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409780701025921080, guid: 16469de4cbc8ecc4aa346c711da8f38f, type: 3}
+      propertyPath: possibleSceneNames.Array.data[0]
+      value: BossArena-2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409780701442449135, guid: 16469de4cbc8ecc4aa346c711da8f38f, type: 3}
+      propertyPath: possibleSceneNames.Array.data[0]
+      value: BossArena-1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409780701614513100, guid: 16469de4cbc8ecc4aa346c711da8f38f, type: 3}
+      propertyPath: possibleSceneNames.Array.data[0]
+      value: BossArena-3
+      objectReference: {fileID: 0}
     - target: {fileID: 6409780701751151026, guid: 16469de4cbc8ecc4aa346c711da8f38f, type: 3}
       propertyPath: m_Name
       value: SelectDungeonCanvas (1)
@@ -1436,6 +1504,34 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1055713697}
+    - target: {fileID: 6409780701817976895, guid: 16469de4cbc8ecc4aa346c711da8f38f, type: 3}
+      propertyPath: possibleSceneNames.Array.data[0]
+      value: Dungeon-2_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409780701817976895, guid: 16469de4cbc8ecc4aa346c711da8f38f, type: 3}
+      propertyPath: possibleSceneNames.Array.data[1]
+      value: Dungeon-2_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409780701817976895, guid: 16469de4cbc8ecc4aa346c711da8f38f, type: 3}
+      propertyPath: possibleSceneNames.Array.data[2]
+      value: Dungeon-2_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409780701817976895, guid: 16469de4cbc8ecc4aa346c711da8f38f, type: 3}
+      propertyPath: possibleSceneNames.Array.data[3]
+      value: Dungeon-2_5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409780701817976895, guid: 16469de4cbc8ecc4aa346c711da8f38f, type: 3}
+      propertyPath: possibleSceneNames.Array.data[4]
+      value: Dungeon-2_6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409780701817976895, guid: 16469de4cbc8ecc4aa346c711da8f38f, type: 3}
+      propertyPath: possibleSceneNames.Array.data[5]
+      value: Dungeon-2_7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409780701817976895, guid: 16469de4cbc8ecc4aa346c711da8f38f, type: 3}
+      propertyPath: possibleSceneNames.Array.data[6]
+      value: Dungeon-2_8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16469de4cbc8ecc4aa346c711da8f38f, type: 3}
 --- !u!1 &936282374
