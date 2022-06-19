@@ -1065,6 +1065,12 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 11761f280a4c37a48a3a7e9475da0b4d, type: 3}
   - {fileID: 8300000, guid: 3912bcd811f268f42ba49202a2a4dcde, type: 3}
   - {fileID: 8300000, guid: 35de9a1a0980cc84ebef3e3ad42e2471, type: 3}
+  _bossBGClips:
+  - {fileID: 8300000, guid: 85c8eebcfe63d57478ca86d8a608203a, type: 3}
+  - {fileID: 8300000, guid: 10dc3910d8df4ba48b52769cb72a2d2c, type: 3}
+  - {fileID: 8300000, guid: 80440c6414ee44f46bcadfe6b082a2e7, type: 3}
+  - {fileID: 8300000, guid: 9ce63adf9e0532a4da22953e842d8c57, type: 3}
+  - {fileID: 8300000, guid: feebc95169fd19e4c9bf81a125187f88, type: 3}
   _bgSound: {fileID: 776025848}
   _fxSound: {fileID: 776025847}
 --- !u!4 &776025850

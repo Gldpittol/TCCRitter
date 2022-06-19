@@ -8,6 +8,7 @@ public class AudioManager : MonoBehaviour
 {
     [SerializeField] private AudioClip[] _mpdBGClips;
     [SerializeField] private AudioClip[] _dgBGClips;
+    [SerializeField] private AudioClip[] _bossBGClips;
 
     [SerializeField] private AudioSource _bgSound;
     [SerializeField] private AudioSource _fxSound;
@@ -44,13 +45,20 @@ public class AudioManager : MonoBehaviour
     private string[] _lastScene = new string[] {"empty","0"};
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (scene.name == "MagePoliceDepartment")
+        if (scene.name.Split('-')[0] != _lastScene[0])
         {
-            PlayMPDMusic();
-        }
-        else if (scene.name.Split('-')[0] != _lastScene[0])
-        {
-            PlayDGMusic();
+            if (scene.name == "MagePoliceDepartment")
+            {
+                PlayMPDMusic();
+            }
+            else if (scene.name.Split('-')[0] == "Dungeon")
+            {
+                PlayDGMusic();
+            }
+            else if(scene.name.Split('-')[0] == "BossArena" || scene.name.Split('-')[0] == "MainMenu")
+            {
+                PlayBossMusic();
+            }
         }
 
         Debug.Log(scene.name.Split('-')[0] + "---" + _lastScene[0]);
@@ -109,6 +117,32 @@ public class AudioManager : MonoBehaviour
             if (!_bgSound.isPlaying)
             {
                 _bgSound.clip = _dgBGClips[UnityEngine.Random.Range(1, _dgBGClips.Length)];
+                _bgSound.Play();
+            }
+
+            yield return null;
+        }
+    }
+
+        public void PlayBossMusic()
+    {
+        if (_bgCoroutine != null)
+        {
+            StopCoroutine(_bgCoroutine);
+        }
+        _bgCoroutine = PlayBossBG();
+        StartCoroutine(_bgCoroutine);
+    }
+
+    private IEnumerator PlayBossBG()
+    {
+        _bgSound.clip = _bossBGClips[0];
+        _bgSound.Play();
+        while (true)
+        {
+            if (!_bgSound.isPlaying)
+            {
+                _bgSound.clip = _bossBGClips[UnityEngine.Random.Range(1, _dgBGClips.Length)];
                 _bgSound.Play();
             }
 
