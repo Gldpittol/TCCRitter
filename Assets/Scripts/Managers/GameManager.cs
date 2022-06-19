@@ -18,9 +18,16 @@ public class GameManager : MonoBehaviour
    public static GameManager Instance;
    public GameState gameState;
    public int amountOfLevels = 15;
+   public GameObject audioManager;
    private void Awake()
    {
       Instance = this;
+   }
+
+   private void Start()
+   {
+      if (!AudioManager.Instance)
+         Instantiate(audioManager);
    }
 
    public void LoadScene(Image fadeImage, float fadeTime, string sceneName)

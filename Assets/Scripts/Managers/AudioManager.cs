@@ -16,6 +16,7 @@ public class AudioManager : MonoBehaviour
     private IEnumerator _bgCoroutine;
 
     public static AudioManager Instance;
+    public static bool isAlreadyOnDungeon;
 
     private void Awake()
     {
@@ -32,7 +33,7 @@ public class AudioManager : MonoBehaviour
         _bgSound = GetComponent<AudioSource>();
     }
 
-    void OnEnable()
+    /*void OnEnable()
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
@@ -40,10 +41,12 @@ public class AudioManager : MonoBehaviour
     void OnDisable()
     {
         SceneManager.sceneLoaded -= OnSceneLoaded;
-    }
+    }*/
 
+    /*
     private string[] _lastScene = new string[] {"empty","0"};
-    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    */
+    /*void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         if (scene.name.Split('-')[0] != _lastScene[0])
         {
@@ -64,7 +67,7 @@ public class AudioManager : MonoBehaviour
         Debug.Log(scene.name.Split('-')[0] + "---" + _lastScene[0]);
 
         _lastScene = scene.name.Split('-');
-    }
+    }*/
 
     public void PlayFX(AudioClip clip)
     {
@@ -100,6 +103,9 @@ public class AudioManager : MonoBehaviour
 
     public void PlayDGMusic()
     {
+        if (isAlreadyOnDungeon) return;
+        isAlreadyOnDungeon = true;
+        
         if (_bgCoroutine != null)
         {
             StopCoroutine(_bgCoroutine);
@@ -110,6 +116,8 @@ public class AudioManager : MonoBehaviour
 
     private IEnumerator PlayDGBG()
     {
+        isAlreadyOnDungeon = false;
+
         _bgSound.clip = _dgBGClips[0];
         _bgSound.Play();
         while (true)
@@ -124,8 +132,10 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-        public void PlayBossMusic()
+    public void PlayBossMusic()
     {
+        isAlreadyOnDungeon = false;
+
         if (_bgCoroutine != null)
         {
             StopCoroutine(_bgCoroutine);

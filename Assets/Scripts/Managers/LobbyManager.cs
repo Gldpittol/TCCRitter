@@ -18,5 +18,15 @@ public class LobbyManager : MonoBehaviour
         
         HUDManager.Instance.AddToInteractionIcons(spellSwap.gameObject);
         HUDManager.Instance.AddToInteractionIcons(exitDoor.gameObject);
+
+        StartCoroutine(SetMusicCoroutine());
+    }
+    
+    private IEnumerator SetMusicCoroutine()
+    {
+        yield return null;
+        yield return null;
+
+        AudioManager.Instance.PlayMPDMusic();
     }
 }

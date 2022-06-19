@@ -12,6 +12,7 @@ public class MainMenuManager : MonoBehaviour
     public Image fadeImage;
     public int fadeTime = 1;
     public GameObject creditsPanel;
+    private bool musicSet;
     private void Start()
     {
         GameManager.Instance.FadeOut(fadeImage, fadeTime);

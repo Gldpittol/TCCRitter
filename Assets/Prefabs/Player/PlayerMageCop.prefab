@@ -721,7 +721,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spellFX:
-  - {fileID: 8300000, guid: e4aff7e23c7f65845a15c73143af8d53, type: 3}
   - {fileID: 8300000, guid: 7585d9b49d4e66c43bb479d81376f058, type: 3}
   magicRightClick: {fileID: 11400000, guid: 7f58083f5808c4341999fc3796f86f5c, type: 2}
   magicOffensive: {fileID: 11400000, guid: 9f1a7e5bf41e4434eba9a2afc4b22229, type: 2}

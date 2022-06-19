@@ -15,48 +15,75 @@ EditorBuildSettings:
     path: Assets/Scenes/TestLevel/TestLevel.unity
     guid: f620292d3bf3c3b4ba9447ec65d68e06
   - enabled: 1
-    path: Assets/Scenes/Boss Arena/BossArena-1.unity
+    path: Assets/Scenes/Boss Arena/Boss1Arena.unity
     guid: 7d180432b47999043b91c4a9b0292331
   - enabled: 1
-    path: Assets/Scenes/Dungeons/Gondor Abandoned Motel/Dungeon-1_2.unity
+    path: Assets/Scenes/Dungeons/Gondor Abandoned Motel/Dungeon1-2.unity
     guid: 05df078510e3c244f91bdec41ee48b34
   - enabled: 1
-    path: Assets/Scenes/Dungeons/Gondor Abandoned Motel/Dungeon-1_3.unity
+    path: Assets/Scenes/Dungeons/Gondor Abandoned Motel/Dungeon1-3.unity
     guid: 17a31f1451dd7bb4187fe59a6fd43f5e
   - enabled: 1
-    path: Assets/Scenes/Dungeons/Gondor Abandoned Motel/Dungeon-1_4.unity
+    path: Assets/Scenes/Dungeons/Gondor Abandoned Motel/Dungeon1-4.unity
     guid: 907e7f2a5a93e9849b0a4e3b89f1f900
   - enabled: 1
-    path: Assets/Scenes/Dungeons/Gondor Abandoned Motel/Dungeon-1_5.unity
+    path: Assets/Scenes/Dungeons/Gondor Abandoned Motel/Dungeon1-5.unity
     guid: dccce509d31063e4695fe0770a0b645b
   - enabled: 1
-    path: Assets/Scenes/Dungeons/Gondor Abandoned Motel/Dungeon-1_6.unity
+    path: Assets/Scenes/Dungeons/Gondor Abandoned Motel/Dungeon1-6.unity
     guid: fa4f68acc8a937d4c832d4f5680d0d66
   - enabled: 1
-    path: Assets/Scenes/Dungeons/Gondor Abandoned Motel/Dungeon-1_7.unity
+    path: Assets/Scenes/Dungeons/Gondor Abandoned Motel/Dungeon1-7.unity
     guid: 3154d2fc06fcd4f47aacf65022e2d3ad
   - enabled: 1
-    path: Assets/Scenes/Dungeons/Gondor Abandoned Motel/Dungeon-1_8.unity
+    path: Assets/Scenes/Dungeons/Gondor Abandoned Motel/Dungeon1-8.unity
     guid: 50ce2234bcc1d674d96474e0cf329630
   - enabled: 1
-    path: Assets/Scenes/Dungeons/Moria Night Club/Dungeon-2_3.unity
+    path: Assets/Scenes/Dungeons/Moria Night Club/Dungeon2-3.unity
     guid: 5d22be9e785f4634586469303898545b
   - enabled: 1
-    path: Assets/Scenes/Dungeons/Moria Night Club/Dungeon-2_4.unity
+    path: Assets/Scenes/Dungeons/Moria Night Club/Dungeon2-4.unity
     guid: 539a9883cb7addf4cad2e9e76e243b61
   - enabled: 1
-    path: Assets/Scenes/Dungeons/Moria Night Club/Dungeon-2_5.unity
+    path: Assets/Scenes/Boss Arena/Boss2Arena.unity
+    guid: 8b097f3194f62d745a1b8b14bfab5227
+  - enabled: 1
+    path: Assets/Scenes/Boss Arena/Boss3Arena.unity
+    guid: 29a1119035eb51148a1aac0d5d388888
+  - enabled: 1
+    path: Assets/Scenes/Dungeons/Moria Night Club/Dungeon2-5.unity
     guid: 9b01389588cd72746b103517e4b5deeb
   - enabled: 1
-    path: Assets/Scenes/Dungeons/Moria Night Club/Dungeon-2_6.unity
+    path: Assets/Scenes/Dungeons/Moria Night Club/Dungeon2-6.unity
     guid: d2461b5365d5533408e8b26b6f511134
   - enabled: 1
-    path: Assets/Scenes/Dungeons/Moria Night Club/Dungeon-2_7.unity
+    path: Assets/Scenes/Dungeons/Galadhon luxury condominium/Dungeon3-2.unity
+    guid: 8d7866871e739214da2bf8cf678cdaa8
+  - enabled: 1
+    path: Assets/Scenes/Dungeons/Galadhon luxury condominium/Dungeon3-3.unity
+    guid: 8dd3fee539e51304aba914f9a9a13fc6
+  - enabled: 1
+    path: Assets/Scenes/Dungeons/Galadhon luxury condominium/Dungeon3-4.unity
+    guid: 9262ceb1b43c1a247be879b74483a999
+  - enabled: 1
+    path: Assets/Scenes/Dungeons/Galadhon luxury condominium/Dungeon3-5.unity
+    guid: d3d87cf5159bd6947bee84a071b71f3b
+  - enabled: 1
+    path: Assets/Scenes/Dungeons/Galadhon luxury condominium/Dungeon3-6.unity
+    guid: f390f9df4863f59498bcc5f07947715a
+  - enabled: 1
+    path: Assets/Scenes/Dungeons/Galadhon luxury condominium/Dungeon3-7.unity
+    guid: 935cfc5941b4de045a7880df5ee59885
+  - enabled: 1
+    path: Assets/Scenes/Dungeons/Galadhon luxury condominium/Dungeon3-8.unity
+    guid: 028a9cc7d3439794abcde86b7424029d
+  - enabled: 1
+    path: Assets/Scenes/Dungeons/Moria Night Club/Dungeon2-7.unity
     guid: 8c594a107fb5fdd44a4159db6c9d1fed
   - enabled: 1
-    path: Assets/Scenes/Dungeons/Moria Night Club/Dungeon-2_2.unity
+    path: Assets/Scenes/Dungeons/Moria Night Club/Dungeon2-2.unity
     guid: 31348326ad817d241beb1f932c02e2b6
   - enabled: 1
-    path: Assets/Scenes/Dungeons/Moria Night Club/Dungeon-2_8.unity
+    path: Assets/Scenes/Dungeons/Moria Night Club/Dungeon2-8.unity
     guid: 0dedf9b6a3e26774d94c5ef845539907
   m_configObjects: {}

@@ -31,6 +31,8 @@ public class EnemySpawnerManager : MonoBehaviour
             GameObject temp = Instantiate(bossPrefab, transform.GetChild(0).transform.position, Quaternion.identity);
             enemiesSpawned.Add(temp);
         }
+
+        StartCoroutine(SetMusicCoroutine());
     }
 
     private void Update()
@@ -72,5 +74,14 @@ public class EnemySpawnerManager : MonoBehaviour
             enemySpawnerList.Remove(spawner);
             spawnedAmount++;
         }
+    }
+    
+    private IEnumerator SetMusicCoroutine()
+    {
+        yield return null;
+        yield return null;
+
+        if(isBossRoom)AudioManager.Instance.PlayBossMusic();
+        else AudioManager.Instance.PlayDGMusic();
     }
 }
