@@ -169,12 +169,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4c50f50c435027438d2e140144d0077, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delayBeforeStarting: 4
+  delayBetweenLongFires: 15
   longFirePrefab: {fileID: 2605375003485514004, guid: 2287df11bce5fa640933032735c33ac1, type: 3}
   delayBeforeLongFire: 5
-  timeLongFireOnField: 10
+  timeLongFireOnField: 20
   delayBetweenLongFireHits: 0.3
   longFireDamage: 3
   lerpToPlayerIntensity: 0.02
+  delayBetweenPermanentFires: 0.5
+  permanentFirePrefab: {fileID: 3955885552979993672, guid: 35cdd98fb8333684c8cf14d43269c8f0, type: 3}
+  delayBeforePermanentFire: 3
+  delayBetweenPermanentFireHits: 0.6
+  permanentFireDamage: 5
+  permanentFireYOffset: 0.5
 --- !u!95 &8359174253468539520
 Animator:
   serializedVersion: 4

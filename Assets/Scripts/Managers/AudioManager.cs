@@ -76,6 +76,8 @@ public class AudioManager : MonoBehaviour
 
     public void PlayMPDMusic()
     {
+        isAlreadyOnDungeon = false;
+
         if (_bgCoroutine != null)
         {
             StopCoroutine(_bgCoroutine);
@@ -116,8 +118,6 @@ public class AudioManager : MonoBehaviour
 
     private IEnumerator PlayDGBG()
     {
-        isAlreadyOnDungeon = false;
-
         _bgSound.clip = _dgBGClips[0];
         _bgSound.Play();
         while (true)

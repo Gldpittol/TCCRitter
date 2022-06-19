@@ -68,6 +68,7 @@ public class PlayerCollision : MonoBehaviour
     {
         // SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single);
         //HUDManager.Instance.GameOver();
+        if (GameManager.Instance.gameState != GameState.Gameplay) yield break;
         GameManager.Instance.gameState = GameState.Cutscene;
         PlayerStats.currentFloor = 0;
         PlayerStats.currentHealth = 100;

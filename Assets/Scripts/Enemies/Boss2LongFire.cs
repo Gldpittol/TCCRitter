@@ -37,6 +37,25 @@ public class Boss2LongFire : MonoBehaviour
         if(destroyAfterXSeconds)StartCoroutine(DestroyAfterXSeconds());
     }
 
+    public void SetDelayedParameters(float time, float dmage, float delay)
+    {
+        StartCoroutine(SetDelayedParametersCoroutine(time, dmage, delay));
+    }
+
+    public IEnumerator SetDelayedParametersCoroutine(float timeToWait, float dmage, float delay )
+    {
+        yield return new WaitForSeconds(timeToWait);
+        transform.GetChild(0).gameObject.SetActive(false);
+        GetComponent<SpriteRenderer>().enabled = true;
+        GetComponent<Collider2D>().enabled = true;
+        animator = GetComponent<Animator>();
+        animator.enabled = true;
+        fireDamage = dmage;
+        delayBetweenFireHits = delay;
+        parametersSet = true;
+        if(destroyAfterXSeconds)StartCoroutine(DestroyAfterXSeconds());
+    }
+
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.CompareTag("Player"))

@@ -118,3 +118,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9c1410dee43a1d4687b037a14f5c637, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glassExplosionClip: {fileID: 8300000, guid: a6d08929306a04d4d8b628916a062cad, type: 3}

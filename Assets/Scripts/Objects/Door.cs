@@ -25,6 +25,7 @@ public class Door : MonoBehaviour
     {
         Instance = this;
         sr = GetComponent<Renderer>();
+        if (!sr) sr = GetComponentInParent<Renderer>();
         boxCol = GetComponent<Collider2D>();
         sr.enabled = false;
         boxCol.enabled = false;

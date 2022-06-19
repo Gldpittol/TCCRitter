@@ -748,6 +748,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3149353995372171894, guid: 66c717ae4b53b8e4a8c614c92908a7e0, type: 3}
+      propertyPath: isBossDoor
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3149353995372171894, guid: 66c717ae4b53b8e4a8c614c92908a7e0, type: 3}
+      propertyPath: stateAfterClearing
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3149353995372171894, guid: 66c717ae4b53b8e4a8c614c92908a7e0, type: 3}
+      propertyPath: possibleScenes.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3149353995372171894, guid: 66c717ae4b53b8e4a8c614c92908a7e0, type: 3}
+      propertyPath: possibleScenes.Array.data[0]
+      value: MagePoliceDepartment
+      objectReference: {fileID: 0}
     - target: {fileID: 3467381687392219380, guid: 66c717ae4b53b8e4a8c614c92908a7e0, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -796,8 +812,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boss 1 Arena
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5671177969880012379, guid: 66c717ae4b53b8e4a8c614c92908a7e0, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 3149353995372171894, guid: 66c717ae4b53b8e4a8c614c92908a7e0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 66c717ae4b53b8e4a8c614c92908a7e0, type: 3}
+--- !u!4 &1473387585 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6440680533129873155, guid: 66c717ae4b53b8e4a8c614c92908a7e0, type: 3}
+  m_PrefabInstance: {fileID: 1473387584}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1787236568
 GameObject:
   m_ObjectHideFlags: 0
@@ -909,6 +935,81 @@ Transform:
   m_Father: {fileID: 17025106}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1889493680
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1889493681}
+  - component: {fileID: 1889493683}
+  - component: {fileID: 1889493682}
+  m_Layer: 0
+  m_Name: Door
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1889493681
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889493680}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 18.26, y: 0.45, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1473387585}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1889493682
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889493680}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.5}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.4888477, y: 5}
+  m_EdgeRadius: 0
+--- !u!114 &1889493683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889493680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e06f1fce5e7e524280fc4d1308f10fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  possibleScenes:
+  - MagePoliceDepartment
+  isBossDoor: 1
+  stateAfterClearing: 2
 --- !u!1001 &2644208092166278549
 PrefabInstance:
   m_ObjectHideFlags: 0

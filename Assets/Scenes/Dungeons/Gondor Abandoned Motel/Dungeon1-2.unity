@@ -18073,6 +18073,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: daa38092a01c8b845b87e817bca7b43b, type: 2}
     - target: {fileID: 8416742148495323337, guid: c24c8c5e7bd4fe34698ce5df5bf3f6fc, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8416742148495323337, guid: c24c8c5e7bd4fe34698ce5df5bf3f6fc, type: 3}
       propertyPath: m_Offset.y
       value: -0.5
       objectReference: {fileID: 0}

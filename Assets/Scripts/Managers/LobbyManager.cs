@@ -18,6 +18,8 @@ public class LobbyManager : MonoBehaviour
         
         HUDManager.Instance.AddToInteractionIcons(spellSwap.gameObject);
         HUDManager.Instance.AddToInteractionIcons(exitDoor.gameObject);
+        HUDManager.Instance.UpdateHealthBar();
+        HUDManager.Instance.UpdateCoins();
 
         StartCoroutine(SetMusicCoroutine());
     }
