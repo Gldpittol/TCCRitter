@@ -213,12 +213,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseDamage: 5
-  health: 300
+  health: 450
   speed: 2
   delayBetweenAttacks: 0.3
   projectileSpeed: 6
   projectileDuration: 1
-  goldGiven: 100
+  goldGiven: 200
   explosionPrefab: {fileID: 2076128814984141890, guid: 1741fa59522dda3429ae4b092d3fa21c, type: 3}
   isStaticEnemy: 1
 --- !u!114 &711018970166128090

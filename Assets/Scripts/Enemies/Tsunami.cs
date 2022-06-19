@@ -44,8 +44,6 @@ public class Tsunami : MonoBehaviour
       GetComponent<Animator>().speed = animatorSpeed;
       myCol.enabled = true;
       Vector2 forceVector = new Vector2(pushLeft ? -1 : 1, 0);
-      print(forceIntensity);
-      print(forceVector);
       PlayerMovement.Instance.beingPushed = true;
       PlayerManager.Instance.GetComponent<Rigidbody2D>().AddForce(forceVector * forceIntensity, ForceMode2D.Impulse);
       yield return new WaitForSeconds(1f);

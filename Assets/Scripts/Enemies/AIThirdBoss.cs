@@ -36,6 +36,14 @@ public class AIThirdBoss : MonoBehaviour
     public float tsunamiHpThreshold;
     public Transform tsunamiSpawnPosLeft;
     public Transform tsunamiSpawnPosRight;
+    
+    [Header("Donut")] 
+    public GameObject donutPrefab;
+    public float donutDamage;
+    public float delayBetweenDonuts;
+    public float delayUntilNewDonutIsCast;
+    public float donutHpThreshold = 0.3f;
+
 
     private void Start()
     {
@@ -74,6 +82,7 @@ public class AIThirdBoss : MonoBehaviour
         yield return new WaitForSeconds(delayBeforeStarting);
         MoveToNewPos();
         SpawnWaves();
+        SpawnDonut();
     }
 
     public void MoveToNewPos()
@@ -121,18 +130,14 @@ public class AIThirdBoss : MonoBehaviour
         if (GetHpPercentage() < 0.3)
         {
             tempList.RemoveAt(Random.Range(0, tempList.Count));
-            tempList.RemoveAt(Random.Range(0, tempList.Count));
         }
         else if (GetHpPercentage() < 0.6)
         {
             tempList.RemoveAt(Random.Range(0, tempList.Count));
             tempList.RemoveAt(Random.Range(0, tempList.Count));
-            tempList.RemoveAt(Random.Range(0, tempList.Count));
         }
         else
         {
-            tempList.RemoveAt(Random.Range(0, tempList.Count));
-            tempList.RemoveAt(Random.Range(0, tempList.Count));
             tempList.RemoveAt(Random.Range(0, tempList.Count));
             tempList.RemoveAt(Random.Range(0, tempList.Count));
         }
@@ -154,5 +159,25 @@ public class AIThirdBoss : MonoBehaviour
 
         yield return new WaitForSeconds(delayBetweenWaveSpawns);
         SpawnWaves();
+    }
+
+    public void SpawnDonut()
+    {
+        StartCoroutine(SpawnDonutCoroutine());
+    }
+
+    public IEnumerator SpawnDonutCoroutine()
+    {
+        while (GetHpPercentage() > donutHpThreshold)
+        {
+            yield return null;
+        }
+        
+        print("SpawningDonut");
+        
+        GameObject temp = Instantiate(donutPrefab, Vector2.zero, Quaternion.identity);
+        temp.GetComponent<Donut>().Initialize(delayBetweenDonuts, donutDamage, delayBetweenDonuts);
+        yield return new WaitForSeconds(delayUntilNewDonutIsCast);
+        SpawnDonut();
     }
 }

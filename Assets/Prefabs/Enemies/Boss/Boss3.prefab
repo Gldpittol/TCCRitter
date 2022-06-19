@@ -1589,12 +1589,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseDamage: 15
-  health: 10
+  health: 600
   speed: 2
   delayBetweenAttacks: 0.3
   projectileSpeed: 6
   projectileDuration: 1
-  goldGiven: 100
+  goldGiven: 300
   explosionPrefab: {fileID: 2076128814984141890, guid: 1741fa59522dda3429ae4b092d3fa21c, type: 3}
   isStaticEnemy: 1
 --- !u!95 &7027566517585753445
@@ -1640,7 +1640,7 @@ MonoBehaviour:
   wavesLeft: {fileID: 259246606}
   wavesRight: {fileID: 1497064507}
   tsunamiPrefab: {fileID: 5396469409085167375, guid: 79d517e94b92d774a8692a9c27fb17c8, type: 3}
-  delayBeforePush: 3
+  delayBeforePush: 2
   pushIntensity: 30
   delayBeforeDestroyTsunami: 1
   tweenSpeed: 0.8
@@ -1649,3 +1649,8 @@ MonoBehaviour:
   tsunamiHpThreshold: 0.5
   tsunamiSpawnPosLeft: {fileID: 618502062}
   tsunamiSpawnPosRight: {fileID: 1051622879}
+  donutPrefab: {fileID: 6875902588079569327, guid: 58bee3fd16305064ba204bfe652d40c9, type: 3}
+  donutDamage: 20
+  delayBetweenDonuts: 1
+  delayUntilNewDonutIsCast: 10
+  donutHpThreshold: 0.3
