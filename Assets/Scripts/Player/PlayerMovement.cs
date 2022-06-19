@@ -15,10 +15,14 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D _rigidBody;
     private AudioSource _audSource;
     public float dashDelay = 2f;
+    public float dashPushTime;
     public float dashForce = 10f;
 
     private float currentDashDelay = 0;
     private bool lastRight = false;
+    private bool dashing = false;
+    
+    public bool beingPushed = false;
     private void Awake()
     {
         if (PlayerDontDestroy.Instance && PlayerDontDestroy.Instance.gameObject != transform.parent.gameObject) return;
@@ -63,6 +67,7 @@ public class PlayerMovement : MonoBehaviour
     private void CheckDash()
     {
         if (currentDashDelay > 0) return;
+        if (beingPushed) return;
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Vector2 impulseVector = new Vector2(Input.GetAxisRaw("Horizontal"),
@@ -74,8 +79,16 @@ public class PlayerMovement : MonoBehaviour
             }
             
             _rigidBody.AddForce(impulseVector * dashForce, ForceMode2D.Impulse);
+            dashing = true;
+            StartCoroutine(ResetDashCoroutine());
             currentDashDelay = dashDelay;
         }
+    }
+
+    public IEnumerator ResetDashCoroutine()
+    {
+        yield return new WaitForSeconds(dashPushTime);
+        dashing = false;
     }
 
     public void ActivatePause()
@@ -86,6 +99,12 @@ public class PlayerMovement : MonoBehaviour
     
     private void MoveCharacter()
     {
+        if (beingPushed || dashing)
+        {
+            _audSource.enabled = false;
+            return;
+        }
+        
         _rigidBody.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), 
             Input.GetAxisRaw("Vertical")).normalized * speed * PlayerStats.movementSpeedMultiplier;
 

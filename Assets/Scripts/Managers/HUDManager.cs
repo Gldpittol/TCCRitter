@@ -89,7 +89,7 @@ public class HUDManager : MonoBehaviour
                 Time.timeScale = 0;
                 GameManager.Instance.gameState = GameState.Paused;
                 CameraManager.Instance.FinishLerp();
-                PlayerMovement.Instance.ActivatePause();
+                if(!PlayerMovement.Instance.beingPushed) PlayerMovement.Instance.ActivatePause();
             }
             else 
             {

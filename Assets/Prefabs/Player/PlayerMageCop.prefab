@@ -678,8 +678,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  dashDelay: 0.5
-  dashForce: 100
+  dashDelay: 1
+  dashPushTime: 0.08
+  dashForce: 20
+  beingPushed: 0
 --- !u!114 &5953440748861727103
 MonoBehaviour:
   m_ObjectHideFlags: 0
