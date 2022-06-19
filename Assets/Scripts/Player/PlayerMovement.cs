@@ -41,6 +41,7 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         currentDashDelay -= Time.deltaTime;
+        if(HUDManager.Instance) HUDManager.Instance.UpdateDashCooldownFill(currentDashDelay, dashDelay);
     }
 
 

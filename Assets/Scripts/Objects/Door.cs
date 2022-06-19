@@ -107,5 +107,6 @@ public class Door : MonoBehaviour
         boxCol.enabled = true;
         isOpen = true;
         PlayerMovement.Instance.ChangeFKeyVisibility(false);
+        HUDManager.Instance.AddToInteractionIcons(gameObject);
     }
 }

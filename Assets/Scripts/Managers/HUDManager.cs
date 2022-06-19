@@ -20,6 +20,7 @@ public class HUDManager : MonoBehaviour
     [SerializeField] private Image offensiveFill;
     [SerializeField] private Image defensiveFill;
     [SerializeField] private Image ultimateFill;
+    [SerializeField] private Image dashFill;
     [SerializeField] private Image basicSprite;
     [SerializeField] private Image offensiveSprite;
     [SerializeField] private Image defensiveSprite;
@@ -35,6 +36,10 @@ public class HUDManager : MonoBehaviour
     public TextMeshProUGUI ultimateBlockText;
     [SerializeField] private Image fadeImage;
     [SerializeField] private float fadeTime = 1;
+    [SerializeField] private List<RectTransform> warningIconList = new List<RectTransform>();
+    [SerializeField] private List<GameObject> warningPositionReferences = new List<GameObject>();
+    [SerializeField] private GameObject warningIconPrefab;
+    [SerializeField] private GameObject warningPanel;
 
     private float hpBarOriginalScaleX;
 
@@ -58,10 +63,12 @@ public class HUDManager : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
+        UpdateWarningIcons();
+        
+        /*if(Input.GetKeyDown(KeyCode.Escape))
         {
             Application.Quit();
-        }
+        }*/
         
         if(gameOverPanel.activeInHierarchy)
         {
@@ -91,7 +98,6 @@ public class HUDManager : MonoBehaviour
             }
         }
     }
-
     public void UpdateHealthBar()
     {
         float scaleX = PlayerStats.currentHealth / PlayerStats.maxHeath * hpBarOriginalScaleX;
@@ -119,6 +125,13 @@ public class HUDManager : MonoBehaviour
                 ultimateFill.fillAmount = fillRatio;
                 break;
         }
+    }
+
+    public void UpdateDashCooldownFill(float current, float max)
+    {
+        float fillRatio = current / max;
+        dashFill.fillAmount = fillRatio;
+
     }
     
     public void UpdateCooldownSprite(MagicType type, Sprite newSprite)
@@ -197,4 +210,30 @@ public class HUDManager : MonoBehaviour
                 GameManager.Instance.gameState = GameState.Gameplay;
             }
     }
+
+    public void AddToInteractionIcons(GameObject positionToSpawn)
+    {
+        GameObject warning = Instantiate(warningIconPrefab, positionToSpawn.transform.position, Quaternion.identity, warningPanel.transform);
+        
+        warningIconList.Add(warning.GetComponent<RectTransform>());
+        warningPositionReferences.Add(positionToSpawn);
+    }
+
+    private float width;
+    private float height;
+    private void UpdateWarningIcons()
+    {
+        foreach (RectTransform rect in warningIconList)
+        {
+            rect.gameObject.transform.position = warningPositionReferences[warningIconList.IndexOf(rect)].transform.position;
+
+            if(height == 0) width = GetComponent<CanvasScaler>().referenceResolution.x; 
+            if(height == 0) height = GetComponent<CanvasScaler>().referenceResolution.y; 
+
+            float iconX = Mathf.Clamp(rect.anchoredPosition.x, -width / 2 + rect.sizeDelta.x/2, width / 2 - rect.sizeDelta.x/2);
+            float iconY = Mathf.Clamp(rect.anchoredPosition.y, -height / 2 + rect.sizeDelta.y/2, height / 2 - rect.sizeDelta.y/2);
+            rect.anchoredPosition = new Vector2(iconX, iconY);
+        }
+    }
+
 }

@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class LobbyManager : MonoBehaviour
 {
+    public Transform spellSwap;
+    public Transform exitDoor;
+    
     private void Start()
     {
         GameManager.Instance.gameState = GameState.Gameplay;
@@ -12,5 +15,8 @@ public class LobbyManager : MonoBehaviour
         PlayerStats.currentFloor = 1;
         PlayerSpellCasting.Instance.ResetCooldowns();
         if(SaveLoadManager.Instance) SaveLoadManager.Instance.SaveGame();
+        
+        HUDManager.Instance.AddToInteractionIcons(spellSwap.gameObject);
+        HUDManager.Instance.AddToInteractionIcons(exitDoor.gameObject);
     }
 }

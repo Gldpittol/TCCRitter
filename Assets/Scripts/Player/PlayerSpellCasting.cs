@@ -412,6 +412,6 @@ public class PlayerSpellCasting : MonoBehaviour
 
     void PlayFX()
     {
-        AudioManager.Instance.PlayFX(_spellFX[UnityEngine.Random.Range(0, _spellFX.Length)]);
+        if(AudioManager.Instance) AudioManager.Instance.PlayFX(_spellFX[UnityEngine.Random.Range(0, _spellFX.Length)]);
     }
 }
