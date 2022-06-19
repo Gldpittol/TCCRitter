@@ -63,7 +63,7 @@ public class Vortex : MonoBehaviour
                 {
                     if (Vector2.Distance(collidedEnemyList[i].transform.position, transform.position) < distanceToDamage)
                     {
-                        collidedEnemyControllerList[i].TakeDamage(damager.damage);
+                        if(collidedEnemyControllerList[i]) collidedEnemyControllerList[i].TakeDamage(damager.damage);
                     }
                 }
             }

@@ -401,6 +401,42 @@ PrefabInstance:
       propertyPath: myData
       value: 
       objectReference: {fileID: 11400000, guid: d89425f4a9c712d4e960f3fb48ca2a64, type: 2}
+    - target: {fileID: 6105289921216352965, guid: ea8ecba25074e9c4fa42b711aa6def90, type: 3}
+      propertyPath: stateAfterClearing
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6105289921216352965, guid: ea8ecba25074e9c4fa42b711aa6def90, type: 3}
+      propertyPath: possibleScenes.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6105289921216352965, guid: ea8ecba25074e9c4fa42b711aa6def90, type: 3}
+      propertyPath: possibleScenes.Array.data[0]
+      value: Dungeon3-2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6105289921216352965, guid: ea8ecba25074e9c4fa42b711aa6def90, type: 3}
+      propertyPath: possibleScenes.Array.data[1]
+      value: Dungeon3-3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6105289921216352965, guid: ea8ecba25074e9c4fa42b711aa6def90, type: 3}
+      propertyPath: possibleScenes.Array.data[2]
+      value: Dungeon3-4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6105289921216352965, guid: ea8ecba25074e9c4fa42b711aa6def90, type: 3}
+      propertyPath: possibleScenes.Array.data[3]
+      value: Dungeon3-5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6105289921216352965, guid: ea8ecba25074e9c4fa42b711aa6def90, type: 3}
+      propertyPath: possibleScenes.Array.data[4]
+      value: Dungeon3-6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6105289921216352965, guid: ea8ecba25074e9c4fa42b711aa6def90, type: 3}
+      propertyPath: possibleScenes.Array.data[5]
+      value: Dungeon3-7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6105289921216352965, guid: ea8ecba25074e9c4fa42b711aa6def90, type: 3}
+      propertyPath: possibleScenes.Array.data[6]
+      value: Dungeon3-8
+      objectReference: {fileID: 0}
     - target: {fileID: 6156900780171812922, guid: ea8ecba25074e9c4fa42b711aa6def90, type: 3}
       propertyPath: myData
       value: 
@@ -529,6 +565,10 @@ PrefabInstance:
       propertyPath: myData
       value: 
       objectReference: {fileID: 11400000, guid: d89425f4a9c712d4e960f3fb48ca2a64, type: 2}
+    - target: {fileID: 8734669624142211329, guid: ea8ecba25074e9c4fa42b711aa6def90, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8801782051599589398, guid: ea8ecba25074e9c4fa42b711aa6def90, type: 3}
       propertyPath: myData
       value: 

@@ -1589,7 +1589,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseDamage: 15
-  health: 600
+  health: 1000
   speed: 2
   delayBetweenAttacks: 0.3
   projectileSpeed: 6

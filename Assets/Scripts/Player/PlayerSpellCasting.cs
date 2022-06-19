@@ -93,14 +93,14 @@ public class PlayerSpellCasting : MonoBehaviour
 
         ReduceCooldowns();
         
-        if (Input.GetButton("Fire1"))
+        if (Input.GetButtonDown("Fire1"))
         {
             if (cooldownRightClick > 0) return;
             onClickBaseMagic?.Invoke();
             staffAnimator.Play("StaffCast");
             PlayFX();
         }
-        if (Input.GetButton("Fire2"))
+        if (Input.GetButtonDown("Fire2"))
         {
             if (cooldownDefensive > 0) return;
             onClickDefensiveMagic?.Invoke();

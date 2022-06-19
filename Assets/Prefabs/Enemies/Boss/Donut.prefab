@@ -47,6 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   damage: 0
+  duration: 0
 --- !u!1 &6875902586870562389
 GameObject:
   m_ObjectHideFlags: 0
@@ -145,7 +146,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.01, y: 0.01}
@@ -205,6 +206,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
+  duration: 0
 --- !u!1 &6875902586881719587
 GameObject:
   m_ObjectHideFlags: 0
@@ -252,6 +254,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   damage: 0
+  duration: 0
 --- !u!1 &6875902586903605056
 GameObject:
   m_ObjectHideFlags: 0
@@ -350,7 +353,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.01, y: 0.01}
@@ -410,6 +413,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
+  duration: 0
 --- !u!1 &6875902586922430570
 GameObject:
   m_ObjectHideFlags: 0
@@ -591,7 +595,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.01, y: 0.01}
@@ -651,6 +655,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
+  duration: 0
 --- !u!1 &6875902586972158167
 GameObject:
   m_ObjectHideFlags: 0
@@ -698,6 +703,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   damage: 0
+  duration: 0
 --- !u!1 &6875902586997003956
 GameObject:
   m_ObjectHideFlags: 0
@@ -796,7 +802,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.01, y: 0.01}
@@ -856,6 +862,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
+  duration: 0
 --- !u!1 &6875902587003942294
 GameObject:
   m_ObjectHideFlags: 0
@@ -903,6 +910,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   damage: 0
+  duration: 0
 --- !u!1 &6875902587020384145
 GameObject:
   m_ObjectHideFlags: 0
@@ -950,6 +958,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   damage: 0
+  duration: 0
 --- !u!1 &6875902587046533086
 GameObject:
   m_ObjectHideFlags: 0
@@ -997,6 +1006,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   damage: 0
+  duration: 0
 --- !u!1 &6875902587048249293
 GameObject:
   m_ObjectHideFlags: 0
@@ -1044,6 +1054,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   damage: 0
+  duration: 0
 --- !u!1 &6875902587053480609
 GameObject:
   m_ObjectHideFlags: 0
@@ -1091,6 +1102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   damage: 0
+  duration: 0
 --- !u!1 &6875902587059362057
 GameObject:
   m_ObjectHideFlags: 0
@@ -1273,7 +1285,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.01, y: 0.01}
@@ -1333,6 +1345,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
+  duration: 0
 --- !u!1 &6875902587100140111
 GameObject:
   m_ObjectHideFlags: 0
@@ -1431,7 +1444,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.01, y: 0.01}
@@ -1491,6 +1504,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
+  duration: 0
 --- !u!1 &6875902587119020883
 GameObject:
   m_ObjectHideFlags: 0
@@ -1589,7 +1603,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.01, y: 0.01}
@@ -1649,6 +1663,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
+  duration: 0
 --- !u!1 &6875902587179227731
 GameObject:
   m_ObjectHideFlags: 0
@@ -1696,6 +1711,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   damage: 0
+  duration: 0
 --- !u!1 &6875902587191250463
 GameObject:
   m_ObjectHideFlags: 0
@@ -1743,6 +1759,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   damage: 0
+  duration: 0
 --- !u!1 &6875902587196041858
 GameObject:
   m_ObjectHideFlags: 0
@@ -1835,6 +1852,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   damage: 0
+  duration: 0
 --- !u!1 &6875902587366079729
 GameObject:
   m_ObjectHideFlags: 0
@@ -1933,7 +1951,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.01, y: 0.01}
@@ -1993,6 +2011,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
+  duration: 0
 --- !u!1 &6875902587416009206
 GameObject:
   m_ObjectHideFlags: 0
@@ -2091,7 +2110,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.01, y: 0.01}
@@ -2151,6 +2170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
+  duration: 0
 --- !u!1 &6875902587440624275
 GameObject:
   m_ObjectHideFlags: 0
@@ -2198,6 +2218,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   damage: 0
+  duration: 0
 --- !u!1 &6875902587441815936
 GameObject:
   m_ObjectHideFlags: 0
@@ -2296,7 +2317,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.01, y: 0.01}
@@ -2356,6 +2377,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
+  duration: 0
 --- !u!1 &6875902587471762609
 GameObject:
   m_ObjectHideFlags: 0
@@ -2403,6 +2425,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   damage: 0
+  duration: 0
 --- !u!1 &6875902587475945024
 GameObject:
   m_ObjectHideFlags: 0
@@ -2501,7 +2524,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.01, y: 0.01}
@@ -2561,6 +2584,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
+  duration: 0
 --- !u!1 &6875902587517428621
 GameObject:
   m_ObjectHideFlags: 0
@@ -2659,7 +2683,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.01, y: 0.01}
@@ -2719,6 +2743,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
+  duration: 0
 --- !u!1 &6875902587524321776
 GameObject:
   m_ObjectHideFlags: 0
@@ -2817,7 +2842,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.01, y: 0.01}
@@ -2877,6 +2902,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
+  duration: 0
 --- !u!1 &6875902587563613737
 GameObject:
   m_ObjectHideFlags: 0
@@ -2975,7 +3001,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.01, y: 0.01}
@@ -3035,6 +3061,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
+  duration: 0
 --- !u!1 &6875902587583150030
 GameObject:
   m_ObjectHideFlags: 0
@@ -3133,7 +3160,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.01, y: 0.01}
@@ -3193,6 +3220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
+  duration: 0
 --- !u!1 &6875902587645227210
 GameObject:
   m_ObjectHideFlags: 0
@@ -3240,6 +3268,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   damage: 0
+  duration: 0
 --- !u!1 &6875902587669543002
 GameObject:
   m_ObjectHideFlags: 0
@@ -3287,6 +3316,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   damage: 0
+  duration: 0
 --- !u!1 &6875902587679751361
 GameObject:
   m_ObjectHideFlags: 0
@@ -3334,6 +3364,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   damage: 0
+  duration: 0
 --- !u!1 &6875902587686757285
 GameObject:
   m_ObjectHideFlags: 0
@@ -3381,6 +3412,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   damage: 0
+  duration: 0
 --- !u!1 &6875902587806058314
 GameObject:
   m_ObjectHideFlags: 0
@@ -3562,7 +3594,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.01, y: 0.01}
@@ -3622,6 +3654,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
+  duration: 0
 --- !u!1 &6875902587816269584
 GameObject:
   m_ObjectHideFlags: 0
@@ -3669,6 +3702,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   damage: 0
+  duration: 0
 --- !u!1 &6875902587827684761
 GameObject:
   m_ObjectHideFlags: 0
@@ -3716,6 +3750,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   damage: 0
+  duration: 0
 --- !u!1 &6875902587846457629
 GameObject:
   m_ObjectHideFlags: 0
@@ -3814,7 +3849,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.01, y: 0.01}
@@ -3874,6 +3909,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
+  duration: 0
 --- !u!1 &6875902587933596928
 GameObject:
   m_ObjectHideFlags: 0
@@ -3972,7 +4008,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.01, y: 0.01}
@@ -4032,6 +4068,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
+  duration: 0
 --- !u!1 &6875902587977362950
 GameObject:
   m_ObjectHideFlags: 0
@@ -4130,7 +4167,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.01, y: 0.01}
@@ -4190,6 +4227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
+  duration: 0
 --- !u!1 &6875902587990898818
 GameObject:
   m_ObjectHideFlags: 0
@@ -4288,7 +4326,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.01, y: 0.01}
@@ -4348,6 +4386,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
+  duration: 0
 --- !u!1 &6875902588031064918
 GameObject:
   m_ObjectHideFlags: 0
@@ -4446,7 +4485,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.01, y: 0.01}
@@ -4506,6 +4545,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
+  duration: 0
 --- !u!1 &6875902588060479035
 GameObject:
   m_ObjectHideFlags: 0
@@ -4604,7 +4644,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.01, y: 0.01}
@@ -4664,6 +4704,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
+  duration: 0
 --- !u!1 &6875902588067344914
 GameObject:
   m_ObjectHideFlags: 0
@@ -4711,6 +4752,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   damage: 0
+  duration: 0
 --- !u!1 &6875902588075572270
 GameObject:
   m_ObjectHideFlags: 0
@@ -4809,7 +4851,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.01, y: 0.01}
@@ -4869,6 +4911,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
+  duration: 0
 --- !u!1 &6875902588079569327
 GameObject:
   m_ObjectHideFlags: 0
@@ -5008,6 +5051,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   damage: 0
+  duration: 0
 --- !u!1 &6875902588084854990
 GameObject:
   m_ObjectHideFlags: 0
@@ -5055,6 +5099,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   damage: 0
+  duration: 0
 --- !u!1 &6875902588103182425
 GameObject:
   m_ObjectHideFlags: 0
@@ -5102,6 +5147,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   damage: 0
+  duration: 0
 --- !u!1 &6875902588111921550
 GameObject:
   m_ObjectHideFlags: 0
@@ -5200,7 +5246,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.01, y: 0.01}
@@ -5260,6 +5306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
+  duration: 0
 --- !u!1 &6875902588111939398
 GameObject:
   m_ObjectHideFlags: 0
@@ -5358,7 +5405,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.01, y: 0.01}
@@ -5418,6 +5465,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
+  duration: 0
 --- !u!1 &6875902588179392741
 GameObject:
   m_ObjectHideFlags: 0
@@ -5516,7 +5564,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.01, y: 0.01}
@@ -5576,6 +5624,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
+  duration: 0
 --- !u!1 &6875902588185232246
 GameObject:
   m_ObjectHideFlags: 0
@@ -5674,7 +5723,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.01, y: 0.01}
@@ -5734,6 +5783,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
+  duration: 0
 --- !u!1 &6875902588198007819
 GameObject:
   m_ObjectHideFlags: 0
@@ -5865,7 +5915,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.01, y: 0.01}
@@ -5925,6 +5975,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
+  duration: 0
 --- !u!1 &6875902588223618053
 GameObject:
   m_ObjectHideFlags: 0
@@ -5972,6 +6023,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   damage: 0
+  duration: 0
 --- !u!1 &6875902588276425103
 GameObject:
   m_ObjectHideFlags: 0
@@ -6019,6 +6071,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   damage: 0
+  duration: 0
 --- !u!1 &6875902588297113165
 GameObject:
   m_ObjectHideFlags: 0
@@ -6149,6 +6202,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   damage: 0
+  duration: 0
 --- !u!1 &6875902588410568222
 GameObject:
   m_ObjectHideFlags: 0
@@ -6196,6 +6250,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   damage: 0
+  duration: 0
 --- !u!1 &6875902588421939236
 GameObject:
   m_ObjectHideFlags: 0
@@ -6243,6 +6298,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   damage: 0
+  duration: 0
 --- !u!1 &6875902588508050454
 GameObject:
   m_ObjectHideFlags: 0
@@ -6341,7 +6397,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.01, y: 0.01}
@@ -6401,6 +6457,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
+  duration: 0
 --- !u!1 &6875902588552646274
 GameObject:
   m_ObjectHideFlags: 0
@@ -6499,7 +6556,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.01, y: 0.01}
@@ -6559,6 +6616,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
+  duration: 0
 --- !u!1 &6875902588569975960
 GameObject:
   m_ObjectHideFlags: 0
@@ -6606,6 +6664,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   damage: 0
+  duration: 0
 --- !u!1 &6875902588588041274
 GameObject:
   m_ObjectHideFlags: 0
@@ -6653,6 +6712,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   damage: 0
+  duration: 0
 --- !u!1 &6875902588599324617
 GameObject:
   m_ObjectHideFlags: 0
@@ -6700,6 +6760,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   damage: 0
+  duration: 0
 --- !u!1 &6875902588619961613
 GameObject:
   m_ObjectHideFlags: 0
@@ -6798,7 +6859,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.01, y: 0.01}
@@ -6858,6 +6919,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
+  duration: 0
 --- !u!1 &6875902588623306933
 GameObject:
   m_ObjectHideFlags: 0
@@ -6945,6 +7007,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   damage: 0
+  duration: 0
 --- !u!1 &6875902588664479028
 GameObject:
   m_ObjectHideFlags: 0
@@ -7043,7 +7106,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.01, y: 0.01}
@@ -7103,6 +7166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
+  duration: 0
 --- !u!1 &6875902588718049017
 GameObject:
   m_ObjectHideFlags: 0
@@ -7150,6 +7214,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   damage: 0
+  duration: 0
 --- !u!1 &6875902588720386514
 GameObject:
   m_ObjectHideFlags: 0
@@ -7248,7 +7313,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.01, y: 0.01}
@@ -7308,6 +7373,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
+  duration: 0
 --- !u!1 &6875902588720991132
 GameObject:
   m_ObjectHideFlags: 0
@@ -7406,7 +7472,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.01, y: 0.01}
@@ -7466,6 +7532,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
+  duration: 0
 --- !u!1 &6875902588748016631
 GameObject:
   m_ObjectHideFlags: 0
@@ -7513,6 +7580,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   damage: 0
+  duration: 0
 --- !u!1 &6875902588762062815
 GameObject:
   m_ObjectHideFlags: 0
@@ -7611,7 +7679,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.01, y: 0.01}
@@ -7671,6 +7739,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
+  duration: 0
 --- !u!1 &6875902588778894052
 GameObject:
   m_ObjectHideFlags: 0
@@ -7937,6 +8006,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   damage: 0
+  duration: 0
 --- !u!1 &6875902588840040453
 GameObject:
   m_ObjectHideFlags: 0
@@ -7984,6 +8054,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   damage: 0
+  duration: 0
 --- !u!1 &6875902588845167715
 GameObject:
   m_ObjectHideFlags: 0
@@ -8115,6 +8186,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   damage: 0
+  duration: 0
 --- !u!1 &6875902588949418994
 GameObject:
   m_ObjectHideFlags: 0
@@ -8213,7 +8285,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.01, y: 0.01}
@@ -8273,6 +8345,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
+  duration: 0
 --- !u!1 &6875902588956780461
 GameObject:
   m_ObjectHideFlags: 0
@@ -8371,7 +8444,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.01, y: 0.01}
@@ -8431,6 +8504,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
+  duration: 0
 --- !u!1 &6875902588992126390
 GameObject:
   m_ObjectHideFlags: 0
@@ -8529,7 +8603,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.01, y: 0.01}
@@ -8589,6 +8663,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
+  duration: 0
 --- !u!1 &6875902589006230096
 GameObject:
   m_ObjectHideFlags: 0
@@ -8636,3 +8711,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   damage: 0
+  duration: 0

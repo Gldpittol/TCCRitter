@@ -213,7 +213,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseDamage: 5
-  health: 450
+  health: 750
   speed: 2
   delayBetweenAttacks: 0.3
   projectileSpeed: 6
@@ -234,25 +234,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delayBeforeStarting: 4
-  delayBetweenLongFires: 15
+  delayBetweenLongFires: 12
   longFirePrefab: {fileID: 2605375003485514004, guid: 2287df11bce5fa640933032735c33ac1, type: 3}
   delayBeforeLongFire: 5
   timeLongFireOnField: 20
-  delayBetweenLongFireHits: 0.3
-  longFireDamage: 3
+  delayBetweenLongFireHits: 0.2
+  longFireDamage: 6.5
   lerpToPlayerIntensity: 0.02
-  delayBetweenPermanentFires: 0.5
+  delayBetweenPermanentFires: 0.3
   permanentFirePrefab: {fileID: 3955885552979993672, guid: 35cdd98fb8333684c8cf14d43269c8f0, type: 3}
-  delayBeforePermanentFire: 3
-  delayBetweenPermanentFireHits: 0.6
-  permanentFireDamage: 5
+  delayBeforePermanentFire: 1
+  delayBetweenPermanentFireHits: 0.4
+  permanentFireDamage: 10
   permanentFireYOffset: 0.5
   hpPercentageThreshold: 0.5
   missilePrefab: {fileID: 2734620432003544460, guid: bfe001b9450ad244b8c55d1295e481c1, type: 3}
   missileYOffset: 0.5
-  delayBetweenMissiles: 1
-  missileDamage: 10
-  missileSpeed: 10
+  delayBetweenMissiles: 0.8
+  missileDamage: 30
+  missileSpeed: 14
   missileSpawnPointRight: {fileID: 992444858}
   missileSpawnPointLeft: {fileID: 3659392282009010447}
 --- !u!95 &8359174253468539520

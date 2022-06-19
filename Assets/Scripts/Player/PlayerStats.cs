@@ -16,6 +16,7 @@ public class PlayerStats : MonoBehaviour
     public static float currentFloor = 1;
     public static GameProgress progress = GameProgress.None;
     public static float spawnCountMultiplier = 1;
+    public static float spawnBaseline = 3;
     private void Awake()
     {
         if (PlayerDontDestroy.Instance && PlayerDontDestroy.Instance.gameObject != transform.parent.gameObject) return;

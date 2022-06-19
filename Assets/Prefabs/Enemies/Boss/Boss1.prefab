@@ -1131,7 +1131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseDamage: 5
-  health: 300
+  health: 600
   speed: 2
   delayBetweenAttacks: 0.3
   projectileSpeed: 6
@@ -1152,11 +1152,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delayBeforeStarting: 4
-  cooldownEdgeBalls: 3
-  cooldownGreenBalls: 5
-  HpPercentageToSpawnGreenBalls: 0.5
-  purpleOrbsDamage: 20
-  greenOrbsDamage: 25
+  cooldownEdgeBalls: 1.6
+  cooldownGreenBalls: 3
+  HpPercentageToSpawnGreenBalls: 0.7
+  purpleOrbsDamage: 40
+  greenOrbsDamage: 50
   purpleOrbSpawner: {fileID: 1770651508}
   purpleOrbPrefab: {fileID: 7480974977974578504, guid: 5b9cad5b647157f4f82235057c2158d7, type: 3}
   greenOrbprefab: {fileID: 7480974977974578504, guid: 1c09489037bff634d956289a4e4bdef0, type: 3}

@@ -45,5 +45,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameState: 1
-  amountOfLevels: 15
+  amountOfLevels: 7
   audioManager: {fileID: 7884249910247456545, guid: cc5897b5c76224d4e91d3d257293e925, type: 3}

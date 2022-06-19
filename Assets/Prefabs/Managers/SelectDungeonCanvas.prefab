@@ -390,6 +390,7 @@ MonoBehaviour:
   - Dungeon3-7
   - Dungeon3-8
   enemySpawnCountMultiplier: 3
+  enemySpawnCountBaseline: 7
 --- !u!1 &6409780700171562372
 GameObject:
   m_ObjectHideFlags: 0
@@ -1031,6 +1032,7 @@ MonoBehaviour:
   - Dungeon1-7
   - Dungeon1-8
   enemySpawnCountMultiplier: 1
+  enemySpawnCountBaseline: 3
 --- !u!1 &6409780701025921085
 GameObject:
   m_ObjectHideFlags: 0
@@ -1185,6 +1187,7 @@ MonoBehaviour:
   possibleSceneNames:
   - Boss2Arena
   enemySpawnCountMultiplier: 1
+  enemySpawnCountBaseline: 3
 --- !u!1 &6409780701045773771
 GameObject:
   m_ObjectHideFlags: 0
@@ -2103,6 +2106,7 @@ MonoBehaviour:
   possibleSceneNames:
   - Boss1Arena
   enemySpawnCountMultiplier: 1
+  enemySpawnCountBaseline: 3
 --- !u!1 &6409780701508865895
 GameObject:
   m_ObjectHideFlags: 0
@@ -2409,6 +2413,7 @@ MonoBehaviour:
   possibleSceneNames:
   - Boss3Arena
   enemySpawnCountMultiplier: 1
+  enemySpawnCountBaseline: 3
 --- !u!1 &6409780701667856581
 GameObject:
   m_ObjectHideFlags: 0
@@ -2837,6 +2842,7 @@ MonoBehaviour:
   - Dungeon2-7
   - Dungeon2-8
   enemySpawnCountMultiplier: 2
+  enemySpawnCountBaseline: 5
 --- !u!1 &6409780701862943147
 GameObject:
   m_ObjectHideFlags: 0
