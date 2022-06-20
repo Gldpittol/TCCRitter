@@ -1629,18 +1629,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9c03038d7c255241ab42b01f71da401, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delayBeforeStarting: 4
+  delayBeforeStarting: 3
   movePoints: {fileID: 1626050639}
-  delayBetweenMoves: 5
+  delayBetweenMoves: 7.5
   moveSpeed: 10
   wavePrefab: {fileID: 1398136853956001056, guid: 379390f6f0d0825429c4b153ee89b63f, type: 3}
-  waveDamage: 20
-  waveSpeed: 3
+  waveDamage: 10
+  waveSpeed: 2.5
   delayBetweenWaveSpawns: 12
   wavesLeft: {fileID: 259246606}
   wavesRight: {fileID: 1497064507}
   tsunamiPrefab: {fileID: 5396469409085167375, guid: 79d517e94b92d774a8692a9c27fb17c8, type: 3}
-  delayBeforePush: 2
+  delayBeforePush: 3
   pushIntensity: 30
   delayBeforeDestroyTsunami: 1
   tweenSpeed: 0.8
@@ -1650,7 +1650,7 @@ MonoBehaviour:
   tsunamiSpawnPosLeft: {fileID: 618502062}
   tsunamiSpawnPosRight: {fileID: 1051622879}
   donutPrefab: {fileID: 6875902588079569327, guid: 58bee3fd16305064ba204bfe652d40c9, type: 3}
-  donutDamage: 20
+  donutDamage: 25
   delayBetweenDonuts: 1
   delayUntilNewDonutIsCast: 10
   donutHpThreshold: 0.3

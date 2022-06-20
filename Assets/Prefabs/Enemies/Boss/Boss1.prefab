@@ -1130,13 +1130,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a201d3c6f450654cb747e317ffebced, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseDamage: 5
+  baseDamage: 3.5
   health: 600
-  speed: 2
-  delayBetweenAttacks: 0.3
-  projectileSpeed: 6
+  speed: 3
+  delayBetweenAttacks: 0.5
+  projectileSpeed: 5
   projectileDuration: 1
-  goldGiven: 100
+  goldGiven: 1000
   explosionPrefab: {fileID: 2076128814984141890, guid: 1741fa59522dda3429ae4b092d3fa21c, type: 3}
   isStaticEnemy: 1
 --- !u!114 &4045497430420528439
@@ -1151,12 +1151,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de6e824dd6627204f88bc83a2837069f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delayBeforeStarting: 4
-  cooldownEdgeBalls: 1.6
-  cooldownGreenBalls: 3
+  delayBeforeStarting: 3
+  cooldownEdgeBalls: 2.5
+  cooldownGreenBalls: 3.5
   HpPercentageToSpawnGreenBalls: 0.7
-  purpleOrbsDamage: 40
-  greenOrbsDamage: 50
+  purpleOrbsDamage: 15
+  greenOrbsDamage: 35
   purpleOrbSpawner: {fileID: 1770651508}
   purpleOrbPrefab: {fileID: 7480974977974578504, guid: 5b9cad5b647157f4f82235057c2158d7, type: 3}
   greenOrbprefab: {fileID: 7480974977974578504, guid: 1c09489037bff634d956289a4e4bdef0, type: 3}

@@ -69,6 +69,11 @@ public class AudioManager : MonoBehaviour
         _lastScene = scene.name.Split('-');
     }*/
 
+    void Start()
+    {
+        PlayBossMusic();
+    }
+
     public void PlayFX(AudioClip clip)
     {
         _fxSound.PlayOneShot(clip);
