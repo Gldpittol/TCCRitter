@@ -236,16 +236,16 @@ MonoBehaviour:
   delayBeforeStarting: 3
   delayBetweenLongFires: 10
   longFirePrefab: {fileID: 2605375003485514004, guid: 2287df11bce5fa640933032735c33ac1, type: 3}
-  delayBeforeLongFire: 3
-  timeLongFireOnField: 1.5
+  delayBeforeLongFire: 4
+  timeLongFireOnField: 15
   delayBetweenLongFireHits: 0.5
   longFireDamage: 5
   lerpToPlayerIntensity: 0.02
   delayBetweenPermanentFires: 0.75
   permanentFirePrefab: {fileID: 3955885552979993672, guid: 35cdd98fb8333684c8cf14d43269c8f0, type: 3}
-  delayBeforePermanentFire: 1
+  delayBeforePermanentFire: 0.75
   delayBetweenPermanentFireHits: 0.5
-  permanentFireDamage: 10
+  permanentFireDamage: 8
   permanentFireYOffset: 0.5
   hpPercentageThreshold: 0.25
   missilePrefab: {fileID: 2734620432003544460, guid: bfe001b9450ad244b8c55d1295e481c1, type: 3}

@@ -7,6 +7,18 @@ public class LobbyManager : MonoBehaviour
 {
     public Transform spellSwap;
     public Transform exitDoor;
+
+    private void Update()
+    {
+        if (Input.GetKey(KeyCode.U))
+        {
+            if (Input.GetKeyDown(KeyCode.A))
+            {
+                PlayerStats.progress = GameProgress.Level3Clear;
+                if (SaveLoadManager.Instance) SaveLoadManager.PlayerData.progress = GameProgress.Level3Clear;
+            }
+        }
+    }
     
     private void Start()
     {

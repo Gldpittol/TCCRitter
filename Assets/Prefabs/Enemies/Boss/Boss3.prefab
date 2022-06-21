@@ -1634,7 +1634,7 @@ MonoBehaviour:
   delayBetweenMoves: 7.5
   moveSpeed: 10
   wavePrefab: {fileID: 1398136853956001056, guid: 379390f6f0d0825429c4b153ee89b63f, type: 3}
-  waveDamage: 10
+  waveDamage: 20
   waveSpeed: 2.5
   delayBetweenWaveSpawns: 12
   wavesLeft: {fileID: 259246606}
@@ -1650,7 +1650,7 @@ MonoBehaviour:
   tsunamiSpawnPosLeft: {fileID: 618502062}
   tsunamiSpawnPosRight: {fileID: 1051622879}
   donutPrefab: {fileID: 6875902588079569327, guid: 58bee3fd16305064ba204bfe652d40c9, type: 3}
-  donutDamage: 25
+  donutDamage: 18
   delayBetweenDonuts: 1
   delayUntilNewDonutIsCast: 10
   donutHpThreshold: 0.3

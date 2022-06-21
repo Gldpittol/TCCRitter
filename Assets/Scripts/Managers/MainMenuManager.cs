@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -17,7 +18,7 @@ public class MainMenuManager : MonoBehaviour
     {
         GameManager.Instance.FadeOut(fadeImage, fadeTime);
     }
-
+    
     public void OpenCredits()
     {
         StartCoroutine(OpenCreditsCoroutine());

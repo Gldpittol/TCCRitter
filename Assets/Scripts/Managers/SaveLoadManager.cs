@@ -32,7 +32,7 @@ public class SaveData
    public SaveData()
    {
       gold = 1000;
-      progress = GameProgress.Level1Clear;
+      progress = GameProgress.None;
       baseMagicID = 0;
       offensiveMagicID = 0;
       defensiveMagicID = 0;
@@ -91,16 +91,27 @@ public class SaveLoadManager : MonoBehaviour
       if(PlayerData != null && _debugDataVisualization) _playerDataVisualization = PlayerData;
       if (_debugQuickKeys)
       {
-         if (Input.GetKeyDown(_quickSaveKey))
+         if(Input.GetKey(KeyCode.U))
          {
-            SaveGame();
+            if (Input.GetKeyDown(_quickSaveKey))
+            {
+               SaveGame();
+            }
+            if (Input.GetKeyDown(_quickLoadKey))
+            {
+               LoadGame();
+            } if (Input.GetKeyDown(_quickDeleteKey))
+            {
+               DeleteSave();
+            }
          }
-         if (Input.GetKeyDown(_quickLoadKey))
+      }
+      if (Input.GetKey(KeyCode.U))
+      {
+         if (Input.GetKeyDown(KeyCode.A))
          {
-            LoadGame();
-         } if (Input.GetKeyDown(_quickDeleteKey))
-         {
-            DeleteSave();
+            PlayerStats.progress = GameProgress.Level3Clear;
+            if (SaveLoadManager.Instance) SaveLoadManager.PlayerData.progress = GameProgress.Level3Clear;
          }
       }
    }
